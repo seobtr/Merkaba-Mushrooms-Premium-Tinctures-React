@@ -25,9 +25,9 @@ const FeatureCard = (props) => {
             flex-direction: column;
           }
           .feature-card-image {
-            width: var(--dl-size-size-doubleunit);
-            height: var(--dl-size-size-doubleunit);
-            object-fit: cover;
+            width: 216px;
+            height: 106px;
+            object-fit: contain;
           }
           .feature-card-text {
             margin-top: var(--dl-space-space-unit);

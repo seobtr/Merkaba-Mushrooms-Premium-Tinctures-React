@@ -6,16 +6,7 @@ const StoreBanner = (props) => {
   return (
     <>
       <div className="store-banner-store-banner">
-        <img
-          alt={props.image_alt1}
-          src={props.image_src1}
-          className="store-banner-image"
-        />
-        <img
-          alt={props.image_alt}
-          src={props.image_src}
-          className="store-banner-image1"
-        />
+        <button className="store-banner-button button">{props.shopbtn}</button>
       </div>
       <style jsx>
         {`
@@ -25,14 +16,9 @@ const StoreBanner = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .store-banner-image {
-            width: 135px;
-            object-fit: cover;
-          }
-          .store-banner-image1 {
-            width: 135px;
-            object-fit: cover;
-            margin-left: var(--dl-space-space-halfunit);
+          .store-banner-button {
+            color: #ffffff;
+            background-color: #6209c6;
           }
         `}
       </style>
@@ -41,17 +27,11 @@ const StoreBanner = (props) => {
 }
 
 StoreBanner.defaultProps = {
-  image_src: '/playground_assets/app-store-badge-200h.png',
-  image_alt1: 'image',
-  image_src1: '/playground_assets/google-play-badge-200h.png',
-  image_alt: 'image',
+  shopbtn: 'SHOP',
 }
 
 StoreBanner.propTypes = {
-  image_src: PropTypes.string,
-  image_alt1: PropTypes.string,
-  image_src1: PropTypes.string,
-  image_alt: PropTypes.string,
+  shopbtn: PropTypes.string,
 }
 
 export default StoreBanner

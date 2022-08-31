@@ -5,15 +5,15 @@ import PropTypes from 'prop-types'
 const StatsCard = (props) => {
   return (
     <>
-      <div className="stats-card-container">
+      <div className={`stats-card-container ${props.rootClassName} `}>
         <img
           alt={props.image_alt}
           src={props.image_src}
           className="stats-card-image"
         />
         <div className="stats-card-container1">
-          <h1 className="headline4">{props.number}</h1>
-          <span className="body1">{props.description}</span>
+          <h3 className="stats-card-text headline4">{props.process}</h3>
+          <span className="stats-card-text1">{props.description}</span>
         </div>
       </div>
       <style jsx>
@@ -24,6 +24,7 @@ const StatsCard = (props) => {
             display: flex;
             position: relative;
             align-items: center;
+            overflow-wrap: break-word;
             flex-direction: row;
           }
           .stats-card-image {
@@ -33,9 +34,30 @@ const StatsCard = (props) => {
           }
           .stats-card-container1 {
             flex: 0 0 auto;
+            width: 350px;
             display: flex;
+            flex-wrap: wrap;
             align-items: flex-start;
+            overflow-wrap: break-word;
             flex-direction: column;
+          }
+          .stats-card-text {
+            overflow-wrap: break-all;
+          }
+          .stats-card-text1 {
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 400;
+            line-height: 1.55;
+            overflow-wrap: break-word;
+            text-transform: none;
+            text-decoration: none;
+          }
+          .stats-card-root-class-name {
+            width: 400px;
+          }
+          .stats-card-root-class-name1 {
+            width: 400px;
           }
         `}
       </style>
@@ -44,14 +66,16 @@ const StatsCard = (props) => {
 }
 
 StatsCard.defaultProps = {
-  number: '10',
-  image_src: '/playground_assets/05.svg',
+  rootClassName: '',
+  process: 'Double Extracted',
+  image_src: 'd1b1341b-3dd9-4f91-b9fb-58aada385730',
   description: 'Description',
   image_alt: 'image',
 }
 
 StatsCard.propTypes = {
-  number: PropTypes.string,
+  rootClassName: PropTypes.string,
+  process: PropTypes.string,
   image_src: PropTypes.string,
   description: PropTypes.string,
   image_alt: PropTypes.string,

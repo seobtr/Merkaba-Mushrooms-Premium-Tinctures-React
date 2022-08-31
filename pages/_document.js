@@ -21,18 +21,28 @@ class CustomDocument extends Document {
           <style
             dangerouslySetInnerHTML={{
               __html:
-                '\n  html {\n    font-family: Inter;\n    font-size: 16px;\n  }\n\n  body {\n    font-weight: 400;\n    font-style:normal;\n    text-decoration: none;\n    text-transform: none;\n    letter-spacing: normal;\n    line-height: 1.55;\n    color: var(--dl-color-gray-900);\n    background-color: var(--dl-color-gray-white);\n    \n  }\n\n  \n',
+                '\n  html {\n    font-family: Montserrat;\n    font-size: 16px;\n  }\n\n  body {\n    font-weight: 400;\n    font-style:normal;\n    text-decoration: none;\n    text-transform: none;\n    letter-spacing: normal;\n    line-height: 1.55;\n    color: var(--dl-color-gray-900);\n    background-color: var(--dl-color-gray-white);\n    \n  }\n\n  \n',
             }}
             data-tag="default-style-sheet"
           ></style>
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&amp;display=swap"
             data-tag="font"
           ></link>
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400&amp;display=swap"
+            data-tag="font"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Italiana&amp;display=swap"
+            data-tag="font"
+          ></link>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
             data-tag="font"
           ></link>
         </Head>

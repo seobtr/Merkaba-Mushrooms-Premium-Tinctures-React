@@ -79,21 +79,21 @@
 }
 .largeLabel {
   font-size: 20px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
 .body2 {
   font-size: 14px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 400;
   text-transform: none;
   text-decoration: none;
 }
 .lead1 {
   font-size: 18px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 400;
   line-height: 1.77;
   text-transform: none;
@@ -101,14 +101,14 @@
 }
 .headline6 {
   font-size: 20px;
-  font-family: Inter;
-  font-weight: 500;
+  font-family: Montserrat;
+  font-weight: 400;
   text-transform: none;
   text-decoration: none;
 }
 .body1 {
   font-size: 16px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 400;
   line-height: 1.55;
   text-transform: none;
@@ -123,50 +123,50 @@
   text-decoration: none;
 }
 .headline3 {
-  font-size: 40px;
-  font-family: Inter;
+  font-size: 31px;
+  font-family: Montserrat;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
 }
 .headline2 {
-  font-size: 48px;
-  font-family: Inter;
+  font-size: 39px;
+  font-family: Montserrat;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
 }
 .headline5 {
-  font-size: 24px;
-  font-family: Inter;
+  font-size: 20px;
+  font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
 .subtitle2 {
   font-size: 18px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
 .smallLabel {
   font-size: 12px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
 .mediumLabel {
   font-size: 14px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
 .headline1 {
-  font-size: 72px;
-  font-family: Inter;
+  font-size: 48px;
+  font-family: Italiana;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
@@ -180,21 +180,21 @@
 }
 .subtitle1 {
   font-size: 18px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 700;
   text-transform: none;
   text-decoration: none;
 }
 .headline4 {
-  font-size: 28px;
-  font-family: Inter;
-  font-weight: 800;
+  font-size: 25px;
+  font-family: Montserrat;
+  font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
 .capitalised {
   font-size: 14px;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
