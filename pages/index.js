@@ -23,7 +23,7 @@ const Home = (props) => {
             <div className="home-logo">
               <img
                 alt="image"
-                src="/playground_assets/merkabaasset%2083x.svg"
+                src="/playground_assets/group%205019-200w.png"
                 className="home-image"
               />
             </div>
@@ -193,22 +193,6 @@ const Home = (props) => {
               card_title="Lions Mane"
               image_src="/playground_assets/lions%20mane%20cutout-300w.png"
             ></FeatureCard>
-            <FeatureCard
-              image_src="/playground_assets/03.svg"
-              card_title="Reishi"
-            ></FeatureCard>
-            <FeatureCard
-              image_src="/playground_assets/04.svg"
-              card_title="Turkey Tail"
-            ></FeatureCard>
-            <FeatureCard
-              image_src="/playground_assets/05.svg"
-              card_title="Oyster"
-            ></FeatureCard>
-            <FeatureCard
-              image_src="/playground_assets/06.svg"
-              card_title="Chaga"
-            ></FeatureCard>
           </div>
         </div>
         <div className="home-achievements">
@@ -221,7 +205,7 @@ const Home = (props) => {
                 rootClassName="stats-card-root-class-name"
               ></StatsCard>
               <StatsCard
-                process="Beta Glucans"
+                process="Benefits 2"
                 image_src="/playground_assets/01.svg"
                 description="Beta-glucans are soluble fibers that come from the cell walls of bacteria, fungi, yeasts, and some plants. They might lower the risk for heart disease."
                 rootClassName="stats-card-root-class-name1"
@@ -267,27 +251,18 @@ const Home = (props) => {
               suscipit non. Non commodo volutpat, pharetra, vel.
             </span>
           </div>
-          <img
-            alt="image"
-            src="/playground_assets/merkaba_bg-1200w.png"
-            image_src="/playground_assets/iphonex-1200w.png"
-            className="home-image4"
-          />
         </div>
         <div className="home-c-t-a">
           <div className="home-container15">
             <div className="home-container16">
-              <h2 className="headline2 home-text27">
-                <span className="home-text28">
-                  Manage your projects from your mobile
-                </span>
-              </h2>
-              <span className="home-text29 lead1">
-                Download the app to manage your projects, keep track of the
-                progress and complete tasks without procastinating. Stay on
-                track and complete on time!
+              <h2 className="headline2 home-text27">Call to Action</h2>
+              <span className="home-text28">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
               </span>
-              <span className="home-text30 subtitle2">Get the Tincture</span>
+              <span className="home-text29 subtitle2">Get the Tincture</span>
               <StoreBanner></StoreBanner>
             </div>
             <div className="home-container17">
@@ -295,13 +270,13 @@ const Home = (props) => {
                 alt="image"
                 src="/playground_assets/cordyceps%20object%20%5B1%5D-500w.png"
                 image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-                className="home-image5"
+                className="home-image4"
               />
               <img
                 alt="image"
                 src="/playground_assets/mask%20group%2018-1500h.png"
                 image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-                className="home-image6"
+                className="home-image5"
               />
             </div>
           </div>
@@ -310,20 +285,20 @@ const Home = (props) => {
           <footer className="home-container18">
             <img
               alt="image"
-              src="/playground_assets/group%205019-1200w.png"
-              className="home-image7"
+              src="/playground_assets/group%205019-200w.png"
+              className="home-image6"
             />
             <div className="home-container19">
-              <span className="home-text31">About</span>
-              <span className="home-text32">Benefits</span>
-              <span className="home-text33">Tinctures</span>
-              <span className="home-text34">Careers</span>
-              <span className="home-text35">Help</span>
-              <span className="home-text36">Privacy Policy</span>
+              <span className="home-text30">About</span>
+              <span className="home-text31">Benefits</span>
+              <span className="home-text32">Tinctures</span>
+              <span className="home-text33">Careers</span>
+              <span className="home-text34">Help</span>
+              <span className="home-text35">Privacy Policy</span>
             </div>
             <div className="home-divider"></div>
             <div className="home-container20">
-              <span className="home-text37 body2">
+              <span className="home-text36 body2">
                 © 2022 Merkaba Mushrooms. All rights reserved
               </span>
               <div className="home-container21">
@@ -859,7 +834,7 @@ const Home = (props) => {
           .home-container12 {
             flex: 0 0 auto;
             width: 540px;
-            height: 399px;
+            height: 364px;
             display: flex;
             overflow: hidden;
             align-items: center;
@@ -897,7 +872,9 @@ const Home = (props) => {
             max-width: 1110px;
             align-items: center;
             flex-direction: column;
+            background-size: cover;
             justify-content: flex-start;
+            background-image: url('/playground_assets/merkaba_bg-1200w.png');
           }
           .home-container14 {
             display: flex;
@@ -914,12 +891,6 @@ const Home = (props) => {
             margin-top: var(--dl-space-space-doubleunit);
             margin-bottom: var(--dl-space-space-doubleunit);
           }
-          .home-image4 {
-            width: 100%;
-            height: 400px;
-            margin-top: var(--dl-space-space-tripleunit);
-            object-fit: cover;
-          }
           .home-c-t-a {
             width: 100%;
             display: flex;
@@ -927,7 +898,7 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            background-color: var(--dl-color-turquoise-default);
+            background-color: #ffffff;
           }
           .home-container15 {
             flex: 0 0 auto;
@@ -949,12 +920,9 @@ const Home = (props) => {
             justify-content: flex-start;
           }
           .home-text28 {
-            white-space: pre-wrap;
-          }
-          .home-text29 {
             max-width: 500px;
           }
-          .home-text30 {
+          .home-text29 {
             max-width: 400px;
             margin-top: var(--dl-space-space-doubleunit);
             margin-bottom: var(--dl-space-space-halfunit);
@@ -967,7 +935,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-image5 {
+          .home-image4 {
             top: -82px;
             left: 113px;
             width: 305px;
@@ -975,11 +943,11 @@ const Home = (props) => {
             position: absolute;
             object-fit: cover;
           }
-          .home-image6 {
-            top: -285px;
-            left: 47px;
-            width: 191px;
-            height: 452px;
+          .home-image5 {
+            top: -195px;
+            left: 90px;
+            width: 122px;
+            height: 344px;
             position: absolute;
             object-fit: cover;
           }
@@ -1007,7 +975,7 @@ const Home = (props) => {
             justify-content: space-between;
             background-image: url('/playground_assets/merkaba_bg-1200w.png');
           }
-          .home-image7 {
+          .home-image6 {
             object-fit: cover;
           }
           .home-container19 {
@@ -1017,6 +985,14 @@ const Home = (props) => {
             margin-bottom: var(--dl-space-space-doubleunit);
             flex-direction: row;
             justify-content: flex-start;
+          }
+          .home-text30 {
+            color: #000000;
+            transition: 0.3s;
+            margin-right: var(--dl-space-space-unit);
+          }
+          .home-text30:hover {
+            color: var(--dl-color-turquoise-default);
           }
           .home-text31 {
             color: #000000;
@@ -1053,17 +1029,9 @@ const Home = (props) => {
           .home-text35 {
             color: #000000;
             transition: 0.3s;
-            margin-right: var(--dl-space-space-unit);
-          }
-          .home-text35:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .home-text36 {
-            color: #000000;
-            transition: 0.3s;
             white-space: nowrap;
           }
-          .home-text36:hover {
+          .home-text35:hover {
             color: var(--dl-color-turquoise-default);
           }
           .home-divider {
@@ -1080,7 +1048,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-text37 {
+          .home-text36 {
             color: #000000;
             margin-top: var(--dl-space-space-unit);
           }
@@ -1237,7 +1205,7 @@ const Home = (props) => {
             .home-container20 {
               flex-direction: column;
             }
-            .home-text37 {
+            .home-text36 {
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
