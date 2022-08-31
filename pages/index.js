@@ -23,7 +23,7 @@ const Home = (props) => {
             <div className="home-logo">
               <img
                 alt="image"
-                src="/playground_assets/group%205019-200w.png"
+                src="/playground_assets/group%205019-1500h.png"
                 className="home-image"
               />
             </div>
@@ -54,7 +54,7 @@ const Home = (props) => {
               <div className="home-logo1">
                 <img
                   alt="image"
-                  src="/playground_assets/logotype-dark.svg"
+                  src="/playground_assets/group%205019-1500h.png"
                   className="home-image1"
                 />
               </div>
@@ -271,7 +271,7 @@ const Home = (props) => {
           <footer className="home-container17">
             <img
               alt="image"
-              src="/playground_assets/group%205019-200w.png"
+              src="/playground_assets/group%205019-1500h.png"
               className="home-image6"
             />
             <div className="home-container18">
