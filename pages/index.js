@@ -1169,6 +1169,10 @@ const Home = (props) => {
             .home-bot {
               width: 100%;
             }
+            .home-text13 {
+              align-self: flex-start;
+              text-align: left;
+            }
             .home-text18 {
               text-align: center;
             }
