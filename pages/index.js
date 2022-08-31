@@ -1000,7 +1000,7 @@ const Home = (props) => {
             padding: var(--dl-space-space-doubleunit);
             z-index: 100;
             flex-wrap: wrap;
-            max-width: 1110px;
+            max-width: auto;
             align-items: center;
             flex-direction: column;
             background-size: cover;
