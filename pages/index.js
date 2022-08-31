@@ -148,7 +148,7 @@ const Home = (props) => {
                   <br></br>
                   <span>Mushrooms</span>
                 </h1>
-                <PrimaryButton button="Get Started"></PrimaryButton>
+                <PrimaryButton button="Learn More"></PrimaryButton>
               </div>
             </div>
             <img

@@ -18,7 +18,7 @@ const StoreBanner = (props) => {
           }
           .store-banner-button {
             color: #ffffff;
-            background-color: #6209c6;
+            background-color: #8c30f5;
           }
         `}
       </style>
