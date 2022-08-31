@@ -144,9 +144,10 @@ const Home = (props) => {
                   Enhancing Cognition Through Community and Research
                 </h3>
                 <h1 className="home-text13">
-                  <span>Merkaba</span>
+                  <span>MERKABA </span>
                   <br></br>
-                  <span>Mushrooms</span>
+                  <span>MUSHROOMS</span>
+                  <br></br>
                 </h1>
                 <PrimaryButton button="Learn More"></PrimaryButton>
               </div>
@@ -179,8 +180,8 @@ const Home = (props) => {
           />
         </div>
         <div className="home-features">
-          <h2 className="headline2 home-text17">Premium Tinctures</h2>
-          <span className="home-text18">
+          <h2 className="headline2 home-text18">Premium Tinctures</h2>
+          <span className="home-text19">
             Fruiting Body Mushrooms Harvesting in Central Louisiana and
             Extracted with the most optimal
           </span>
@@ -190,8 +191,8 @@ const Home = (props) => {
               card_title="Cordyceps"
             ></FeatureCard>
             <FeatureCard
-              card_title="Lions Mane"
               image_src="/playground_assets/lions%20mane%20cutout-300w.png"
+              card_title="Lions Mane"
             ></FeatureCard>
           </div>
         </div>
@@ -225,8 +226,8 @@ const Home = (props) => {
           </div>
           <div className="home-container13">
             <h3 className="headline3">Cordyceps</h3>
-            <span className="home-text20 lead1">
-              <span className="home-text21">
+            <span className="home-text21 lead1">
+              <span className="home-text22">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Condimentum diam orci pretium a pharetra, feugiat cursus.
                 Dictumst risus, sem egestas odio cras adipiscing vulputate.
@@ -240,14 +241,14 @@ const Home = (props) => {
         <div className="home-c-t-a">
           <div className="home-container14">
             <div className="home-container15">
-              <h2 className="headline2 home-text22">Call to Action</h2>
-              <span className="home-text23">
+              <h2 className="headline2 home-text23">Call to Action</h2>
+              <span className="home-text24">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </span>
-              <span className="home-text24 subtitle2">Get the Tincture</span>
+              <span className="home-text25 subtitle2">Get the Tincture</span>
               <StoreBanner></StoreBanner>
             </div>
             <div className="home-container16">
@@ -274,16 +275,16 @@ const Home = (props) => {
               className="home-image6"
             />
             <div className="home-container18">
-              <span className="home-text25">About</span>
-              <span className="home-text26">Benefits</span>
-              <span className="home-text27">Tinctures</span>
-              <span className="home-text28">Careers</span>
-              <span className="home-text29">Help</span>
-              <span className="home-text30">Privacy Policy</span>
+              <span className="home-text26">About</span>
+              <span className="home-text27">Benefits</span>
+              <span className="home-text28">Tinctures</span>
+              <span className="home-text29">Careers</span>
+              <span className="home-text30">Help</span>
+              <span className="home-text31">Privacy Policy</span>
             </div>
             <div className="home-divider"></div>
             <div className="home-container19">
-              <span className="home-text31 body2">
+              <span className="home-text32 body2">
                 © 2022 Merkaba Mushrooms. All rights reserved
               </span>
               <div className="home-container20">
@@ -761,7 +762,7 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text18 {
+          .home-text19 {
             max-width: 500px;
             text-align: center;
           }
@@ -842,12 +843,12 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text20 {
+          .home-text21 {
             max-width: 400px;
             margin-top: var(--dl-space-space-doubleunit);
             margin-bottom: var(--dl-space-space-doubleunit);
           }
-          .home-text21 {
+          .home-text22 {
             white-space: pre-wrap;
           }
           .home-c-t-a {
@@ -878,10 +879,10 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text23 {
+          .home-text24 {
             max-width: 500px;
           }
-          .home-text24 {
+          .home-text25 {
             max-width: 400px;
             margin-top: var(--dl-space-space-doubleunit);
             margin-bottom: var(--dl-space-space-halfunit);
@@ -944,14 +945,6 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-text25 {
-            color: #000000;
-            transition: 0.3s;
-            margin-right: var(--dl-space-space-unit);
-          }
-          .home-text25:hover {
-            color: var(--dl-color-turquoise-default);
-          }
           .home-text26 {
             color: #000000;
             transition: 0.3s;
@@ -987,9 +980,17 @@ const Home = (props) => {
           .home-text30 {
             color: #000000;
             transition: 0.3s;
-            white-space: nowrap;
+            margin-right: var(--dl-space-space-unit);
           }
           .home-text30:hover {
+            color: var(--dl-color-turquoise-default);
+          }
+          .home-text31 {
+            color: #000000;
+            transition: 0.3s;
+            white-space: nowrap;
+          }
+          .home-text31:hover {
             color: var(--dl-color-turquoise-default);
           }
           .home-divider {
@@ -1006,7 +1007,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-text31 {
+          .home-text32 {
             color: #000000;
             margin-top: var(--dl-space-space-unit);
           }
@@ -1143,10 +1144,10 @@ const Home = (props) => {
               font-size: 50px;
               text-align: center;
             }
-            .home-text17 {
+            .home-text18 {
               font-size: 40px;
             }
-            .home-text22 {
+            .home-text23 {
               font-size: 40px;
             }
             .home-container18 {
@@ -1156,7 +1157,7 @@ const Home = (props) => {
             .home-container19 {
               flex-direction: column;
             }
-            .home-text31 {
+            .home-text32 {
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
@@ -1168,10 +1169,10 @@ const Home = (props) => {
             .home-bot {
               width: 100%;
             }
-            .home-text17 {
+            .home-text18 {
               text-align: center;
             }
-            .home-text18 {
+            .home-text19 {
               text-align: center;
             }
             .home-container10 {
