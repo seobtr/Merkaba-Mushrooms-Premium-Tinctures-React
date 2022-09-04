@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 const PrimaryButton = (props) => {
   return (
     <>
-      <div className="primary-button-container">
+      <div className={`primary-button-container ${props.rootClassName} `}>
         <button className="primary-button-button mediumLabel button">
           {props.button}
         </button>
@@ -37,6 +37,12 @@ const PrimaryButton = (props) => {
           .primary-button-button:active {
             background-color: var(--dl-color-purple-1000);
           }
+
+          @media (max-width: 479px) {
+            .primary-button-root-class-name {
+              align-self: flex-start;
+            }
+          }
         `}
       </style>
     </>
@@ -45,10 +51,12 @@ const PrimaryButton = (props) => {
 
 PrimaryButton.defaultProps = {
   button: 'Button',
+  rootClassName: '',
 }
 
 PrimaryButton.propTypes = {
   button: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default PrimaryButton
