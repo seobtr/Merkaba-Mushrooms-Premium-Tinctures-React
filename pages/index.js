@@ -536,6 +536,7 @@ const Home = (props) => {
             width: 100%;
             display: flex;
             position: relative;
+            max-width: 1200px;
             align-items: center;
             flex-direction: column;
           }
