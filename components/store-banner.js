@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 
@@ -6,7 +7,9 @@ const StoreBanner = (props) => {
   return (
     <>
       <div className="store-banner-store-banner">
-        <button className="store-banner-button button">{props.shopbtn}</button>
+        <Link href="/shop">
+          <a className="store-banner-link button">{props.shopbtn}</a>
+        </Link>
       </div>
       <style jsx>
         {`
@@ -16,9 +19,10 @@ const StoreBanner = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .store-banner-button {
+          .store-banner-link {
             color: #ffffff;
-            background-color: #8c30f5;
+            text-decoration: none;
+            background-color: #d6b1ff;
           }
         `}
       </style>
@@ -27,7 +31,7 @@ const StoreBanner = (props) => {
 }
 
 StoreBanner.defaultProps = {
-  shopbtn: 'SHOP',
+  shopbtn: 'Shop Tinctures',
 }
 
 StoreBanner.propTypes = {

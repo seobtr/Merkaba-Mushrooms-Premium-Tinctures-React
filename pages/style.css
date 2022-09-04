@@ -11,10 +11,15 @@
   --dl-color-orange-100: #ffe3c1ff;
   --dl-color-orange-800: #ffc278ff;
   --dl-color-purple-100: #f1e4ffff;
-  --dl-color-purple-800: #d6b1ffff;
+  --dl-color-purple-800: #dec6f7ff;
   --dl-color-purple-900: #ac69f8ff;
   --dl-space-space-unit: 1rem;
   --dl-color-purple-1000: #6209c6ff;
+  --dl-color-background-1: rgba(0, 0, 0, 1);
+  --dl-color-background-3: rgba(100, 100, 100, 1);
+  --dl-color-background-4: rgba(188, 188, 188, 1);
+  --dl-color-background-6: rgba(240, 240, 240, 1);
+  --dl-color-background-8: rgba(255, 255, 255, 1);
   --dl-color-pink-default: #f22bb2ff;
   --dl-size-size-halfunit: 0.5rem;
   --dl-color-turquoise-100: #d5fafcff;
@@ -198,4 +203,53 @@
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
+}
+.othersButtonsLarge {
+  font-size: 15px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600px;
+  font-stretch: normal;
+}
+.paragraphsCaptionDefault {
+  font-size: 12px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.paragraphsBodyDefault {
+  font-size: 14px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.headingsScale5Default {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600px;
+  font-stretch: normal;
+}
+.paragraphsLeadDefault {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.headingsScale3Default {
+  font-size: 24px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.headingsScale1Default {
+  font-size: 48px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 500px;
+  font-stretch: normal;
 }
