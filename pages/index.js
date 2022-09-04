@@ -555,7 +555,7 @@ const Home = (props) => {
             display: flex;
             padding: var(--dl-space-space-doubleunit);
             z-index: 100;
-            max-width: 1110px;
+            max-width: auto;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
@@ -589,9 +589,10 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-image1 {
-            width: 320px;
+            width: auto;
             z-index: 100;
             object-fit: cover;
+            margin-right: 60px;
           }
           .home-turquoise-cirble {
             top: 439px;
