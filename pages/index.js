@@ -225,8 +225,7 @@ const Home = (props) => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </span>
-              <span className="home-text19 subtitle2">Get the Tincture</span>
-              <StoreBanner></StoreBanner>
+              <StoreBanner rootClassName="store-banner-root-class-name"></StoreBanner>
             </div>
             <div className="home-container16">
               <img
@@ -252,16 +251,16 @@ const Home = (props) => {
               className="home-image5"
             />
             <div className="home-container18">
-              <span className="home-text20">About</span>
-              <span className="home-text21">Benefits</span>
-              <span className="home-text22">Tinctures</span>
-              <span className="home-text23">Careers</span>
-              <span className="home-text24">Help</span>
-              <span className="home-text25">Privacy Policy</span>
+              <span className="home-text19">About</span>
+              <span className="home-text20">Benefits</span>
+              <span className="home-text21">Tinctures</span>
+              <span className="home-text22">Careers</span>
+              <span className="home-text23">Help</span>
+              <span className="home-text24">Privacy Policy</span>
             </div>
             <div className="home-divider"></div>
             <div className="home-container19">
-              <span className="home-text26 body2">
+              <span className="home-text25 body2">
                 © 2022 Merkaba Mushrooms. All rights reserved
               </span>
               <div className="home-container20">
@@ -783,11 +782,6 @@ const Home = (props) => {
           .home-text18 {
             max-width: 500px;
           }
-          .home-text19 {
-            max-width: 400px;
-            margin-top: var(--dl-space-space-doubleunit);
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
           .home-container16 {
             width: 520px;
             display: flex;
@@ -846,6 +840,14 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
+          .home-text19 {
+            color: #000000;
+            transition: 0.3s;
+            margin-right: var(--dl-space-space-unit);
+          }
+          .home-text19:hover {
+            color: var(--dl-color-turquoise-default);
+          }
           .home-text20 {
             color: #000000;
             transition: 0.3s;
@@ -881,17 +883,9 @@ const Home = (props) => {
           .home-text24 {
             color: #000000;
             transition: 0.3s;
-            margin-right: var(--dl-space-space-unit);
-          }
-          .home-text24:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .home-text25 {
-            color: #000000;
-            transition: 0.3s;
             white-space: nowrap;
           }
-          .home-text25:hover {
+          .home-text24:hover {
             color: var(--dl-color-turquoise-default);
           }
           .home-divider {
@@ -908,7 +902,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-text26 {
+          .home-text25 {
             color: #000000;
             margin-top: var(--dl-space-space-unit);
           }
@@ -1053,6 +1047,20 @@ const Home = (props) => {
             .home-text12 {
               font-size: 40px;
             }
+            .home-container10 {
+              flex-direction: column;
+            }
+            .home-container12 {
+              width: auto;
+              max-width: 400px;
+            }
+            .home-container14 {
+              justify-content: center;
+            }
+            .home-container15 {
+              width: auto;
+              max-width: 400px;
+            }
             .home-text17 {
               font-size: 40px;
             }
@@ -1063,7 +1071,7 @@ const Home = (props) => {
             .home-container19 {
               flex-direction: column;
             }
-            .home-text26 {
+            .home-text25 {
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }

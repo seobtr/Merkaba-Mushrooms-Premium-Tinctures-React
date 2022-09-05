@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const StoreBanner = (props) => {
   return (
     <>
-      <div className="store-banner-store-banner">
+      <div className={`store-banner-store-banner ${props.rootClassName} `}>
         <Link href="/shop">
           <a className="store-banner-link button">{props.shopbtn}</a>
         </Link>
@@ -24,6 +24,12 @@ const StoreBanner = (props) => {
             text-decoration: none;
             background-color: #d6b1ff;
           }
+
+          @media (max-width: 767px) {
+            .store-banner-root-class-name {
+              margin-top: var(--dl-space-space-unit);
+            }
+          }
         `}
       </style>
     </>
@@ -32,10 +38,12 @@ const StoreBanner = (props) => {
 
 StoreBanner.defaultProps = {
   shopbtn: 'Shop Tinctures',
+  rootClassName: '',
 }
 
 StoreBanner.propTypes = {
   shopbtn: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default StoreBanner

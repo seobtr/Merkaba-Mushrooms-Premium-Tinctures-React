@@ -59,6 +59,19 @@ const StatsCard = (props) => {
           .stats-card-root-class-name1 {
             width: 400px;
           }
+          @media (max-width: 767px) {
+            .stats-card-root-class-name {
+              width: auto;
+            }
+          }
+          @media (max-width: 479px) {
+            .stats-card-root-class-name {
+              width: auto;
+            }
+            .stats-card-root-class-name1 {
+              width: auto;
+            }
+          }
         `}
       </style>
     </>
