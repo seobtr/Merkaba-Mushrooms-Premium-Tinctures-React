@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 
@@ -7,9 +6,12 @@ const StoreBanner = (props) => {
   return (
     <>
       <div className={`store-banner-store-banner ${props.rootClassName} `}>
-        <Link href="/shop">
-          <a className="store-banner-link button">{props.shopbtn}</a>
-        </Link>
+        <a
+          href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
+          className="store-banner-button button"
+        >
+          {props.shopbtn}
+        </a>
       </div>
       <style jsx>
         {`
@@ -19,7 +21,7 @@ const StoreBanner = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .store-banner-link {
+          .store-banner-button {
             color: #ffffff;
             text-decoration: none;
             background-color: #d6b1ff;

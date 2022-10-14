@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
@@ -224,14 +223,15 @@ const Home = (props) => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </span>
-              <Link href="/shop">
-                <a className="home-link4">
-                  <StoreBanner
-                    rootClassName="store-banner-root-class-name"
-                    className="home-component7"
-                  ></StoreBanner>
-                </a>
-              </Link>
+              <a
+                href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
+                className="home-link4"
+              >
+                <StoreBanner
+                  rootClassName="store-banner-root-class-name"
+                  className="home-component7"
+                ></StoreBanner>
+              </a>
             </div>
             <div className="home-container16">
               <img

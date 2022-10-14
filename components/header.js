@@ -22,25 +22,29 @@ const Header = (props) => {
         </div>
         <div className="header-menu">
           <span className="header-text">{props.text}</span>
-          <Link href="/shop">
-            <a className="header-link1">{props.text1}</a>
-          </Link>
-          <Link href="/shop">
-            <a className="header-link2">{props.text2}</a>
-          </Link>
+          <a
+            href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
+            className="header-link1"
+          >
+            {props.text1}
+          </a>
+          <a
+            href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="header-link2"
+          >
+            {props.text2}
+          </a>
           <span className="header-text1">{props.text3}</span>
-          <span className="header-text2">{props.text4}</span>
-          <span className="header-text3">{props.text5}</span>
-          <svg viewBox="0 0 1024 1024" className="header-icon">
-            <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
-          </svg>
         </div>
         <div className="header-container">
-          <Link href="/shop">
-            <a className="header-link3">
-              <StoreBanner className="header-component"></StoreBanner>
-            </a>
-          </Link>
+          <a
+            href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/"
+            className="header-link3"
+          >
+            <StoreBanner className="header-component"></StoreBanner>
+          </a>
         </div>
         <div data-type="BurgerMenu" className="header-burger-menu">
           <svg viewBox="0 0 1024 1024" className="header-menu1">
@@ -114,23 +118,6 @@ const Header = (props) => {
           .header-text1:hover {
             color: var(--dl-color-turquoise-default);
           }
-          .header-text2 {
-            transition: 0.3s;
-            margin-right: var(--dl-space-space-doubleunit);
-          }
-          .header-text2:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .header-text3 {
-            transition: 0.3s;
-          }
-          .header-text3:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .header-icon {
-            width: 24px;
-            height: 24px;
-          }
           .header-container {
             display: flex;
             align-items: center;
@@ -181,26 +168,22 @@ const Header = (props) => {
 
 Header.defaultProps = {
   text2: 'Tinctures',
-  text5: 'More',
   image_src: '/playground_assets/group%205019-200w.png',
   text1: 'All Products',
   image_alt: 'image',
   rootClassName: '',
-  text4: 'Research\n',
-  text3: 'Blog',
   text: 'About',
+  text3: 'Blog',
 }
 
 Header.propTypes = {
   text2: PropTypes.string,
-  text5: PropTypes.string,
   image_src: PropTypes.string,
   text1: PropTypes.string,
   image_alt: PropTypes.string,
   rootClassName: PropTypes.string,
-  text4: PropTypes.string,
-  text3: PropTypes.string,
   text: PropTypes.string,
+  text3: PropTypes.string,
 }
 
 export default Header
