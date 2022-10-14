@@ -131,7 +131,7 @@ const Home = (props) => {
             <div className="home-container08">
               <img
                 alt="image"
-                src="/playground_assets/mask%20group%2018-1500h.png"
+                src="/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-1500h.png"
                 className="home-image1"
               />
             </div>
@@ -234,7 +234,7 @@ const Home = (props) => {
               />
               <img
                 alt="image"
-                src="/playground_assets/mask%20group%2018-1500h.png"
+                src="/playground_assets/mask%20group%2018-200w.png"
                 image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
                 className="home-image4"
               />
@@ -743,6 +743,10 @@ const Home = (props) => {
               padding-right: 0px;
               justify-content: center;
             }
+            .home-image1 {
+              margin-right: 0px;
+              padding-right: 0px;
+            }
             .home-achievements {
               flex-direction: column;
             }
@@ -767,6 +771,10 @@ const Home = (props) => {
             .home-text07 {
               font-size: 50px;
               text-align: center;
+            }
+            .home-image1 {
+              margin-right: 0px;
+              padding-right: 0px;
             }
             .home-text12 {
               font-size: 40px;
