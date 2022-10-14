@@ -34,14 +34,11 @@ const Header = (props) => {
           </svg>
         </div>
         <div className="header-container">
-          <a
-            href="https://landify-6cuiwp-seobtr.vercel.app/shop"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="header-link2"
-          >
-            <StoreBanner className="header-component"></StoreBanner>
-          </a>
+          <Link href="/shop">
+            <a className="header-link2">
+              <StoreBanner className="header-component"></StoreBanner>
+            </a>
+          </Link>
         </div>
         <div data-type="BurgerMenu" className="header-burger-menu">
           <svg viewBox="0 0 1024 1024" className="header-menu1">
