@@ -159,6 +159,10 @@ const Header = (props) => {
             .header-container {
               display: none;
             }
+            .header-menu1 {
+              width: 48px;
+              height: 48px;
+            }
           }
         `}
       </style>
@@ -168,12 +172,12 @@ const Header = (props) => {
 
 Header.defaultProps = {
   text2: 'Tinctures',
-  image_src: '/playground_assets/group%205019-200w.png',
+  image_src: '/playground_assets/asset%2011-200w.png',
   text1: 'All Products',
   image_alt: 'image',
   rootClassName: '',
-  text: 'About',
   text3: 'Blog',
+  text: 'About',
 }
 
 Header.propTypes = {
@@ -182,8 +186,8 @@ Header.propTypes = {
   text1: PropTypes.string,
   image_alt: PropTypes.string,
   rootClassName: PropTypes.string,
-  text: PropTypes.string,
   text3: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default Header

@@ -112,6 +112,8 @@ const Footer = (props) => {
             background-color: #ffffff;
           }
           .footer-image {
+            width: 92px;
+            height: 105px;
             object-fit: cover;
           }
           .footer-container1 {
@@ -304,7 +306,7 @@ Footer.defaultProps = {
   text4: 'Help',
   text1: 'Benefits',
   text5: 'Privacy Policy',
-  image_src: '/playground_assets/group%205019-200w.png',
+  image_src: '/playground_assets/asset%2011-200w.png',
   rootClassName: '',
   text6: '© 2022 Merkaba Mushrooms. All rights reserved',
   text: 'About',
