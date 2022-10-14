@@ -23,14 +23,9 @@ const Header = (props) => {
         <div className="header-menu">
           <span className="header-text">{props.text}</span>
           <span className="header-text1">{props.text1}</span>
-          <a
-            href="https://landify-6cuiwp-seobtr.vercel.app/shop"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="header-link1"
-          >
-            {props.text2}
-          </a>
+          <Link href="/shop">
+            <a className="header-link1">{props.text2}</a>
+          </Link>
           <span className="header-text2">{props.text3}</span>
           <span className="header-text3">{props.text4}</span>
           <span className="header-text4">{props.text5}</span>
