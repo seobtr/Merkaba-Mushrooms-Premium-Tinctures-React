@@ -22,20 +22,22 @@ const Header = (props) => {
         </div>
         <div className="header-menu">
           <span className="header-text">{props.text}</span>
-          <span className="header-text1">{props.text1}</span>
           <Link href="/shop">
-            <a className="header-link1">{props.text2}</a>
+            <a className="header-link1">{props.text1}</a>
           </Link>
-          <span className="header-text2">{props.text3}</span>
-          <span className="header-text3">{props.text4}</span>
-          <span className="header-text4">{props.text5}</span>
+          <Link href="/shop">
+            <a className="header-link2">{props.text2}</a>
+          </Link>
+          <span className="header-text1">{props.text3}</span>
+          <span className="header-text2">{props.text4}</span>
+          <span className="header-text3">{props.text5}</span>
           <svg viewBox="0 0 1024 1024" className="header-icon">
             <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
           </svg>
         </div>
         <div className="header-container">
           <Link href="/shop">
-            <a className="header-link2">
+            <a className="header-link3">
               <StoreBanner className="header-component"></StoreBanner>
             </a>
           </Link>
@@ -89,19 +91,27 @@ const Header = (props) => {
           .header-text:hover {
             color: var(--dl-color-turquoise-default);
           }
-          .header-text1 {
-            transition: 0.3s;
-            margin-right: var(--dl-space-space-doubleunit);
-          }
-          .header-text1:hover {
-            color: var(--dl-color-turquoise-default);
-          }
           .header-link1 {
             transition: 0.3s;
             margin-right: var(--dl-space-space-doubleunit);
             text-decoration: none;
           }
           .header-link1:hover {
+            color: var(--dl-color-turquoise-default);
+          }
+          .header-link2 {
+            transition: 0.3s;
+            margin-right: var(--dl-space-space-doubleunit);
+            text-decoration: none;
+          }
+          .header-link2:hover {
+            color: var(--dl-color-turquoise-default);
+          }
+          .header-text1 {
+            transition: 0.3s;
+            margin-right: var(--dl-space-space-doubleunit);
+          }
+          .header-text1:hover {
             color: var(--dl-color-turquoise-default);
           }
           .header-text2 {
@@ -113,15 +123,8 @@ const Header = (props) => {
           }
           .header-text3 {
             transition: 0.3s;
-            margin-right: var(--dl-space-space-doubleunit);
           }
           .header-text3:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .header-text4 {
-            transition: 0.3s;
-          }
-          .header-text4:hover {
             color: var(--dl-color-turquoise-default);
           }
           .header-icon {
@@ -134,7 +137,7 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-link2 {
+          .header-link3 {
             display: contents;
           }
           .header-component {

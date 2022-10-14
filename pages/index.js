@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
@@ -223,7 +224,14 @@ const Home = (props) => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </span>
-              <StoreBanner rootClassName="store-banner-root-class-name"></StoreBanner>
+              <Link href="/shop">
+                <a className="home-link4">
+                  <StoreBanner
+                    rootClassName="store-banner-root-class-name"
+                    className="home-component7"
+                  ></StoreBanner>
+                </a>
+              </Link>
             </div>
             <div className="home-container16">
               <img
@@ -695,6 +703,12 @@ const Home = (props) => {
           }
           .home-text17 {
             max-width: 500px;
+          }
+          .home-link4 {
+            display: contents;
+          }
+          .home-component7 {
+            text-decoration: none;
           }
           .home-container16 {
             width: 520px;
