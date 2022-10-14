@@ -37,13 +37,13 @@ const StoreBanner = (props) => {
 }
 
 StoreBanner.defaultProps = {
-  shopbtn: 'Shop Tinctures',
   rootClassName: '',
+  shopbtn: 'Shop Tinctures',
 }
 
 StoreBanner.propTypes = {
-  shopbtn: PropTypes.string,
   rootClassName: PropTypes.string,
+  shopbtn: PropTypes.string,
 }
 
 export default StoreBanner

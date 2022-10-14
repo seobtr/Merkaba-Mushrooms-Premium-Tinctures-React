@@ -23,9 +23,14 @@ const Header = (props) => {
         <div className="header-menu">
           <span className="header-text">{props.text}</span>
           <span className="header-text1">{props.text1}</span>
-          <Link href="/shop">
-            <a className="header-link1">{props.text2}</a>
-          </Link>
+          <a
+            href="https://landify-6cuiwp-seobtr.vercel.app/shop"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="header-link1"
+          >
+            {props.text2}
+          </a>
           <span className="header-text2">{props.text3}</span>
           <span className="header-text3">{props.text4}</span>
           <span className="header-text4">{props.text5}</span>
@@ -34,7 +39,14 @@ const Header = (props) => {
           </svg>
         </div>
         <div className="header-container">
-          <StoreBanner></StoreBanner>
+          <a
+            href="https://landify-6cuiwp-seobtr.vercel.app/shop"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="header-link2"
+          >
+            <StoreBanner className="header-component"></StoreBanner>
+          </a>
         </div>
         <div data-type="BurgerMenu" className="header-burger-menu">
           <svg viewBox="0 0 1024 1024" className="header-menu1">
@@ -129,6 +141,12 @@ const Header = (props) => {
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
+          }
+          .header-link2 {
+            display: contents;
+          }
+          .header-component {
+            text-decoration: none;
           }
           .header-burger-menu {
             display: none;
