@@ -772,6 +772,9 @@ const Home = (props) => {
             }
           }
           @media (max-width: 767px) {
+            .home-mobile-menu {
+              display: none;
+            }
             .home-container07 {
               width: 100%;
             }
@@ -806,7 +809,7 @@ const Home = (props) => {
           }
           @media (max-width: 479px) {
             .home-mobile-menu {
-              display: flex;
+              display: none;
             }
             .home-bot {
               width: 100%;

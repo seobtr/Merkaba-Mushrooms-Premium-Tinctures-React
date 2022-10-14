@@ -153,6 +153,9 @@ const Header = (props) => {
             .header-menu {
               display: none;
             }
+            .header-container {
+              display: none;
+            }
             .header-burger-menu {
               display: block;
             }
