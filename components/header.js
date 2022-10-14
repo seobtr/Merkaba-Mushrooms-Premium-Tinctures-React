@@ -85,9 +85,11 @@ const Header = (props) => {
           }
           .header-menu {
             display: flex;
+            transition: 0.3s;
             align-items: flex-start;
             flex-direction: row;
           }
+
           .header-text {
             transition: 0.3s;
             margin-right: var(--dl-space-space-doubleunit);
@@ -154,10 +156,14 @@ const Header = (props) => {
             .header-burger-menu {
               display: block;
             }
+            .header-menu1 {
+              width: 48px;
+              height: 48px;
+            }
           }
           @media (max-width: 479px) {
-            .header-container {
-              display: none;
+            .header-header {
+              padding-right: 2rem;
             }
             .header-menu1 {
               width: 48px;

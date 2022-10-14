@@ -1,12 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import Header from '../components/header'
+import StoreBanner from '../components/store-banner'
 import PrimaryButton from '../components/primary-button'
 import FeatureCard from '../components/feature-card'
 import StatsCard from '../components/stats-card'
 import LinkIconButton from '../components/link-icon-button'
-import StoreBanner from '../components/store-banner'
 import Footer from '../components/footer'
 
 const Home = (props) => {
@@ -25,11 +26,15 @@ const Home = (props) => {
           <div data-type="MobileMenu" className="home-mobile-menu">
             <div className="home-top">
               <div className="home-logo">
-                <img
-                  alt="image"
-                  src="/playground_assets/group%205019-1500h.png"
-                  className="home-image"
-                />
+                <Link href="/">
+                  <a className="home-link">
+                    <img
+                      alt="image"
+                      src="/playground_assets/asset%2011-1500h.png"
+                      className="home-image"
+                    />
+                  </a>
+                </Link>
               </div>
               <div data-type="CloseMobileMenu" className="home-close-menu">
                 <svg viewBox="0 0 1024 1024" className="home-icon">
@@ -39,19 +44,26 @@ const Home = (props) => {
             </div>
             <div className="home-mid">
               <span className="home-text">About</span>
-              <span className="home-text01">Products</span>
-              <span className="home-text02">Pricing</span>
-              <span className="home-text03">Blog</span>
-              <span className="home-text04">Jobs</span>
-              <span className="home-text05">More</span>
+              <a
+                href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
+                className="home-link1"
+              >
+                Products
+              </a>
             </div>
+            <a href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop">
+              <StoreBanner
+                rootClassName="store-banner-root-class-name1"
+                className="home-component01"
+              ></StoreBanner>
+            </a>
             <div className="home-bot">
               <div className="home-container01">
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link"
+                  className="home-link3"
                 >
                   <div className="home-container02">
                     <svg
@@ -66,7 +78,7 @@ const Home = (props) => {
                   href="https://dribbble.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link1"
+                  className="home-link4"
                 >
                   <div className="home-container03">
                     <svg
@@ -81,7 +93,7 @@ const Home = (props) => {
                   href="https://twitter.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link2"
+                  className="home-link5"
                 >
                   <div className="home-container04">
                     <svg
@@ -96,7 +108,7 @@ const Home = (props) => {
                   href="https://youtube.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="home-link3"
+                  className="home-link6"
                 >
                   <div className="home-container05">
                     <svg viewBox="0 0 1024 1024" className="home-icon08">
@@ -113,10 +125,10 @@ const Home = (props) => {
           <div className="home-hero">
             <div className="home-container06">
               <div className="home-container07">
-                <h3 className="home-text06">
+                <h3 className="home-text01">
                   Enhancing Cognition Through Community and Research
                 </h3>
-                <h1 className="home-text07">
+                <h1 className="home-text02">
                   <span>MERKABA </span>
                   <br></br>
                   <span>MUSHROOMS</span>
@@ -158,8 +170,8 @@ const Home = (props) => {
           />
         </div>
         <div className="home-features">
-          <h2 className="headline2 home-text12">Premium Tinctures</h2>
-          <span className="home-text13">
+          <h2 className="headline2 home-text07">Premium Tinctures</h2>
+          <span className="home-text08">
             Fruiting Body Mushrooms Harvesting in Central Louisiana and
             Extracted with the most optimal
           </span>
@@ -204,7 +216,7 @@ const Home = (props) => {
           </div>
           <div className="home-container13">
             <h3 className="headline3">Cordyceps</h3>
-            <span className="home-text15 lead1">
+            <span className="home-text10 lead1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
               risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
@@ -216,8 +228,8 @@ const Home = (props) => {
         <div className="home-c-t-a">
           <div className="home-container14">
             <div className="home-container15">
-              <h2 className="headline2 home-text16">Call to Action</h2>
-              <span className="home-text17">
+              <h2 className="headline2 home-text11">Call to Action</h2>
+              <span className="home-text12">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -225,11 +237,11 @@ const Home = (props) => {
               </span>
               <a
                 href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
-                className="home-link4"
+                className="home-link7"
               >
                 <StoreBanner
                   rootClassName="store-banner-root-class-name"
-                  className="home-component7"
+                  className="home-component08"
                 ></StoreBanner>
               </a>
             </div>
@@ -297,9 +309,13 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
+          .home-link {
+            display: contents;
+          }
           .home-image {
             width: 100px;
             object-fit: cover;
+            text-decoration: none;
           }
           .home-close-menu {
             flex: 0 0 auto;
@@ -325,39 +341,16 @@ const Home = (props) => {
           .home-text:hover {
             color: var(--dl-color-turquoise-default);
           }
-          .home-text01 {
+          .home-link1 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
           }
-          .home-text01:hover {
+          .home-link1:hover {
             color: var(--dl-color-turquoise-default);
           }
-          .home-text02 {
-            transition: 0.3s;
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .home-text02:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .home-text03 {
-            transition: 0.3s;
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .home-text03:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .home-text04 {
-            transition: 0.3s;
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .home-text04:hover {
-            color: var(--dl-color-turquoise-default);
-          }
-          .home-text05 {
-            transition: 0.3s;
-          }
-          .home-text05:hover {
-            color: var(--dl-color-turquoise-default);
+          .home-component01 {
+            text-decoration: none;
           }
           .home-bot {
             flex: 0 0 auto;
@@ -373,7 +366,7 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: row;
           }
-          .home-link {
+          .home-link3 {
             display: contents;
           }
           .home-container02 {
@@ -393,7 +386,7 @@ const Home = (props) => {
           .home-icon02:hover {
             fill: var(--dl-color-purple-default);
           }
-          .home-link1 {
+          .home-link4 {
             display: contents;
           }
           .home-container03 {
@@ -414,7 +407,7 @@ const Home = (props) => {
           .home-icon04:hover {
             fill: var(--dl-color-pink-default);
           }
-          .home-link2 {
+          .home-link5 {
             display: contents;
           }
           .home-container04 {
@@ -435,7 +428,7 @@ const Home = (props) => {
           .home-icon06:hover {
             fill: var(--dl-color-turquoise-default);
           }
-          .home-link3 {
+          .home-link6 {
             display: contents;
           }
           .home-container05 {
@@ -508,10 +501,10 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-text06 {
+          .home-text01 {
             font-size: 1.1em;
           }
-          .home-text07 {
+          .home-text02 {
             color: var(--dl-color-gray-900);
             font-size: 64px;
             font-family: Italiana;
@@ -587,7 +580,7 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text13 {
+          .home-text08 {
             max-width: 500px;
             text-align: center;
           }
@@ -668,7 +661,7 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text15 {
+          .home-text10 {
             max-width: 400px;
             margin-top: var(--dl-space-space-doubleunit);
             margin-bottom: var(--dl-space-space-doubleunit);
@@ -701,13 +694,13 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text17 {
+          .home-text12 {
             max-width: 500px;
           }
-          .home-link4 {
+          .home-link7 {
             display: contents;
           }
-          .home-component7 {
+          .home-component08 {
             text-decoration: none;
           }
           .home-container16 {
@@ -748,7 +741,7 @@ const Home = (props) => {
               align-items: center;
               margin-bottom: var(--dl-space-space-doubleunit);
             }
-            .home-text07 {
+            .home-text02 {
               text-align: center;
             }
             .home-container08 {
@@ -782,7 +775,7 @@ const Home = (props) => {
             .home-container07 {
               width: 100%;
             }
-            .home-text07 {
+            .home-text02 {
               font-size: 50px;
               text-align: center;
             }
@@ -790,7 +783,7 @@ const Home = (props) => {
               margin-right: 0px;
               padding-right: 0px;
             }
-            .home-text12 {
+            .home-text07 {
               font-size: 40px;
             }
             .home-container10 {
@@ -807,11 +800,14 @@ const Home = (props) => {
               width: auto;
               max-width: 400px;
             }
-            .home-text16 {
+            .home-text11 {
               font-size: 40px;
             }
           }
           @media (max-width: 479px) {
+            .home-mobile-menu {
+              display: flex;
+            }
             .home-bot {
               width: 100%;
             }
@@ -823,14 +819,14 @@ const Home = (props) => {
               width: 100%;
               align-self: center;
             }
-            .home-text07 {
+            .home-text02 {
               align-self: flex-start;
               text-align: left;
             }
-            .home-text12 {
+            .home-text07 {
               text-align: center;
             }
-            .home-text13 {
+            .home-text08 {
               text-align: center;
             }
             .home-container10 {
