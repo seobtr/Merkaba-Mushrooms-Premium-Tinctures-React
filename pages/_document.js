@@ -57,7 +57,7 @@ class CustomDocument extends Document {
           ></link>
           <noscript
             dangerouslySetInnerHTML={{
-              __html: '</noscript>\nsadf<noscript>',
+              __html: '</noscript> <noscript>',
             }}
           ></noscript>
         </Head>
