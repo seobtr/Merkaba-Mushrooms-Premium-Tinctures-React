@@ -22,15 +22,18 @@ const Footer = (props) => {
           </div>
           <div className="footer-divider"></div>
           <div className="footer-container2">
-            <span className="footer-text6 body2">{props.text6}</span>
-            <div className="footer-container3">
+            <span className="footer-text6">{props.Disclaimer}</span>
+          </div>
+          <div className="footer-container3">
+            <span className="footer-text7 body2">{props.text6}</span>
+            <div className="footer-container4">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="footer-link"
               >
-                <div className="footer-container4">
+                <div className="footer-container5">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="footer-icon"
@@ -45,7 +48,7 @@ const Footer = (props) => {
                 rel="noreferrer noopener"
                 className="footer-link1"
               >
-                <div className="footer-container5">
+                <div className="footer-container6">
                   <svg
                     viewBox="0 0 877.7142857142857 1024"
                     className="footer-icon2"
@@ -60,7 +63,7 @@ const Footer = (props) => {
                 rel="noreferrer noopener"
                 className="footer-link2"
               >
-                <div className="footer-container6">
+                <div className="footer-container7">
                   <svg
                     viewBox="0 0 950.8571428571428 1024"
                     className="footer-icon4"
@@ -75,7 +78,7 @@ const Footer = (props) => {
                 rel="noreferrer noopener"
                 className="footer-link3"
               >
-                <div className="footer-container7">
+                <div className="footer-container8">
                   <svg viewBox="0 0 1024 1024" className="footer-icon6">
                     <path d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"></path>
                   </svg>
@@ -107,6 +110,7 @@ const Footer = (props) => {
             flex-wrap: wrap;
             max-width: auto;
             align-items: center;
+            padding-top: 2rem;
             flex-direction: column;
             justify-content: space-between;
             background-color: #ffffff;
@@ -179,6 +183,25 @@ const Footer = (props) => {
             background-color: #0a0707;
           }
           .footer-container2 {
+            flex: 0 0 auto;
+            width: 70vw;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .footer-text6 {
+            color: #000000;
+            font-size: 10px;
+            margin-top: var(--dl-space-space-unit);
+            text-align: center;
+            font-family: Montserrat;
+            font-weight: 400;
+            text-transform: none;
+            text-decoration: none;
+          }
+          .footer-container3 {
             width: 100%;
             display: flex;
             margin-top: var(--dl-space-space-unit);
@@ -186,11 +209,11 @@ const Footer = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .footer-text6 {
+          .footer-text7 {
             color: #000000;
             margin-top: var(--dl-space-space-unit);
           }
-          .footer-container3 {
+          .footer-container4 {
             flex: 0 0 auto;
             width: 200px;
             display: flex;
@@ -200,7 +223,7 @@ const Footer = (props) => {
           .footer-link {
             display: contents;
           }
-          .footer-container4 {
+          .footer-container5 {
             display: flex;
             padding: var(--dl-space-space-halfunit);
             align-items: flex-start;
@@ -220,7 +243,7 @@ const Footer = (props) => {
           .footer-link1 {
             display: contents;
           }
-          .footer-container5 {
+          .footer-container6 {
             display: flex;
             padding: var(--dl-space-space-halfunit);
             align-items: flex-start;
@@ -241,7 +264,7 @@ const Footer = (props) => {
           .footer-link2 {
             display: contents;
           }
-          .footer-container6 {
+          .footer-container7 {
             display: flex;
             padding: var(--dl-space-space-halfunit);
             align-items: flex-start;
@@ -262,7 +285,7 @@ const Footer = (props) => {
           .footer-link3 {
             display: contents;
           }
-          .footer-container7 {
+          .footer-container8 {
             display: flex;
             padding: var(--dl-space-space-halfunit);
             align-items: flex-start;
@@ -286,10 +309,10 @@ const Footer = (props) => {
               flex-wrap: wrap;
               justify-content: center;
             }
-            .footer-container2 {
+            .footer-container3 {
               flex-direction: column;
             }
-            .footer-text6 {
+            .footer-text7 {
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
             }
@@ -301,6 +324,8 @@ const Footer = (props) => {
 }
 
 Footer.defaultProps = {
+  Disclaimer:
+    '"These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease."',
   image_alt: 'image',
   text3: 'Careers',
   text4: 'Help',
@@ -314,6 +339,7 @@ Footer.defaultProps = {
 }
 
 Footer.propTypes = {
+  Disclaimer: PropTypes.string,
   image_alt: PropTypes.string,
   text3: PropTypes.string,
   text4: PropTypes.string,

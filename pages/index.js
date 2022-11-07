@@ -23,7 +23,7 @@ const Home = (props) => {
         </Head>
         <div data-role="Header" className="home-header-container">
           <Header></Header>
-          <div data-type="MobileMenu" className="home-mobile-menu">
+          <div data-role="MobileMenu" className="home-mobile-menu">
             <div className="home-top">
               <div className="home-logo">
                 <Link href="/">
@@ -36,7 +36,7 @@ const Home = (props) => {
                   </a>
                 </Link>
               </div>
-              <div data-type="CloseMobileMenu" className="home-close-menu">
+              <div data-role="CloseMobileMenu" className="home-close-menu">
                 <svg viewBox="0 0 1024 1024" className="home-icon">
                   <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
                 </svg>
@@ -120,34 +120,32 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="home-main">
-          <div className="home-blur-background"></div>
-          <div className="home-hero">
-            <div className="home-container06">
-              <div className="home-container07">
-                <h3 className="home-text01">
-                  Enhancing Cognition Through Community and Research
-                </h3>
-                <h1 className="home-text02">
-                  <span>MERKABA </span>
-                  <br></br>
-                  <span>MUSHROOMS</span>
-                  <br></br>
-                </h1>
-                <PrimaryButton
-                  button="Learn More"
-                  rootClassName="primary-button-root-class-name"
-                ></PrimaryButton>
-              </div>
-            </div>
-            <div className="home-container08">
-              <img
-                alt="image"
-                src="/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-1500h.png"
-                className="home-image1"
-              />
+        <div className="home-hero">
+          <div className="home-container06">
+            <div className="home-container07">
+              <h3 className="home-text01">Premnium Fruiting Body Tinctures</h3>
+              <h1 className="home-text02">
+                <span>MERKABA </span>
+                <br></br>
+                <span>MUSHROOMS</span>
+                <br></br>
+              </h1>
+              <PrimaryButton
+                button="Learn More"
+                rootClassName="primary-button-root-class-name"
+              ></PrimaryButton>
             </div>
           </div>
+          <div className="home-container08">
+            <img
+              alt="image"
+              src="/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-1500h.png"
+              className="home-image1"
+            />
+          </div>
+        </div>
+        <div className="home-main">
+          <div className="home-blur-background"></div>
           <img
             alt="image"
             src="/playground_assets/turquoise-circle.svg"
@@ -449,28 +447,6 @@ const Home = (props) => {
           .home-icon08:hover {
             fill: var(--dl-color-orange-default);
           }
-          .home-main {
-            width: 100%;
-            display: flex;
-            position: relative;
-            max-width: 1200px;
-            align-items: center;
-            flex-direction: column;
-          }
-          .home-blur-background {
-            top: 0px;
-            left: auto;
-            right: 0px;
-            width: 100%;
-            bottom: auto;
-            filter: blur(60px);
-            height: 70vh;
-            display: flex;
-            position: absolute;
-            align-items: center;
-            flex-direction: column;
-            background-color: #f2f2f2;
-          }
           .home-hero {
             flex: 0 0 auto;
             width: 100%;
@@ -528,6 +504,28 @@ const Home = (props) => {
             object-fit: cover;
             margin-right: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-unit);
+          }
+          .home-main {
+            width: 100%;
+            display: flex;
+            position: relative;
+            max-width: 1200px;
+            align-items: center;
+            flex-direction: column;
+          }
+          .home-blur-background {
+            top: 0px;
+            left: auto;
+            right: 0px;
+            width: 100%;
+            bottom: auto;
+            filter: blur(60px);
+            height: 70vh;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f2f2f2;
           }
           .home-turquoise-cirble {
             top: 439px;
