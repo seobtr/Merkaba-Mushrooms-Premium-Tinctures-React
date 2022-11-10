@@ -489,7 +489,7 @@ const Home = (props) => {
             display: flex;
             padding: var(--dl-space-space-doubleunit);
             z-index: 100;
-            max-width: auto;
+            max-width: 1150px;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
