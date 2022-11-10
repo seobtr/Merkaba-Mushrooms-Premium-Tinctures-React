@@ -24,7 +24,6 @@ const Home = (props) => {
         </Head>
         <div data-role="Header" className="home-header-container">
           <Header></Header>
-          <div className="home-hero"></div>
           <div data-role="MobileMenu" className="home-mobile-menu">
             <div className="home-top">
               <div className="home-logo">
@@ -122,7 +121,7 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="home-hero1">
+        <div className="home-hero">
           <div className="home-container06">
             <img
               alt="image"
@@ -303,16 +302,6 @@ const Home = (props) => {
             align-items: center;
             flex-direction: column;
           }
-          .home-hero {
-            width: 100%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            display: flex;
-            position: relative;
-            max-width: 1320px;
-            padding-left: var(--dl-space-space-unitandahalfunit);
-            padding-right: var(--dl-space-space-unitandahalfunit);
-            justify-content: center;
-          }
           .home-mobile-menu {
             top: 0px;
             flex: 0 0 auto;
@@ -482,7 +471,7 @@ const Home = (props) => {
           .home-icon08:hover {
             fill: var(--dl-color-orange-default);
           }
-          .home-hero1 {
+          .home-hero {
             flex: 0 0 auto;
             width: 100%;
             height: 80vh;
@@ -799,7 +788,7 @@ const Home = (props) => {
             object-fit: cover;
           }
           @media (max-width: 991px) {
-            .home-hero1 {
+            .home-hero {
               height: auto;
               flex-direction: column;
             }
