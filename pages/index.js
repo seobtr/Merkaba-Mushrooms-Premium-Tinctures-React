@@ -268,18 +268,20 @@ const Home = (props) => {
               </a>
             </div>
             <div className="home-container16">
-              <img
-                alt="image"
-                src="/playground_assets/cordyceps%20object%20%5B1%5D-500w.png"
-                image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-                className="home-image3"
-              />
-              <img
-                alt="image"
-                src="/playground_assets/mask%20group%2018-200w.png"
-                image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-                className="home-image4"
-              />
+              <div className="home-container17">
+                <img
+                  alt="image"
+                  src="/playground_assets/cordyceps%20object%20%5B1%5D-500w.png"
+                  image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
+                  className="home-image3"
+                />
+                <img
+                  alt="image"
+                  src="/playground_assets/mask%20group%2018-200w.png"
+                  image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
+                  className="home-image4"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -764,6 +766,14 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-container16 {
+            flex: 0 0 auto;
+            width: 520px;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .home-container17 {
             width: 520px;
             display: flex;
             position: relative;
@@ -818,7 +828,7 @@ const Home = (props) => {
               margin-left: 0px;
               margin-right: 0px;
             }
-            .home-container16 {
+            .home-container17 {
               display: none;
             }
           }
