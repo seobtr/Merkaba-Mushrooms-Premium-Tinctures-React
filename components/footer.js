@@ -1,6 +1,5 @@
 import React from 'react'
 
-import DangerousHTML from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
 const Footer = (props) => {
@@ -86,18 +85,6 @@ const Footer = (props) => {
                 </div>
               </a>
             </div>
-          </div>
-          <div>
-            <DangerousHTML
-              html={`<div class="ec-cart-widget"></div>
-<div>
-    <script data-cfasync="false" type="text/javascript"
-        src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-11-10" charset="utf-8"></script>
-    <script type="text/javascript">
-        Ecwid.init();
-    </script>
-</div>`}
-            ></DangerousHTML>
           </div>
         </footer>
       </div>
