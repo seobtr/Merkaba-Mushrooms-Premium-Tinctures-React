@@ -12,7 +12,7 @@ const StatsCard = (props) => {
           className="stats-card-image"
         />
         <div className="stats-card-container1">
-          <h3 className="stats-card-text headline4">{props.process}</h3>
+          <h3 className="stats-card-text Headline4">{props.process}</h3>
           <span className="stats-card-text1">{props.description}</span>
         </div>
       </div>

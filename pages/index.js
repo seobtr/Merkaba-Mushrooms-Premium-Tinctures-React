@@ -4,7 +4,8 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import StoreBanner from '../components/store-banner'
-import PrimaryButton from '../components/primary-button'
+import PrimaryPinkButton from '../components/primary-pink-button'
+import OutlineGrayButton from '../components/outline-gray-button'
 import FeatureCard from '../components/feature-card'
 import StatsCard from '../components/stats-card'
 import LinkIconButton from '../components/link-icon-button'
@@ -23,6 +24,7 @@ const Home = (props) => {
         </Head>
         <div data-role="Header" className="home-header-container">
           <Header></Header>
+          <div className="home-hero"></div>
           <div data-role="MobileMenu" className="home-mobile-menu">
             <div className="home-top">
               <div className="home-logo">
@@ -120,28 +122,51 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="home-hero">
+        <div className="home-hero1">
           <div className="home-container06">
-            <div className="home-container07">
-              <h3 className="home-text01">Premnium Fruiting Body Tinctures</h3>
-              <h1 className="home-text02">
-                <span>MERKABA </span>
-                <br></br>
-                <span>MUSHROOMS</span>
-                <br></br>
-              </h1>
-              <PrimaryButton
-                button="Learn More"
-                rootClassName="primary-button-root-class-name"
-              ></PrimaryButton>
-            </div>
-          </div>
-          <div className="home-container08">
             <img
               alt="image"
               src="/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-1500h.png"
               className="home-image1"
             />
+          </div>
+          <div className="home-card">
+            <h1 className="home-text01">
+              A New Way to Cultivate Your Mind and Body 
+            </h1>
+            <span className="home-text02">
+              <span>
+                Fruiting Body only tinctures specifically formulated to taste
+                good and make you feel good
+              </span>
+              <span className="Lead">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
+              <span className="Lead">
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
+            </span>
+            <div className="home-container07">
+              <div className="home-container08">
+                <Link href="/shop">
+                  <a className="home-link7">
+                    <PrimaryPinkButton
+                      button="Shop Now"
+                      className="home-component02"
+                    ></PrimaryPinkButton>
+                  </a>
+                </Link>
+              </div>
+              <OutlineGrayButton button="Learn More"></OutlineGrayButton>
+            </div>
           </div>
         </div>
         <div className="home-main">
@@ -168,8 +193,8 @@ const Home = (props) => {
           />
         </div>
         <div className="home-features">
-          <h2 className="headline2 home-text07">Premium Tinctures</h2>
-          <span className="home-text08">
+          <h2 className="home-text06">Premium Tinctures</h2>
+          <span className="home-text07">
             Fruiting Body Mushrooms Harvesting in Central Louisiana and
             Extracted with the most optimal
           </span>
@@ -213,8 +238,8 @@ const Home = (props) => {
             />
           </div>
           <div className="home-container13">
-            <h3 className="headline3">Cordyceps</h3>
-            <span className="home-text10 lead1">
+            <h3 className="Headline3">Cordyceps</h3>
+            <span className="home-text09">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
               risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
@@ -226,8 +251,8 @@ const Home = (props) => {
         <div className="home-c-t-a">
           <div className="home-container14">
             <div className="home-container15">
-              <h2 className="headline2 home-text11">Call to Action</h2>
-              <span className="home-text12">
+              <h2 className="Headline2 home-text10">Call to Action</h2>
+              <span className="home-text11">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -235,11 +260,11 @@ const Home = (props) => {
               </span>
               <a
                 href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
-                className="home-link7"
+                className="home-link8"
               >
                 <StoreBanner
                   rootClassName="store-banner-root-class-name"
-                  className="home-component08"
+                  className="home-component09"
                 ></StoreBanner>
               </a>
             </div>
@@ -277,6 +302,16 @@ const Home = (props) => {
             display: flex;
             align-items: center;
             flex-direction: column;
+          }
+          .home-hero {
+            width: 100%;
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            display: flex;
+            position: relative;
+            max-width: 1320px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            justify-content: center;
           }
           .home-mobile-menu {
             top: 0px;
@@ -447,7 +482,7 @@ const Home = (props) => {
           .home-icon08:hover {
             fill: var(--dl-color-orange-default);
           }
-          .home-hero {
+          .home-hero1 {
             flex: 0 0 auto;
             width: 100%;
             height: 80vh;
@@ -461,49 +496,75 @@ const Home = (props) => {
           }
           .home-container06 {
             flex: 0 0 auto;
-            width: 60%;
-            height: auto;
-            display: flex;
-            align-items: space-between;
-            margin-left: var(--dl-space-space-unit);
-            padding-left: var(--dl-space-space-unit);
-            flex-direction: column;
-          }
-          .home-container07 {
-            flex: 0 0 auto;
-            width: 50%;
-            height: auto;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
-          .home-text01 {
-            font-size: 1.1em;
-          }
-          .home-text02 {
-            color: var(--dl-color-gray-900);
-            font-size: 64px;
-            font-family: Italiana;
-            font-weight: 800;
-            margin-bottom: var(--dl-space-space-doubleunit);
-            text-transform: none;
-            text-decoration: none;
-          }
-          .home-container08 {
-            flex: 0 0 auto;
             width: 40%;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             margin-right: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-unit);
             flex-direction: row;
+            justify-content: center;
           }
           .home-image1 {
-            width: auto;
+            width: 238px;
             z-index: 100;
             object-fit: cover;
             margin-right: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-unit);
+          }
+          .home-card {
+            flex: 0 0 auto;
+            width: 60%;
+            display: flex;
+            padding: var(--dl-space-space-tripleunit);
+            z-index: 1;
+            box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, 0.15),
+              0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
+            margin-top: var(--dl-space-space-tripleunit);
+            align-items: flex-start;
+            border-radius: var(--dl-radius-radius-radius1);
+            flex-direction: column;
+            backdrop-filter: saturate(200%) blur(30px);
+            background-color: hsla(0, 0%, 100%, 0.8);
+          }
+          .home-text01 {
+            font-size: 48px;
+            text-align: center;
+            font-family: Italiana;
+            text-transform: uppercase;
+            background-image: linear-gradient(
+              310deg,
+              rgb(121, 40, 202),
+              rgb(255, 0, 128)
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+          .home-text02 {
+            color: var(--dl-color-secondary-600);
+            text-align: center;
+            margin-right: var(--dl-space-space-tripleunit);
+            margin-bottom: var(--dl-space-space-unit);
+            padding-right: var(--dl-space-space-tripleunit);
+          }
+          .home-container07 {
+            display: flex;
+            align-self: center;
+            margin-top: var(--dl-space-space-unitandahalfunit);
+            align-items: flex-start;
+            margin-bottom: var(--dl-space-space-unit);
+            flex-direction: row;
+          }
+          .home-container08 {
+            display: flex;
+            align-items: flex-start;
+            margin-right: var(--dl-space-space-unit);
+            flex-direction: row;
+          }
+          .home-link7 {
+            display: contents;
+          }
+          .home-component02 {
+            text-decoration: none;
           }
           .home-main {
             width: 100%;
@@ -578,7 +639,13 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text08 {
+          .home-text06 {
+            font-family: Montserrat;
+            font-weight: 800;
+            text-transform: none;
+            text-decoration: none;
+          }
+          .home-text07 {
             max-width: 500px;
             text-align: center;
           }
@@ -659,10 +726,16 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text10 {
+          .home-text09 {
+            font-size: 18px;
             max-width: 400px;
             margin-top: var(--dl-space-space-doubleunit);
+            font-family: Montserrat;
+            font-weight: 400;
+            line-height: 1.77;
             margin-bottom: var(--dl-space-space-doubleunit);
+            text-transform: none;
+            text-decoration: none;
           }
           .home-c-t-a {
             width: 100%;
@@ -692,13 +765,13 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text12 {
+          .home-text11 {
             max-width: 500px;
           }
-          .home-link7 {
+          .home-link8 {
             display: contents;
           }
-          .home-component08 {
+          .home-component09 {
             text-decoration: none;
           }
           .home-container16 {
@@ -726,23 +799,11 @@ const Home = (props) => {
             object-fit: cover;
           }
           @media (max-width: 991px) {
-            .home-hero {
+            .home-hero1 {
               height: auto;
               flex-direction: column;
             }
             .home-container06 {
-              width: 100%;
-              align-items: center;
-            }
-            .home-container07 {
-              width: 100%;
-              align-items: center;
-              margin-bottom: var(--dl-space-space-doubleunit);
-            }
-            .home-text02 {
-              text-align: center;
-            }
-            .home-container08 {
               width: 100%;
               margin-right: 0px;
               padding-right: 0px;
@@ -751,6 +812,9 @@ const Home = (props) => {
             .home-image1 {
               margin-right: 0px;
               padding-right: 0px;
+            }
+            .home-card {
+              width: 100%;
             }
             .home-achievements {
               flex-direction: column;
@@ -773,18 +837,19 @@ const Home = (props) => {
             .home-mobile-menu {
               display: none;
             }
-            .home-container07 {
-              width: 100%;
-            }
-            .home-text02 {
-              font-size: 50px;
-              text-align: center;
-            }
             .home-image1 {
               margin-right: 0px;
               padding-right: 0px;
             }
-            .home-text07 {
+            .home-card {
+              align-items: center;
+            }
+            .home-text02 {
+              text-align: center;
+              margin-right: 0px;
+              padding-right: 0px;
+            }
+            .home-text06 {
               font-size: 40px;
             }
             .home-container10 {
@@ -801,7 +866,7 @@ const Home = (props) => {
               width: auto;
               max-width: 400px;
             }
-            .home-text11 {
+            .home-text10 {
               font-size: 40px;
             }
           }
@@ -812,22 +877,21 @@ const Home = (props) => {
             .home-bot {
               width: 100%;
             }
-            .home-container06 {
-              margin-left: 0px;
-              padding-left: 0px;
+            .home-card {
+              padding: var(--dl-space-space-unit);
             }
             .home-container07 {
-              width: 100%;
-              align-self: center;
+              align-items: center;
+              flex-direction: column;
             }
-            .home-text02 {
-              align-self: flex-start;
-              text-align: left;
+            .home-container08 {
+              margin-right: 0px;
+              margin-bottom: var(--dl-space-space-unit);
             }
-            .home-text07 {
+            .home-text06 {
               text-align: center;
             }
-            .home-text08 {
+            .home-text07 {
               text-align: center;
             }
             .home-container10 {

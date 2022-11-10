@@ -25,7 +25,7 @@ const Footer = (props) => {
             <span className="footer-text6">{props.Disclaimer}</span>
           </div>
           <div className="footer-container3">
-            <span className="footer-text7 body2">{props.text6}</span>
+            <span className="footer-text7 Body2">{props.text6}</span>
             <div className="footer-container4">
               <a
                 href="https://instagram.com"

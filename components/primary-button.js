@@ -6,7 +6,7 @@ const PrimaryButton = (props) => {
   return (
     <>
       <div className={`primary-button-container ${props.rootClassName} `}>
-        <button className="primary-button-button mediumLabel button">
+        <button className="primary-button-button MediumLabel button">
           {props.button}
         </button>
       </div>
@@ -40,6 +40,9 @@ const PrimaryButton = (props) => {
 
           @media (max-width: 479px) {
             .primary-button-root-class-name {
+              align-self: flex-start;
+            }
+            .primary-button-root-class-name1 {
               align-self: flex-start;
             }
           }

@@ -18,9 +18,9 @@ const TestimonialsCard = (props) => {
             className="testimonials-card-image1"
           />
           <div className="testimonials-card-container2">
-            <span className="testimonials-card-text lead1">{props.text}</span>
-            <span className="subtitle1">{props.text1}</span>
-            <span className="testimonials-card-text2 lead2">{props.text2}</span>
+            <span className="testimonials-card-text Lead1">{props.text}</span>
+            <span className="Subtitle1">{props.text1}</span>
+            <span className="testimonials-card-text2 Lead2">{props.text2}</span>
           </div>
         </div>
       </div>

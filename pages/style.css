@@ -1,6 +1,6 @@
 :root {
   --dl-color-gray-300: #d9dbe1ff;
-  --dl-color-gray-700: #969babff;
+  --dl-color-gray-700: #20273fff;
   --dl-color-gray-800: #474a57ff;
   --dl-color-gray-900: #18191fff;
   --dl-color-pink-100: #ffb1e6ff;
@@ -22,6 +22,8 @@
   --dl-color-background-8: rgba(255, 255, 255, 1);
   --dl-color-pink-default: #f22bb2ff;
   --dl-size-size-halfunit: 0.5rem;
+  --dl-color-secondary-200: #8392abff;
+  --dl-color-secondary-600: #252f40ff;
   --dl-color-turquoise-100: #d5fafcff;
   --dl-color-turquoise-800: #75e3eaff;
   --dl-radius-radius-round: 50%;
@@ -30,6 +32,7 @@
   --dl-size-size-doubleunit: 2rem;
   --dl-size-size-tripleunit: 3rem;
   --dl-space-space-halfunit: 0.5rem;
+  --dl-radius-radius-radius1: 1rem;
   --dl-radius-radius-radius2: 2px;
   --dl-radius-radius-radius4: 4px;
   --dl-radius-radius-radius6: 6px;
@@ -37,6 +40,8 @@
   --dl-space-space-doubleunit: 2rem;
   --dl-space-space-tripleunit: 3rem;
   --dl-color-turquoise-default: #2ec5ceff;
+  --dl-space-space-unitandahalfunit: 1.5rem;
+  --dl-space-space-triplequarterunit: 0.75rem;
 }
 .teleport-show {
   display: flex !important;
@@ -83,21 +88,29 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
-.largeLabel {
+.LargeLabel {
   font-size: 20px;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
-.body2 {
+.Lead {
+  font-size: 1.25rem;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.625;
+  text-transform: none;
+  text-decoration: none;
+}
+.Body2 {
   font-size: 14px;
   font-family: Montserrat;
   font-weight: 400;
   text-transform: none;
   text-decoration: none;
 }
-.lead1 {
+.Lead1 {
   font-size: 18px;
   font-family: Montserrat;
   font-weight: 400;
@@ -105,14 +118,23 @@
   text-transform: none;
   text-decoration: none;
 }
-.headline6 {
+.ButtonSmall {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.025rem;
+  text-transform: uppercase;
+}
+.Headline6 {
   font-size: 20px;
   font-family: Montserrat;
   font-weight: 400;
   text-transform: none;
   text-decoration: none;
 }
-.body1 {
+.Body1 {
   font-size: 16px;
   font-family: Montserrat;
   font-weight: 400;
@@ -120,7 +142,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.lead2 {
+.Lead2 {
   font-size: 14px;
   font-family: Inter;
   font-weight: 500;
@@ -128,126 +150,134 @@
   text-transform: none;
   text-decoration: none;
 }
-.headline3 {
+.Headline3 {
   font-size: 31px;
   font-family: Montserrat;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
 }
-.headline2 {
+.Headline2 {
   font-size: 39px;
   font-family: Montserrat;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
 }
-.headline5 {
+.Headline5 {
   font-size: 20px;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
-.subtitle2 {
+.Subtitle2 {
   font-size: 18px;
   font-family: Montserrat;
   font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
-.smallLabel {
+.SmallLabel {
   font-size: 12px;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
-.mediumLabel {
+.MediumLabel {
   font-size: 14px;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
-.headline1 {
+.Headline1 {
   font-size: 48px;
   font-family: Italiana;
   font-weight: 800;
   text-transform: none;
   text-decoration: none;
 }
-.badgeLabel {
+.BadgeLabel {
   font-size: 20px;
   font-family: Nanum Pen Script;
   font-weight: 400;
   text-transform: none;
   text-decoration: none;
 }
-.subtitle1 {
+.Subtitle1 {
   font-size: 18px;
   font-family: Montserrat;
   font-weight: 700;
   text-transform: none;
   text-decoration: none;
 }
-.headline4 {
+.Headline4 {
   font-size: 25px;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
 }
-.capitalised {
+.HeadingOne {
+  font-size: 2.25rem;
+  font-family: Open Sans;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: none;
+  text-decoration: none;
+}
+.Capitalised {
   font-size: 14px;
   font-family: Montserrat;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
 }
-.othersButtonsLarge {
+.OthersButtonsLarge {
   font-size: 15px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 600px;
   font-stretch: normal;
 }
-.paragraphsCaptionDefault {
+.ParagraphsCaptionDefault {
   font-size: 12px;
   font-style: normal;
   font-family: Roboto;
   font-weight: 400px;
   font-stretch: normal;
 }
-.paragraphsBodyDefault {
+.ParagraphsBodyDefault {
   font-size: 14px;
   font-style: normal;
   font-family: Roboto;
   font-weight: 400px;
   font-stretch: normal;
 }
-.headingsScale5Default {
+.HeadingsScale5Default {
   font-size: 16px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 600px;
   font-stretch: normal;
 }
-.paragraphsLeadDefault {
+.ParagraphsLeadDefault {
   font-size: 16px;
   font-style: normal;
   font-family: Roboto;
   font-weight: 400px;
   font-stretch: normal;
 }
-.headingsScale3Default {
+.HeadingsScale3Default {
   font-size: 24px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 500px;
   font-stretch: normal;
 }
-.headingsScale1Default {
+.HeadingsScale1Default {
   font-size: 48px;
   font-style: normal;
   font-family: Poppins;
