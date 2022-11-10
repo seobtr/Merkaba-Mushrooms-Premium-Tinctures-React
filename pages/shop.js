@@ -22,23 +22,12 @@ const Shop = (props) => {
           <DangerousHTML
             html={`<div id="my-store-78742521"></div>
 <div>
-  <script
-    data-cfasync="false"
-    type="text/javascript"
-    src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-10-11"
-    charset="utf-8"
-  ></script>
+  <script data-cfasync="false" type="text/javascript"
+    src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-11-10" charset="utf-8"></script>
   <script type="text/javascript">
-xProductBrowser(
-  "categoriesPerRow=3",
-  "views=grid(20,3) list(60) table(60)",
-  "categoryView=grid",
-  "searchView=list",
-  "id=my-store-78742521"
-);
-</script>
-</div>
-`}
+    xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-78742521");
+  </script>
+</div>`}
           ></DangerousHTML>
         </div>
         <Footer rootClassName="footer-root-class-name"></Footer>
