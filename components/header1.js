@@ -15,18 +15,26 @@ const Header1 = (props) => {
       >
         <nav className="header1-nav">
           <div className="header1-container">
-            <img
-              alt={props.image_alt}
-              src={props.image_src}
-              className="header1-image"
-            />
+            <Link href="/">
+              <a className="header1-link">
+                <img
+                  alt={props.image_alt}
+                  src={props.image_src}
+                  className="header1-image"
+                />
+              </a>
+            </Link>
             <span className="header1-text Large">Merkaba Mushrooms</span>
           </div>
           <div className="header1-container1">
             <div className="header1-menu">
-              <span className="header1-text01">Shop</span>
-              <span className="header1-text02">Blog</span>
-              <span className="header1-text03">About</span>
+              <Link href="/shop">
+                <a className="header1-link1">Shop</a>
+              </Link>
+              <span className="header1-text1">Blog</span>
+              <Link href="/shop">
+                <a className="header1-link2">About</a>
+              </Link>
               <div>
                 <DangerousHTML
                   html={`<div class="ec-cart-widget"></div>
@@ -43,7 +51,7 @@ const Header1 = (props) => {
             <div className="header1-container2">
               <div className="header1-container3">
                 <Link href="/shop">
-                  <a className="header1-link">
+                  <a className="header1-link3">
                     <PrimaryPinkButton1
                       button="buy now"
                       className="header1-component"
@@ -66,7 +74,7 @@ const Header1 = (props) => {
               src={props.image_src1}
               className="header1-image1"
             />
-            <span className="header1-text04">
+            <span className="header1-text2">
               <span>Merkaba Mushrooms</span>
               <br></br>
             </span>
@@ -78,9 +86,9 @@ const Header1 = (props) => {
           </div>
           <div className="header1-mid">
             <div className="header1-menu1">
-              <span className="header1-text07 Large">Shop</span>
-              <span className="header1-text08 Large">Blog</span>
-              <span className="header1-text09 Large">Blog</span>
+              <span className="header1-text5 Large">Shop</span>
+              <span className="header1-text6 Large">Blog</span>
+              <span className="header1-text7 Large">Blog</span>
             </div>
           </div>
           <div className="header1-bot">
@@ -132,10 +140,14 @@ const Header1 = (props) => {
             align-self: center;
             align-items: flex-start;
           }
+          .header1-link {
+            display: contents;
+          }
           .header1-image {
             width: auto;
             height: 41px;
             object-fit: cover;
+            text-decoration: none;
           }
           .header1-text {
             align-self: center;
@@ -158,7 +170,7 @@ const Header1 = (props) => {
             align-items: flex-start;
             flex-direction: row;
           }
-          .header1-text01 {
+          .header1-link1 {
             font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -171,7 +183,7 @@ const Header1 = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .header1-text02 {
+          .header1-text1 {
             font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -184,7 +196,7 @@ const Header1 = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .header1-text03 {
+          .header1-link2 {
             font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -209,7 +221,7 @@ const Header1 = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header1-link {
+          .header1-link3 {
             display: contents;
           }
           .header1-component {
@@ -253,7 +265,7 @@ const Header1 = (props) => {
             width: 100px;
             object-fit: cover;
           }
-          .header1-text04 {
+          .header1-text2 {
             font-weight: 600;
             text-decoration: none;
           }
@@ -283,27 +295,27 @@ const Header1 = (props) => {
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .header1-text07 {
+          .header1-text5 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .header1-text07:hover {
+          .header1-text5:hover {
             color: var(--dl-color-gray-500);
           }
-          .header1-text08 {
+          .header1-text6 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .header1-text08:hover {
+          .header1-text6:hover {
             color: var(--dl-color-gray-500);
           }
-          .header1-text09 {
+          .header1-text7 {
             transition: 0.3s;
             text-decoration: none;
           }
-          .header1-text09:hover {
+          .header1-text7:hover {
             color: var(--dl-color-gray-500);
           }
           .header1-bot {
@@ -324,13 +336,13 @@ const Header1 = (props) => {
             .header1-nav {
               max-width: 960px;
             }
-            .header1-text01 {
+            .header1-link1 {
               font-family: Montserrat;
             }
-            .header1-text02 {
+            .header1-text1 {
               font-family: Montserrat;
             }
-            .header1-text03 {
+            .header1-link2 {
               font-family: Montserrat;
             }
             .header1-root-class-name {
@@ -358,7 +370,7 @@ const Header1 = (props) => {
             .header1-menu {
               display: none;
             }
-            .header1-text03 {
+            .header1-link2 {
               font-size: 0.875rem;
               font-family: Montserrat;
               font-weight: 400;
@@ -377,7 +389,7 @@ const Header1 = (props) => {
               height: auto;
               min-height: auto;
             }
-            .header1-text04 {
+            .header1-text2 {
               font-weight: 600;
               text-decoration: none;
             }
