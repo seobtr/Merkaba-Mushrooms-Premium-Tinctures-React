@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
+import DangerousHTML from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
 import PrimaryPinkButton1 from './primary-pink-button1'
@@ -26,6 +27,18 @@ const Header1 = (props) => {
               <span className="header1-text01">Shop</span>
               <span className="header1-text02">Blog</span>
               <span className="header1-text03">About</span>
+              <div>
+                <DangerousHTML
+                  html={`<div class="ec-cart-widget"></div>
+<div>
+    <script data-cfasync="false" type="text/javascript"
+        src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-11-13" charset="utf-8"></script>
+    <script type="text/javascript">
+        Ecwid.init();
+    </script>
+</div>`}
+                ></DangerousHTML>
+              </div>
             </div>
             <div className="header1-container2">
               <div className="header1-container3">
@@ -303,6 +316,10 @@ const Header1 = (props) => {
             width: 95%;
             max-width: 1100px;
           }
+          .header1-root-class-name1 {
+            width: 95%;
+            max-width: 1100px;
+          }
           @media (max-width: 991px) {
             .header1-nav {
               max-width: 960px;
@@ -317,6 +334,10 @@ const Header1 = (props) => {
               font-family: Montserrat;
             }
             .header1-root-class-name {
+              width: 95%;
+              max-width: 990px;
+            }
+            .header1-root-class-name1 {
               width: 95%;
               max-width: 990px;
             }

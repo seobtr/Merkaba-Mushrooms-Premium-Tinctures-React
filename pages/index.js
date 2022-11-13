@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Header from '../components/header'
+import Header1 from '../components/header1'
 import StoreBanner from '../components/store-banner'
 import PrimaryPinkButton from '../components/primary-pink-button'
 import OutlineGrayButton from '../components/outline-gray-button'
@@ -22,7 +22,7 @@ const Home = (props) => {
           />
         </Head>
         <div data-role="Header" className="home-header-container">
-          <Header></Header>
+          <Header1 rootClassName="header1-root-class-name"></Header1>
           <div data-role="MobileMenu" className="home-mobile-menu">
             <div className="home-top">
               <div className="home-logo">
