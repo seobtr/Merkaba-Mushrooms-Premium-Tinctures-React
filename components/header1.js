@@ -105,7 +105,7 @@ const Header1 = (props) => {
             width: 100%;
             bottom: auto;
             display: flex;
-            z-index: 3;
+            z-index: 10;
             position: fixed;
             max-width: 1320px;
             padding-left: var(--dl-space-space-unitandahalfunit);

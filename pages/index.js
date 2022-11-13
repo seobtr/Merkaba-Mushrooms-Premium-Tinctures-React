@@ -536,7 +536,7 @@ const Home = (props) => {
           }
           .home-image1 {
             width: 238px;
-            z-index: 100;
+            z-index: 2;
             object-fit: cover;
             margin-right: var(--dl-space-space-unit);
             padding-right: var(--dl-space-space-unit);
@@ -962,6 +962,12 @@ const Home = (props) => {
             }
             .home-bot {
               width: 100%;
+            }
+            .home-hero {
+              max-width: auto;
+            }
+            .home-image1 {
+              width: 200px;
             }
             .home-card {
               padding: var(--dl-space-space-unit);
