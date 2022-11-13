@@ -324,10 +324,6 @@ const Header1 = (props) => {
             margin-top: auto;
             flex-direction: column;
           }
-          .header1-root-class-name {
-            width: 95%;
-            max-width: 1100px;
-          }
           .header1-root-class-name1 {
             width: 95%;
             max-width: 1100px;
@@ -344,10 +340,6 @@ const Header1 = (props) => {
             }
             .header1-link2 {
               font-family: Montserrat;
-            }
-            .header1-root-class-name {
-              width: 95%;
-              max-width: 990px;
             }
             .header1-root-class-name1 {
               width: 95%;
