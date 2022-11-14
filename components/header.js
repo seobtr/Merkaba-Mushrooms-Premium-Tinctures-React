@@ -321,8 +321,12 @@ const Header = (props) => {
           }
 
           @media (max-width: 991px) {
+            .header-header {
+              padding: var(--dl-space-space-halfunit);
+            }
             .header-nav {
               max-width: 960px;
+              margin-top: var(--dl-space-space-halfunit);
             }
             .header-link1 {
               font-family: Montserrat;
@@ -341,7 +345,10 @@ const Header = (props) => {
           }
           @media (max-width: 479px) {
             .header-header {
-              padding-right: 2rem;
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-unit);
             }
             .header-container {
               width: 177px;
@@ -349,9 +356,6 @@ const Header = (props) => {
             }
             .header-image {
               align-self: center;
-            }
-            .header-menu {
-              display: none;
             }
             .header-link2 {
               font-size: 0.875rem;

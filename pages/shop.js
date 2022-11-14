@@ -18,9 +18,11 @@ const Shop = (props) => {
           />
         </Head>
         <Header rootClassName="header-root-class-name"></Header>
-        <div>
-          <DangerousHTML
-            html={`<div id="my-store-78742521"></div>
+        <div className="shop-container1">
+          <section className="shop-container2">
+            <div>
+              <DangerousHTML
+                html={`<div id="my-store-78742521"></div>
 <div>
   <script
     data-cfasync="false"
@@ -39,20 +41,36 @@ xProductBrowser(
 </script>
 </div>
 `}
-          ></DangerousHTML>
+              ></DangerousHTML>
+            </div>
+          </section>
         </div>
         <Footer rootClassName="footer-root-class-name"></Footer>
       </div>
       <style jsx>
         {`
           .shop-container {
-            width: 100%;
             display: flex;
             overflow: auto;
+            max-width: 100%;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
             justify-content: flex-start;
+          }
+          .shop-container1 {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .shop-container2 {
+            flex: 0 0 auto;
+            width: 1200px;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
           }
         `}
       </style>

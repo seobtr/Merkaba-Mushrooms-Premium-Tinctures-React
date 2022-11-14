@@ -541,7 +541,7 @@ const Home = (props) => {
             justify-content: center;
           }
           .home-c-t-a {
-            width: 100%;
+            width: auto;
             display: flex;
             overflow: hidden;
             align-items: center;
@@ -693,6 +693,7 @@ const Home = (props) => {
             .home-image {
               width: 174px;
               height: 387px;
+              padding: 10px;
             }
             .home-card {
               padding: var(--dl-space-space-unit);
