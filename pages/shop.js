@@ -70,6 +70,22 @@ xProductBrowser(
             align-items: flex-start;
             flex-direction: column;
           }
+          @media (max-width: 991px) {
+            .shop-container2 {
+              width: 100%;
+              max-width: 950px;
+            }
+          }
+          @media (max-width: 767px) {
+            .shop-container2 {
+              max-width: 720px;
+            }
+          }
+          @media (max-width: 479px) {
+            .shop-container2 {
+              max-width: 450px;
+            }
+          }
         `}
       </style>
     </>
