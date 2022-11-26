@@ -54,8 +54,6 @@ const Header2 = (props) => {
               <div className="header2-container3">
                 <a
                   href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                  target="_blank"
-                  rel="noreferrer noopener"
                   className="header2-link3"
                 >
                   <PrimaryPinkButton1

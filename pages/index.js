@@ -58,8 +58,6 @@ const Home = (props) => {
               <div className="home-container03">
                 <a
                   href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                  target="_blank"
-                  rel="noreferrer noopener"
                   className="home-link"
                 >
                   <PrimaryPinkButton
