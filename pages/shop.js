@@ -20,10 +20,10 @@ const Shop = (props) => {
         <Header rootClassName="header-root-class-name"></Header>
         <div className="shop-container1">
           <section className="shop-container2">
-            <div>
+            <div id="my-store-78742521">
               <DangerousHTML
-                html={`<div id="my-store-78742521"></div>
-<div>
+                id="my-store-78742521"
+                html={`<div>
   <script
     data-cfasync="false"
     type="text/javascript"
