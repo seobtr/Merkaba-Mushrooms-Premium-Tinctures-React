@@ -6,36 +6,36 @@ import PropTypes from 'prop-types'
 
 import PrimaryPinkButton1 from './primary-pink-button1'
 
-const Header = (props) => {
+const Header2 = (props) => {
   return (
     <>
-      <header className={`header-header ${props.rootClassName} `}>
-        <nav className="header-nav">
-          <div className="header-container">
-            <Link href="/">
-              <a className="header-link">
-                <img
-                  alt={props.image_alt}
-                  src={props.image_src}
-                  className="header-image"
-                />
-              </a>
-            </Link>
-            <span className="header-text Large">Merkaba Mushrooms</span>
-          </div>
-          <div className="header-container1">
-            <div className="header-menu">
+      <header className={`header2-header ${props.rootClassName} `}>
+        <nav className="header2-nav">
+          <div className="header2-container">
+            <div className="header2-container1">
+              <Link href="/">
+                <a className="header2-link">
+                  <img
+                    alt={props.image_alt}
+                    src={props.image_src}
+                    className="header2-image"
+                  />
+                </a>
+              </Link>
+              <span className="header2-text Large">Merkaba Mushrooms</span>
+            </div>
+            <div className="header2-menu">
               <a
                 href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="header-link1"
+                className="header2-link1"
               >
                 Shop
               </a>
-              <span className="header-text1">Blog</span>
+              <span className="header2-text1">Blog</span>
               <Link href="/shop">
-                <a className="header-link2">About</a>
+                <a className="header2-link2">About</a>
               </Link>
               <div>
                 <DangerousHTML
@@ -50,60 +50,70 @@ const Header = (props) => {
                 ></DangerousHTML>
               </div>
             </div>
-            <div className="header-container2">
-              <div className="header-container3">
+            <div className="header2-container2">
+              <div className="header2-container3">
                 <a
                   href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="header-link3"
+                  className="header2-link3"
                 >
                   <PrimaryPinkButton1
                     button="buy now"
-                    className="header-component"
+                    className="header2-component"
                   ></PrimaryPinkButton1>
                 </a>
               </div>
-              <div data-role="BurgerMenu" className="header-burger-menu">
-                <svg viewBox="0 0 1024 1024" className="header-icon">
+              <div data-role="BurgerMenu" className="header2-burger-menu">
+                <svg viewBox="0 0 1024 1024" className="header2-icon">
                   <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
                 </svg>
               </div>
             </div>
           </div>
         </nav>
-        <div data-role="MobileMenu" className="header-mobile-menu">
-          <div className="header-top">
-            <img
-              alt={props.image_alt1}
-              src={props.image_src1}
-              className="header-image1"
-            />
-            <span className="header-text2">
-              <span>Merkaba Mushrooms</span>
-              <br></br>
-            </span>
-            <div data-role="CloseMobileMenu" className="header-close-menu">
-              <svg viewBox="0 0 1024 1024" className="header-icon2">
+        <div data-role="MobileMenu" className="header2-mobile-menu">
+          <div className="header2-top">
+            <div className="header2-container4">
+              <Link href="/">
+                <a className="header2-link4">
+                  <img
+                    alt={props.image_alt1}
+                    src={props.image_src1}
+                    className="header2-image1"
+                  />
+                </a>
+              </Link>
+              <span className="header2-text2">
+                <span>Merkaba Mushrooms</span>
+                <br></br>
+              </span>
+            </div>
+            <div data-role="CloseMobileMenu" className="header2-close-menu">
+              <svg viewBox="0 0 1024 1024" className="header2-icon2">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
               </svg>
             </div>
           </div>
-          <div className="header-mid">
-            <div className="header-menu1">
-              <span className="header-text5 Large">Shop</span>
-              <span className="header-text6 Large">Blog</span>
-              <span className="header-text7 Large">Blog</span>
+          <div className="header2-mid">
+            <div className="header2-menu1">
+              <a
+                href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
+                className="header2-link5 Large"
+              >
+                Shop
+              </a>
+              <span className="header2-text5 Large">Blog</span>
             </div>
           </div>
-          <div className="header-bot">
+          <div className="header2-bot">
             <PrimaryPinkButton1 button="buy now"></PrimaryPinkButton1>
           </div>
         </div>
       </header>
       <style jsx>
         {`
-          .header-header {
+          .header2-header {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -115,13 +125,12 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-nav {
+          .header2-nav {
             flex: 0 0 auto;
             color: var(--dl-color-secondary-600);
             width: 100%;
             height: 60px;
             display: flex;
-            flex-wrap: wrap;
             box-shadow: 0 0.25rem 0.375rem -0.0625rem hsla(0, 0%, 8%, 0.12),
               0 0.125rem 0.25rem -0.0625rem hsla(0, 0%, 8%, 0.07) !important;
             margin-top: var(--dl-space-space-unit);
@@ -136,44 +145,44 @@ const Header = (props) => {
             justify-content: space-between;
             background-color: hsla(0, 0%, 100%, 0.8) !important;
           }
-          .header-container {
+          .header2-container {
+            flex: 0 0 auto;
+            color: var(--dl-color-gray-black);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          .header2-container1 {
             flex: 0 0 auto;
             width: auto;
+            height: auto;
             display: flex;
-            align-self: center;
             align-items: flex-start;
           }
-          .header-link {
+          .header2-link {
             display: contents;
           }
-          .header-image {
+          .header2-image {
             width: auto;
             height: 41px;
             object-fit: cover;
             text-decoration: none;
           }
-          .header-text {
+          .header2-text {
             align-self: center;
             font-weight: 600;
             margin-left: var(--dl-space-space-unit);
             margin-right: var(--dl-space-space-unit);
             text-decoration: none;
           }
-          .header-container1 {
-            color: var(--dl-color-gray-black);
-            width: auto;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .header-menu {
+          .header2-menu {
             flex: 0 0 auto;
             display: flex;
             align-items: flex-start;
             flex-direction: row;
           }
-          .header-link1 {
+          .header2-link1 {
             font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -186,7 +195,7 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .header-text1 {
+          .header2-text1 {
             font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -199,7 +208,7 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .header-link2 {
+          .header2-link2 {
             font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -212,36 +221,36 @@ const Header = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .header-container2 {
+          .header2-container2 {
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-container3 {
+          .header2-container3 {
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-link3 {
+          .header2-link3 {
             display: contents;
           }
-          .header-component {
+          .header2-component {
             text-decoration: none;
           }
-          .header-burger-menu {
+          .header2-burger-menu {
             display: none;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-icon {
+          .header2-icon {
             width: 24px;
             height: 24px;
             margin-left: var(--dl-space-space-unit);
           }
-          .header-mobile-menu {
+          .header2-mobile-menu {
             top: 0px;
             flex: 0 0 auto;
             left: 0px;
@@ -255,7 +264,7 @@ const Header = (props) => {
             flex-direction: column;
             background-color: var(--dl-color-gray-white);
           }
-          .header-top {
+          .header2-top {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -264,25 +273,35 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-image1 {
-            width: 100px;
-            object-fit: cover;
+          .header2-container4 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
           }
-          .header-text2 {
+          .header2-link4 {
+            display: contents;
+          }
+          .header2-image1 {
+            width: 100px;
+            object-fit: contain;
+            text-decoration: none;
+          }
+          .header2-text2 {
             font-weight: 600;
             text-decoration: none;
           }
-          .header-close-menu {
+          .header2-close-menu {
             flex: 0 0 auto;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
           }
-          .header-icon2 {
+          .header2-icon2 {
             width: 24px;
             height: 24px;
           }
-          .header-mid {
+          .header2-mid {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -291,80 +310,87 @@ const Header = (props) => {
             padding-right: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .header-menu1 {
+          .header2-menu1 {
             flex: 0 0 auto;
             display: flex;
             align-items: flex-start;
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .header-text5 {
+          .header2-link5 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .header-text5:hover {
+          .header2-link5:hover {
             color: var(--dl-color-gray-500);
           }
-          .header-text6 {
-            transition: 0.3s;
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-decoration: none;
-          }
-          .header-text6:hover {
-            color: var(--dl-color-gray-500);
-          }
-          .header-text7 {
+          .header2-text5 {
             transition: 0.3s;
             text-decoration: none;
           }
-          .header-text7:hover {
+          .header2-text5:hover {
             color: var(--dl-color-gray-500);
           }
-          .header-bot {
+          .header2-bot {
             flex: 0 0 auto;
             display: flex;
             margin-top: auto;
             flex-direction: column;
           }
+
           @media (max-width: 991px) {
-            .header-header {
+            .header2-header {
               padding: var(--dl-space-space-halfunit);
             }
-            .header-nav {
+            .header2-nav {
               max-width: 960px;
               margin-top: var(--dl-space-space-halfunit);
             }
-            .header-link1 {
+            .header2-link1 {
               font-family: Montserrat;
             }
-            .header-text1 {
+            .header2-text1 {
               font-family: Montserrat;
             }
-            .header-link2 {
+            .header2-link2 {
               font-family: Montserrat;
             }
           }
           @media (max-width: 767px) {
-            .header-burger-menu {
+            .header2-burger-menu {
               display: flex;
             }
           }
           @media (max-width: 479px) {
-            .header-header {
+            .header2-header {
               padding-top: var(--dl-space-space-unit);
               padding-left: var(--dl-space-space-unit);
               padding-right: var(--dl-space-space-unit);
               padding-bottom: var(--dl-space-space-unit);
             }
-            .header-container {
-              width: 177px;
-              height: 0px;
+            .header2-nav {
+              margin: 0px;
+              align-self: stretch;
+              padding-left: var(--dl-space-space-halfunit);
+              padding-right: var(--dl-space-space-halfunit);
             }
-            .header-image {
+            .header2-container {
+              width: 100%;
+              height: 0px;
+              justify-content: space-between;
+            }
+            .header2-container1 {
+              width: auto;
+              height: auto;
+            }
+            .header2-image {
               align-self: center;
             }
-            .header-link2 {
+            .header2-menu {
+              display: none;
+            }
+            .header2-link2 {
               font-size: 0.875rem;
               font-family: Montserrat;
               font-weight: 400;
@@ -372,18 +398,22 @@ const Header = (props) => {
               text-transform: none;
               text-decoration: none;
             }
-            .header-container3 {
+            .header2-container3 {
               display: none;
             }
-            .header-mobile-menu {
+            .header2-mobile-menu {
               display: none;
             }
-            .header-image1 {
+            .header2-container4 {
               width: auto;
-              height: auto;
+            }
+            .header2-image1 {
+              width: 111px;
+              height: 42px;
               min-height: auto;
             }
-            .header-text2 {
+            .header2-text2 {
+              align-self: center;
               font-weight: 600;
               text-decoration: none;
             }
@@ -394,20 +424,20 @@ const Header = (props) => {
   )
 }
 
-Header.defaultProps = {
-  image_alt1: 'image',
-  image_src: '/playground_assets/asset%2011-200w.png',
-  image_src1: '/playground_assets/asset%2011-200w.png',
+Header2.defaultProps = {
   rootClassName: '',
+  image_src: '/playground_assets/asset%2011-200w.png',
   image_alt: 'image',
+  image_alt1: 'image',
+  image_src1: '/playground_assets/asset%2011-200w.png',
 }
 
-Header.propTypes = {
-  image_alt1: PropTypes.string,
-  image_src: PropTypes.string,
-  image_src1: PropTypes.string,
+Header2.propTypes = {
   rootClassName: PropTypes.string,
+  image_src: PropTypes.string,
   image_alt: PropTypes.string,
+  image_alt1: PropTypes.string,
+  image_src1: PropTypes.string,
 }
 
-export default Header
+export default Header2

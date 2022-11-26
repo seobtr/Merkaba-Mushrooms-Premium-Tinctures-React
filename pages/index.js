@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Header from '../components/header'
+import Header2 from '../components/header2'
 import PrimaryPinkButton from '../components/primary-pink-button'
 import OutlineGrayButton from '../components/outline-gray-button'
 import FeatureCard from '../components/feature-card'
@@ -21,7 +21,7 @@ const Home = (props) => {
             content="Merkaba Mushrooms Premium Tinctures"
           />
         </Head>
-        <Header rootClassName="header-root-class-name2"></Header>
+        <Header2 rootClassName="header2-root-class-name"></Header2>
         <div className="home-hero">
           <div className="home-container01">
             <img
@@ -56,14 +56,17 @@ const Home = (props) => {
             </span>
             <div className="home-container02">
               <div className="home-container03">
-                <Link href="/shop">
-                  <a className="home-link">
-                    <PrimaryPinkButton
-                      button="Shop Now"
-                      className="home-component01"
-                    ></PrimaryPinkButton>
-                  </a>
-                </Link>
+                <a
+                  href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="home-link"
+                >
+                  <PrimaryPinkButton
+                    button="Shop Now"
+                    className="home-component01"
+                  ></PrimaryPinkButton>
+                </a>
               </div>
               <OutlineGrayButton button="Learn More"></OutlineGrayButton>
             </div>

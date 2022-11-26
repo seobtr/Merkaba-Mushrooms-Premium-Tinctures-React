@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import DangerousHTML from 'dangerous-html/react'
 
-import Header from '../components/header'
+import Header2 from '../components/header2'
 import Footer from '../components/footer'
 
 const Shop = (props) => {
@@ -17,7 +17,7 @@ const Shop = (props) => {
             content="Shop - Merkaba Mushrooms Premium Tinctures"
           />
         </Head>
-        <Header rootClassName="header-root-class-name"></Header>
+        <Header2 rootClassName="header2-root-class-name2"></Header2>
         <div className="shop-container1">
           <section className="shop-container2">
             <div id="my-store-78742521">
