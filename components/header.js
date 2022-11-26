@@ -25,9 +25,14 @@ const Header = (props) => {
           </div>
           <div className="header-container1">
             <div className="header-menu">
-              <Link href="/shop">
-                <a className="header-link1">Shop</a>
-              </Link>
+              <a
+                href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="header-link1"
+              >
+                Shop
+              </a>
               <span className="header-text1">Blog</span>
               <Link href="/shop">
                 <a className="header-link2">About</a>
@@ -47,14 +52,17 @@ const Header = (props) => {
             </div>
             <div className="header-container2">
               <div className="header-container3">
-                <Link href="/shop">
-                  <a className="header-link3">
-                    <PrimaryPinkButton1
-                      button="buy now"
-                      className="header-component"
-                    ></PrimaryPinkButton1>
-                  </a>
-                </Link>
+                <a
+                  href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="header-link3"
+                >
+                  <PrimaryPinkButton1
+                    button="buy now"
+                    className="header-component"
+                  ></PrimaryPinkButton1>
+                </a>
               </div>
               <div data-role="BurgerMenu" className="header-burger-menu">
                 <svg viewBox="0 0 1024 1024" className="header-icon">
