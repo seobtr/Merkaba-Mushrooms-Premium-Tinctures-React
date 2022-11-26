@@ -23,8 +23,7 @@ const Shop = (props) => {
             <div id="my-store-78742521">
               <DangerousHTML
                 id="my-store-78742521"
-                html={`<div>
-  <script
+                html={`<script
     data-cfasync="false"
     type="text/javascript"
     src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-10-11"
@@ -39,7 +38,6 @@ xProductBrowser(
   "id=my-store-78742521"
 );
 </script>
-</div>
 `}
               ></DangerousHTML>
             </div>
