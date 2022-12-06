@@ -2,9 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Header2 from '../components/header2'
+import Header3 from '../components/header3'
+import Hero from '../components/hero'
+import MeetMerkaba from '../components/meet-merkaba'
 import PrimaryPinkButton from '../components/primary-pink-button'
-import OutlineGrayButton from '../components/outline-gray-button'
 import FeatureCard from '../components/feature-card'
 import StatsCard from '../components/stats-card'
 import StoreBanner from '../components/store-banner'
@@ -21,55 +22,8 @@ const Home = (props) => {
             content="Merkaba Mushrooms Premium Tinctures"
           />
         </Head>
-        <Header2 rootClassName="header2-root-class-name"></Header2>
-        <div className="home-hero">
-          <div className="home-container01">
-            <img
-              alt="image"
-              src="/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png"
-              className="home-image"
-            />
-          </div>
-          <div className="home-card">
-            <h1 className="home-text">
-              A New Way to Cultivate Your Mind and Body 
-            </h1>
-            <span className="home-text01">
-              <span>
-                Fruiting Body only tinctures specifically formulated to taste
-                good and make you feel good
-              </span>
-              <span className="Lead">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-              <span className="Lead">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </span>
-            </span>
-            <div className="home-container02">
-              <div className="home-container03">
-                <a
-                  href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                  className="home-link"
-                >
-                  <PrimaryPinkButton
-                    button="Shop Now"
-                    className="home-component01"
-                  ></PrimaryPinkButton>
-                </a>
-              </div>
-              <OutlineGrayButton button="Learn More"></OutlineGrayButton>
-            </div>
-          </div>
-        </div>
+        <Header3 rootClassName="header3-root-class-name3"></Header3>
+        <Hero rootClassName="hero-root-class-name"></Hero>
         <div className="home-main">
           <div className="home-blur-background"></div>
           <img
@@ -93,9 +47,10 @@ const Home = (props) => {
             className="home-right"
           />
         </div>
+        <MeetMerkaba rootClassName="meet-merkaba-root-class-name"></MeetMerkaba>
         <div className="home-features">
-          <span className="home-text05">meet merkaba mushrooms</span>
-          <h2 className="home-text06">
+          <span className="home-text">meet merkaba mushrooms</span>
+          <h2 className="home-text01">
             <span>
               The South’s Leading Medicinal Mushroom Company
               <span
@@ -107,15 +62,15 @@ const Home = (props) => {
             <br></br>
             <span>Providing Quality Mushroom Tinctures</span>
           </h2>
-          <span className="home-text10">
+          <span className="home-text05">
             <span>
               Proprietary Formula Created by Our Mycologist Biological Engineer 
             </span>
             <span>Jordan Gros</span>
           </span>
-          <div className="home-container04">
+          <div className="home-container01">
             <Link href="/about">
-              <a className="home-link1">
+              <a className="home-link">
                 <PrimaryPinkButton
                   button="Our Mission"
                   className="home-component03"
@@ -136,32 +91,32 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-feature1">
-          <div className="home-container05">
+          <div className="home-container02">
             <img
               alt="image"
               src="/playground_assets/cordyceps%20object%20%5B1%5D-500w.png"
               image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-              className="home-image1"
+              className="home-image"
             />
           </div>
-          <div className="home-container06">
-            <span className="home-text13">Featured product</span>
-            <h3 className="home-text14">
+          <div className="home-container03">
+            <span className="home-text08">Featured product</span>
+            <h3 className="home-text09">
               <span className="Headline3">Merkaba Dual Extracted</span>
               <br className="Headline3"></br>
             </h3>
-            <h3 className="home-text17 Headline3">
+            <h3 className="home-text12 Headline3">
               <span className="Headline3">Lion&apos;s Mane </span>
-              <span className="home-text19 Headline3">Tinctures</span>
+              <span className="home-text14 Headline3">Tinctures</span>
             </h3>
-            <span className="home-text20">
+            <span className="home-text15">
               Lion&apos;s Mane mushrooms, also called Hericium Erinaceus, are
               prized for their nootropic properties. Our dual extract
               lion&apos;s mane tinctures offer cognitive support, immune
               support, anti-inflammatory and gut health benefits.
             </span>
             <Link href="/about">
-              <a className="home-link2">
+              <a className="home-link1">
                 <PrimaryPinkButton
                   button="SHOP NOW"
                   className="home-component07"
@@ -171,8 +126,8 @@ const Home = (props) => {
           </div>
         </div>
         <div className="home-achievements">
-          <div className="home-container07">
-            <div className="home-container08">
+          <div className="home-container04">
+            <div className="home-container05">
               <StatsCard
                 process="Beta Glucans"
                 image_src="/playground_assets/01.svg"
@@ -186,14 +141,14 @@ const Home = (props) => {
                 rootClassName="stats-card-root-class-name1"
               ></StatsCard>
             </div>
-            <div className="home-container09"></div>
+            <div className="home-container06"></div>
           </div>
         </div>
         <div className="home-c-t-a">
-          <div className="home-container10">
-            <div className="home-container11">
-              <h2 className="Headline2 home-text21">Call to Action</h2>
-              <span className="home-text22">
+          <div className="home-container07">
+            <div className="home-container08">
+              <h2 className="Headline2 home-text16">Call to Action</h2>
+              <span className="home-text17">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -201,7 +156,7 @@ const Home = (props) => {
               </span>
               <a
                 href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop"
-                className="home-link3"
+                className="home-link2"
               >
                 <StoreBanner
                   rootClassName="store-banner-root-class-name"
@@ -209,19 +164,19 @@ const Home = (props) => {
                 ></StoreBanner>
               </a>
             </div>
-            <div className="home-container12">
-              <div className="home-container13">
+            <div className="home-container09">
+              <div className="home-container10">
                 <img
                   alt="image"
                   src="/playground_assets/cordyceps%20object%20%5B1%5D-500w.png"
                   image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-                  className="home-image2"
+                  className="home-image1"
                 />
                 <img
                   alt="image"
                   src="/playground_assets/mask%20group%2018-200w.png"
                   image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-                  className="home-image3"
+                  className="home-image2"
                 />
               </div>
             </div>
@@ -239,88 +194,6 @@ const Home = (props) => {
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
-          }
-          .home-hero {
-            width: 100%;
-            display: flex;
-            padding: 48px;
-            max-width: 1400px;
-            min-height: 80vh;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-container01 {
-            flex: 0 0 auto;
-            width: 40%;
-            display: flex;
-            align-items: center;
-            margin-right: var(--dl-space-space-unit);
-            padding-right: var(--dl-space-space-unit);
-            flex-direction: row;
-            justify-content: center;
-          }
-          .home-image {
-            width: 238px;
-            z-index: 2;
-            object-fit: cover;
-            margin-right: var(--dl-space-space-unit);
-            padding-right: var(--dl-space-space-unit);
-          }
-          .home-card {
-            flex: 0 0 auto;
-            width: 60%;
-            display: flex;
-            padding: var(--dl-space-space-tripleunit);
-            z-index: 1;
-            box-shadow: 0 8px 26px -4px hsla(0, 0%, 8%, 0.15),
-              0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
-            margin-top: var(--dl-space-space-tripleunit);
-            align-items: flex-start;
-            border-radius: var(--dl-radius-radius-radius1);
-            flex-direction: column;
-            backdrop-filter: saturate(200%) blur(30px);
-            background-color: hsla(0, 0%, 100%, 0.8);
-          }
-          .home-text {
-            font-size: 48px;
-            text-align: center;
-            font-family: Italiana;
-            text-transform: uppercase;
-            background-image: linear-gradient(
-              310deg,
-              rgb(121, 40, 202),
-              rgb(255, 0, 128)
-            );
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-          .home-text01 {
-            color: var(--dl-color-secondary-600);
-            padding: 0px;
-            text-align: center;
-            margin-bottom: var(--dl-space-space-unit);
-            padding-right: var(--dl-space-space-tripleunit);
-          }
-          .home-container02 {
-            display: flex;
-            align-self: center;
-            margin-top: var(--dl-space-space-unitandahalfunit);
-            align-items: flex-start;
-            margin-bottom: var(--dl-space-space-unit);
-            flex-direction: row;
-          }
-          .home-container03 {
-            display: flex;
-            align-items: flex-start;
-            margin-right: var(--dl-space-space-unit);
-            flex-direction: row;
-          }
-          .home-link {
-            display: contents;
-          }
-          .home-component01 {
-            text-decoration: none;
           }
           .home-main {
             width: 100%;
@@ -395,12 +268,12 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text05 {
+          .home-text {
             max-width: 500px;
             text-align: center;
             text-transform: uppercase;
           }
-          .home-text06 {
+          .home-text01 {
             color: var(--dl-color-gray-900);
             font-size: 1.95rem;
             text-align: center;
@@ -409,17 +282,17 @@ const Home = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .home-text10 {
+          .home-text05 {
             max-width: 400px;
             text-align: center;
           }
-          .home-container04 {
+          .home-container01 {
             display: flex;
             align-items: flex-start;
             margin-right: var(--dl-space-space-unit);
             flex-direction: row;
           }
-          .home-link1 {
+          .home-link {
             display: contents;
           }
           .home-component03 {
@@ -444,7 +317,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-container05 {
+          .home-container02 {
             flex: 0 0 auto;
             width: 540px;
             height: 364px;
@@ -454,13 +327,13 @@ const Home = (props) => {
             flex-direction: column;
             background-color: var(--dl-color-purple-100);
           }
-          .home-image1 {
+          .home-image {
             width: 470px;
             height: 299px;
             margin-top: 100px;
             object-fit: cover;
           }
-          .home-container06 {
+          .home-container03 {
             flex: 1;
             margin: var(--dl-space-space-doubleunit);
             display: flex;
@@ -468,29 +341,29 @@ const Home = (props) => {
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text13 {
+          .home-text08 {
             max-width: 500px;
             text-align: center;
             text-transform: uppercase;
           }
-          .home-text14 {
+          .home-text09 {
             font-size: 28px;
             font-family: Montserrat;
             font-weight: 800;
             text-transform: none;
             text-decoration: none;
           }
-          .home-text17 {
+          .home-text12 {
             font-size: 31px;
             font-family: Montserrat;
             font-weight: 800;
             text-transform: none;
             text-decoration: none;
           }
-          .home-text19 {
+          .home-text14 {
             color: var(--dl-color-gray-900);
           }
-          .home-text20 {
+          .home-text15 {
             font-size: 18px;
             max-width: 400px;
             margin-top: var(--dl-space-space-halfunit);
@@ -501,7 +374,7 @@ const Home = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .home-link2 {
+          .home-link1 {
             display: contents;
           }
           .home-component07 {
@@ -521,20 +394,20 @@ const Home = (props) => {
             justify-content: flex-start;
             background-image: url('/playground_assets/merkaba_bg-1200w.png');
           }
-          .home-container07 {
+          .home-container04 {
             flex: 1;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
           }
-          .home-container08 {
+          .home-container05 {
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: center;
           }
-          .home-container09 {
+          .home-container06 {
             border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
             align-items: center;
@@ -550,7 +423,7 @@ const Home = (props) => {
             justify-content: center;
             background-color: #ffffff;
           }
-          .home-container10 {
+          .home-container07 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -562,23 +435,23 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-container11 {
+          .home-container08 {
             flex: 1;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-text22 {
+          .home-text17 {
             max-width: 500px;
           }
-          .home-link3 {
+          .home-link2 {
             display: contents;
           }
           .home-component10 {
             text-decoration: none;
           }
-          .home-container12 {
+          .home-container09 {
             flex: 0 0 auto;
             width: 520px;
             height: auto;
@@ -586,7 +459,7 @@ const Home = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .home-container13 {
+          .home-container10 {
             width: 520px;
             display: flex;
             position: relative;
@@ -594,7 +467,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: flex-start;
           }
-          .home-image2 {
+          .home-image1 {
             top: -82px;
             left: 113px;
             width: 305px;
@@ -602,7 +475,7 @@ const Home = (props) => {
             position: absolute;
             object-fit: cover;
           }
-          .home-image3 {
+          .home-image2 {
             top: -153px;
             left: 92px;
             width: 96px;
@@ -611,125 +484,69 @@ const Home = (props) => {
             object-fit: cover;
           }
           @media (max-width: 991px) {
-            .home-hero {
-              flex-direction: column;
-            }
-            .home-container01 {
-              width: 100%;
-              margin-right: 0px;
-              padding-right: 0px;
-              justify-content: center;
-            }
-            .home-image {
-              width: auto;
-              margin-right: 0px;
-              padding-right: 0px;
-            }
-            .home-card {
-              width: 100%;
-            }
             .home-feature1 {
               flex-direction: column;
             }
-            .home-container06 {
+            .home-container03 {
               margin-left: 0px;
               margin-right: 0px;
             }
             .home-achievements {
               flex-direction: column;
             }
-            .home-container07 {
+            .home-container04 {
               margin-top: var(--dl-space-space-doubleunit);
             }
-            .home-container13 {
+            .home-container10 {
               display: none;
             }
           }
           @media (max-width: 767px) {
-            .home-hero {
-              padding-left: 32px;
-              padding-right: 32px;
-            }
-            .home-image {
-              margin-right: 0px;
-              padding-right: 0px;
-            }
-            .home-card {
-              align-items: center;
-            }
             .home-text01 {
-              text-align: center;
-              margin-right: 0px;
-              padding-right: 0px;
-            }
-            .home-text06 {
               font-size: 40px;
             }
-            .home-container05 {
+            .home-container02 {
               width: auto;
               max-width: 400px;
             }
-            .home-container08 {
+            .home-container05 {
               flex-direction: column;
             }
-            .home-container10 {
+            .home-container07 {
               justify-content: center;
             }
-            .home-container11 {
+            .home-container08 {
               width: auto;
               max-width: 400px;
             }
-            .home-text21 {
+            .home-text16 {
               font-size: 40px;
             }
           }
           @media (max-width: 479px) {
-            .home-hero {
-              z-index: 2;
-              padding-top: 32px;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: 32px;
+            .home-text {
+              text-align: center;
             }
-            .home-image {
-              width: 174px;
-              height: 387px;
-              padding: 10px;
-            }
-            .home-card {
-              padding: var(--dl-space-space-unit);
-            }
-            .home-container02 {
-              align-items: center;
-              flex-direction: column;
-            }
-            .home-container03 {
-              margin-right: 0px;
-              margin-bottom: var(--dl-space-space-unit);
+            .home-text01 {
+              text-align: center;
             }
             .home-text05 {
               text-align: center;
             }
-            .home-text06 {
-              text-align: center;
-            }
-            .home-text10 {
-              text-align: center;
-            }
-            .home-container04 {
+            .home-container01 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-unit);
             }
-            .home-image1 {
+            .home-image {
               box-shadow: 5px 5px 10px 0px #d4d4d4;
             }
-            .home-text13 {
+            .home-text08 {
               text-align: center;
             }
-            .home-container08 {
+            .home-container05 {
               flex-direction: column;
             }
-            .home-container09 {
+            .home-container06 {
               flex-direction: column;
             }
           }

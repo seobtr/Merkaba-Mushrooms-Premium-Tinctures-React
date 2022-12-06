@@ -423,19 +423,19 @@ const Header2 = (props) => {
 }
 
 Header2.defaultProps = {
-  rootClassName: '',
-  image_src: '/playground_assets/asset%2011-200w.png',
-  image_alt: 'image',
   image_alt1: 'image',
+  image_src: '/playground_assets/asset%2011-200w.png',
+  rootClassName: '',
   image_src1: '/playground_assets/asset%2011-200w.png',
+  image_alt: 'image',
 }
 
 Header2.propTypes = {
-  rootClassName: PropTypes.string,
-  image_src: PropTypes.string,
-  image_alt: PropTypes.string,
   image_alt1: PropTypes.string,
+  image_src: PropTypes.string,
+  rootClassName: PropTypes.string,
   image_src1: PropTypes.string,
+  image_alt: PropTypes.string,
 }
 
 export default Header2
