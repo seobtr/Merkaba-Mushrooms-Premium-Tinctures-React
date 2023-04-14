@@ -2,8 +2,8 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
+import MushroomBtn from './mushroom-btn'
 import PrimaryPinkButton3 from './primary-pink-button3'
-import OutlineGrayButton1 from './outline-gray-button1'
 
 const Hero = (props) => {
   return (
@@ -18,30 +18,29 @@ const Hero = (props) => {
                 <span className="HeadingOne">Your Mind and Body</span>
                 <br></br>
               </h2>
-              <img
-                src={props.image_src2}
-                alt={props.image_alt2}
-                className="hero-image"
-              />
               <span className="hero-text5">{props.text}</span>
             </div>
             <div className="hero-container2">
-              <div className="hero-container3">
+              <div className="hero-container3"></div>
+              <MushroomBtn button="read more"></MushroomBtn>
+            </div>
+            <div className="hero-container4">
+              <div className="hero-container5">
                 <PrimaryPinkButton3 button="contact us"></PrimaryPinkButton3>
               </div>
-              <OutlineGrayButton1 button="read more"></OutlineGrayButton1>
+              <MushroomBtn button="read more"></MushroomBtn>
             </div>
           </div>
         </div>
         <img
           alt={props.image_alt}
           src={props.image_src}
-          className="hero-image1"
+          className="hero-image"
         />
         <img
           alt={props.image_alt1}
           src={props.image_src1}
-          className="hero-image2"
+          className="hero-image1"
         />
       </div>
       <style jsx>
@@ -108,11 +107,6 @@ const Hero = (props) => {
             text-align: left;
             margin-bottom: var(--dl-space-space-unitandahalfunit);
           }
-          .hero-image {
-            width: 100px;
-            display: none;
-            object-fit: contain;
-          }
           .hero-text5 {
             color: var(--dl-color-secondary-600);
             margin-right: var(--dl-space-space-tripleunit);
@@ -127,12 +121,26 @@ const Hero = (props) => {
             flex-direction: row;
           }
           .hero-container3 {
+            border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
             align-items: flex-start;
             margin-right: var(--dl-space-space-unit);
             flex-direction: row;
           }
-          .hero-image1 {
+          .hero-container4 {
+            display: flex;
+            margin-top: var(--dl-space-space-unitandahalfunit);
+            align-items: flex-start;
+            margin-bottom: var(--dl-space-space-unit);
+            flex-direction: row;
+          }
+          .hero-container5 {
+            display: flex;
+            align-items: flex-start;
+            margin-right: var(--dl-space-space-unit);
+            flex-direction: row;
+          }
+          .hero-image {
             top: 0px;
             left: auto;
             right: 0px;
@@ -145,7 +153,7 @@ const Hero = (props) => {
             object-position: right;
             border-bottom-left-radius: 10rem;
           }
-          .hero-image2 {
+          .hero-image1 {
             top: 158px;
             right: 131px;
             width: 253px;
@@ -159,12 +167,10 @@ const Hero = (props) => {
           @media (max-width: 991px) {
             .hero-container {
               max-width: 960px;
-              padding-right: 63px;
             }
             .hero-card {
               width: 90%;
               height: auto;
-              padding: var(--dl-space-space-unit);
               margin-left: var(--dl-space-space-doubleunit);
             }
             .hero-container1 {
@@ -177,22 +183,21 @@ const Hero = (props) => {
             .hero-text5 {
               color: var(--dl-color-secondary-600);
             }
-            .hero-image2 {
+            .hero-image1 {
               z-index: 100;
             }
           }
           @media (max-width: 767px) {
             .hero-card {
-              align-items: center;
-              margin-left: var(--dl-space-space-unit);
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
+              align-items: flex-start;
+              margin-right: var(--dl-space-space-doubleunit);
+              padding-left: var(--dl-space-space-doubleunit);
+              margin-bottom: var(--dl-space-space-tripleunit);
+              padding-right: var(--dl-space-space-doubleunit);
+              padding-bottom: var(--dl-space-space-doubleunit);
             }
             .hero-text1 {
               width: 80%;
-            }
-            .hero-image {
-              display: none;
             }
             .hero-text5 {
               color: var(--dl-color-secondary-600);
@@ -201,23 +206,33 @@ const Hero = (props) => {
               margin-right: 0px;
               padding-right: 0px;
             }
-            .hero-image1 {
+            .hero-image {
               display: none;
             }
-            .hero-image2 {
+            .hero-image1 {
               top: 152px;
               right: 58px;
             }
           }
           @media (max-width: 479px) {
             .hero-container {
+              max-width: 100%;
+              min-height: auto;
               padding-right: 0px;
             }
             .hero-card {
+              margin-top: var(--dl-space-space-sixunits);
+              margin-left: var(--dl-space-space-unit);
               padding-top: var(--dl-space-space-tripleunit);
-              padding-left: var(--dl-space-space-halfunit);
-              padding-right: var(--dl-space-space-halfunit);
-              padding-bottom: var(--dl-space-space-halfunit);
+              margin-right: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-unit);
+              margin-bottom: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-tripleunit);
+            }
+            .hero-container1 {
+              align-self: center;
+              align-items: center;
             }
             .hero-text {
               font-size: 2.25rem;
@@ -235,20 +250,13 @@ const Hero = (props) => {
               );
             }
             .hero-text1 {
-              font-size: 1.3rem;
               align-self: center;
-              text-align: center;
-            }
-            .hero-image {
-              width: 181px;
-              height: 368px;
-              display: flex;
-              align-self: center;
+              text-align: left;
             }
             .hero-text5 {
               color: var(--dl-color-secondary-600);
               align-self: center;
-              text-align: center;
+              text-align: left;
             }
             .hero-container2 {
               align-items: center;
@@ -258,14 +266,19 @@ const Hero = (props) => {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-unit);
             }
+            .hero-container4 {
+              align-items: center;
+              flex-direction: column;
+            }
+            .hero-container5 {
+              margin-right: 0px;
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .hero-image {
+              display: none;
+            }
             .hero-image1 {
               display: none;
-            }
-            .hero-image2 {
-              display: none;
-            }
-            .hero-root-class-name {
-              margin-top: var(--dl-space-space-tripleunit);
             }
           }
         `}
@@ -275,29 +288,28 @@ const Hero = (props) => {
 }
 
 Hero.defaultProps = {
-  image_src: '/playground_assets/merkaba_bg-1500h.png',
-  image_alt: 'image',
   image_src1:
     '/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png',
   image_alt1: 'image',
   heading: 'Merkaba Mushrooms',
-  text: 'Fruiting Body only tinctures specifically formulated to taste good and make you feel good',
-  rootClassName: '',
-  image_src2:
-    '/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png',
+  image_alt: 'image',
   image_alt2: 'image',
+  image_src2: '03a700b8-7d31-46f8-8ccb-cac4f826fda2',
+  rootClassName: '',
+  text: 'Fruiting Body only tinctures specifically formulated to taste good and make you feel good',
+  image_src: '/playground_assets/merkaba_bg-1500h.png',
 }
 
 Hero.propTypes = {
-  image_src: PropTypes.string,
-  image_alt: PropTypes.string,
   image_src1: PropTypes.string,
   image_alt1: PropTypes.string,
   heading: PropTypes.string,
-  text: PropTypes.string,
-  rootClassName: PropTypes.string,
-  image_src2: PropTypes.string,
+  image_alt: PropTypes.string,
   image_alt2: PropTypes.string,
+  image_src2: PropTypes.string,
+  rootClassName: PropTypes.string,
+  text: PropTypes.string,
+  image_src: PropTypes.string,
 }
 
 export default Hero

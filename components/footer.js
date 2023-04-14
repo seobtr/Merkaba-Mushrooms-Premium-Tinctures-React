@@ -331,7 +331,7 @@ Footer.defaultProps = {
   text4: 'Help',
   text1: 'Benefits',
   text5: 'Privacy Policy',
-  image_src: '/playground_assets/asset%2011-200w.png',
+  image_src: '/playground_assets/merkaba_logo2-200w.png',
   rootClassName: '',
   text6: '© 2022 Merkaba Mushrooms. All rights reserved',
   text: 'About',

@@ -45,7 +45,7 @@ const FeatureCard = (props) => {
 FeatureCard.defaultProps = {
   card_title: 'Title',
   text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique ipsum.',
-  image_src: '/playground_assets/01.svg',
+  image_src: 'https://play.teleporthq.io/static/svg/placeholders/no-image.svg',
   image_alt: 'image',
 }
 

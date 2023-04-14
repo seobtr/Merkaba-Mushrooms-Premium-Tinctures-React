@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
 
-import Header3 from '../components/header3'
+import PrimaryHeader from '../components/primary-header'
 import Hero from '../components/hero'
 import MeetMerkaba from '../components/meet-merkaba'
 import PrimaryPinkButton from '../components/primary-pink-button'
@@ -16,13 +16,10 @@ const Home = (props) => {
     <>
       <div className="home-container">
         <Head>
-          <title>Merkaba Mushrooms Premium Tinctures</title>
-          <meta
-            property="og:title"
-            content="Merkaba Mushrooms Premium Tinctures"
-          />
+          <title>Merkaba Mushrooms E-Commerce</title>
+          <meta property="og:title" content="Merkaba Mushrooms E-Commerce" />
         </Head>
-        <Header3 rootClassName="header3-root-class-name3"></Header3>
+        <PrimaryHeader rootClassName="primary-header-root-class-name3"></PrimaryHeader>
         <Hero rootClassName="hero-root-class-name"></Hero>
         <div className="home-main">
           <div className="home-blur-background"></div>
@@ -130,13 +127,13 @@ const Home = (props) => {
             <div className="home-container05">
               <StatsCard
                 process="Beta Glucans"
-                image_src="/playground_assets/01.svg"
+                image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
                 description="Beta-glucans are soluble fibers that come from the cell walls of bacteria, fungi, yeasts, and some plants. They might lower the risk for heart disease."
                 rootClassName="stats-card-root-class-name"
               ></StatsCard>
               <StatsCard
                 process="Benefits 2"
-                image_src="/playground_assets/01.svg"
+                image_src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
                 description="Beta-glucans are soluble fibers that come from the cell walls of bacteria, fungi, yeasts, and some plants. They might lower the risk for heart disease."
                 rootClassName="stats-card-root-class-name1"
               ></StatsCard>
@@ -144,7 +141,7 @@ const Home = (props) => {
             <div className="home-container06"></div>
           </div>
         </div>
-        <div className="home-c-t-a">
+        <div className="home-cta">
           <div className="home-container07">
             <div className="home-container08">
               <h2 className="Headline2 home-text16">Call to Action</h2>
@@ -414,7 +411,7 @@ const Home = (props) => {
             flex-direction: row;
             justify-content: center;
           }
-          .home-c-t-a {
+          .home-cta {
             width: auto;
             display: flex;
             overflow: hidden;

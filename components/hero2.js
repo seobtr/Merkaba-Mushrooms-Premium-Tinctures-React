@@ -208,16 +208,16 @@ const Hero2 = (props) => {
 }
 
 Hero2.defaultProps = {
-  image_src:
-    '/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png',
   image_alt: 'image',
   heading: 'A New Way to Cultivate Your Mind and Body ',
+  image_src:
+    '/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png',
 }
 
 Hero2.propTypes = {
-  image_src: PropTypes.string,
   image_alt: PropTypes.string,
   heading: PropTypes.string,
+  image_src: PropTypes.string,
 }
 
 export default Hero2

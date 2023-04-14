@@ -8,10 +8,10 @@ const About = (props) => {
     <>
       <div className="about-container">
         <Head>
-          <title>About - Merkaba Mushrooms Premium Tinctures</title>
+          <title>About - Merkaba Mushrooms E-Commerce</title>
           <meta
             property="og:title"
-            content="About - Merkaba Mushrooms Premium Tinctures"
+            content="About - Merkaba Mushrooms E-Commerce"
           />
         </Head>
         <Header2 rootClassName="header2-root-class-name1"></Header2>

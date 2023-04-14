@@ -11,10 +11,10 @@ const Shop = (props) => {
     <>
       <div className="shop-container">
         <Head>
-          <title>Shop - Merkaba Mushrooms Premium Tinctures</title>
+          <title>Shop - Merkaba Mushrooms E-Commerce</title>
           <meta
             property="og:title"
-            content="Shop - Merkaba Mushrooms Premium Tinctures"
+            content="Shop - Merkaba Mushrooms E-Commerce"
           />
         </Head>
         <Header2 rootClassName="header2-root-class-name2"></Header2>

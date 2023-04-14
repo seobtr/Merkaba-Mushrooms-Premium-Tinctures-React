@@ -4,7 +4,7 @@ import Link from 'next/link'
 import DangerousHTML from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
-import PrimaryPinkButton1 from './primary-pink-button1'
+import PrimaryPinkBtn from './primary-pink-btn'
 
 const Header2 = (props) => {
   return (
@@ -17,7 +17,7 @@ const Header2 = (props) => {
                 <a className="header2-link">
                   <img
                     alt={props.image_alt}
-                    src={props.image_src}
+                    src={props.image_src2}
                     className="header2-image"
                   />
                 </a>
@@ -56,10 +56,10 @@ const Header2 = (props) => {
                   href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
                   className="header2-link3"
                 >
-                  <PrimaryPinkButton1
+                  <PrimaryPinkBtn
                     button="buy now"
                     className="header2-component"
-                  ></PrimaryPinkButton1>
+                  ></PrimaryPinkBtn>
                 </a>
               </div>
               <div data-role="BurgerMenu" className="header2-burger-menu">
@@ -105,7 +105,7 @@ const Header2 = (props) => {
             </div>
           </div>
           <div className="header2-bot">
-            <PrimaryPinkButton1 button="buy now"></PrimaryPinkButton1>
+            <PrimaryPinkBtn button="buy now"></PrimaryPinkBtn>
           </div>
         </div>
       </header>
@@ -424,14 +424,16 @@ const Header2 = (props) => {
 
 Header2.defaultProps = {
   image_alt1: 'image',
-  image_src: '/playground_assets/asset%2011-200w.png',
+  image_src2: '/playground_assets/merkaba_logo2-200w.png',
+  image_src: 'bac6af95-3d01-4a5f-95bf-2803f85dcdc0',
   rootClassName: '',
-  image_src1: '/playground_assets/asset%2011-200w.png',
+  image_src1: 'https://play.teleporthq.io/static/svg/placeholders/no-image.svg',
   image_alt: 'image',
 }
 
 Header2.propTypes = {
   image_alt1: PropTypes.string,
+  image_src2: PropTypes.string,
   image_src: PropTypes.string,
   rootClassName: PropTypes.string,
   image_src1: PropTypes.string,

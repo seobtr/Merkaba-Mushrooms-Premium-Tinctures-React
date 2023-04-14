@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-
 class CustomDocument extends Document {
   render() {
     return (
@@ -25,6 +24,12 @@ class CustomDocument extends Document {
             }}
             data-tag="default-style-sheet"
           ></style>
+          <link
+            rel="shortcut icon"
+            href="/playground_assets/merkaba_logo21.png"
+            type="icon/png"
+            sizes="32x32"
+          ></link>
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&amp;display=swap"
@@ -60,156 +65,6 @@ class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
             data-tag="font"
           ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Italiana:wght@400&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-            data-tag="font"
-          ></link>
           <noscript
             dangerouslySetInnerHTML={{
               __html: '</noscript> <noscript>',
@@ -230,5 +85,4 @@ class CustomDocument extends Document {
     )
   }
 }
-
 export default CustomDocument
