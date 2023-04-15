@@ -30,7 +30,7 @@ const Hero = (props) => {
         </div>
         <img
           alt={props.image_alt}
-          src={props.image_src}
+          src="/playground_assets/cordyceps_unsaturated-bg-1500h.png"
           className="hero-image"
         />
         <img
@@ -129,7 +129,7 @@ const Hero = (props) => {
             top: 0px;
             left: auto;
             right: 0px;
-            width: 50%;
+            width: 100%;
             bottom: 0px;
             height: 80vh;
             opacity: 0.6;
@@ -279,7 +279,7 @@ Hero.defaultProps = {
   image_src2: '03a700b8-7d31-46f8-8ccb-cac4f826fda2',
   rootClassName: '',
   text: 'Fruiting Body only tinctures specifically formulated to taste good and make you feel good',
-  image_src: '/playground_assets/merkaba_bg-1500h.png',
+  image_src: '245ce3d9-9f6f-4059-8923-7b6454cebdf7',
 }
 
 Hero.propTypes = {
