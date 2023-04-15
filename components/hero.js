@@ -30,7 +30,7 @@ const Hero = (props) => {
         </div>
         <img
           alt={props.image_alt}
-          src="/playground_assets/cordyceps_unsaturated-bg-1500h.png"
+          src="/playground_assets/cordyceps_unsaturated-bg-1500w.png"
           className="hero-image"
         />
         <img
@@ -131,8 +131,9 @@ const Hero = (props) => {
             right: 0px;
             width: 100%;
             bottom: 0px;
-            height: 80vh;
-            opacity: 0.6;
+            height: auto;
+            margin: auto;
+            opacity: 1;
             position: absolute;
             object-fit: cover;
             object-position: right;
@@ -168,6 +169,11 @@ const Hero = (props) => {
             }
             .hero-text5 {
               color: var(--dl-color-secondary-600);
+            }
+            .hero-image {
+              top: 0px;
+              bottom: 0px;
+              margin: auto;
             }
             .hero-image1 {
               z-index: 100;
