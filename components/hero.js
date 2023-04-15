@@ -137,7 +137,6 @@ const Hero = (props) => {
             position: absolute;
             object-fit: cover;
             object-position: right;
-            border-bottom-left-radius: 10rem;
           }
           .hero-image1 {
             top: 158px;
