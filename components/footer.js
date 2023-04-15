@@ -94,6 +94,7 @@ const Footer = (props) => {
             flex: 0 0 auto;
             color: var(--dl-color-gray-white);
             width: 100%;
+            height: 100px;
             display: flex;
             position: relative;
             align-items: flex-start;

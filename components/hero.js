@@ -2,8 +2,8 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import MushroomBtn from './mushroom-btn'
 import PrimaryPinkButton3 from './primary-pink-button3'
+import MushroomBtn from './mushroom-btn'
 
 const Hero = (props) => {
   return (
@@ -21,11 +21,7 @@ const Hero = (props) => {
               <span className="hero-text5">{props.text}</span>
             </div>
             <div className="hero-container2">
-              <div className="hero-container3"></div>
-              <MushroomBtn button="read more"></MushroomBtn>
-            </div>
-            <div className="hero-container4">
-              <div className="hero-container5">
+              <div className="hero-container3">
                 <PrimaryPinkButton3 button="contact us"></PrimaryPinkButton3>
               </div>
               <MushroomBtn button="read more"></MushroomBtn>
@@ -73,12 +69,15 @@ const Hero = (props) => {
               0 8px 9px -5px hsla(0, 0%, 8%, 0.06) !important;
             margin-top: var(--dl-space-space-tripleunit);
             align-items: flex-start;
+            margin-left: var(--dl-space-space-tripleunit);
             padding-top: var(--dl-space-space-doubleunit);
-            padding-left: var(--dl-space-space-halfunit);
+            margin-right: var(--dl-space-space-tripleunit);
+            padding-left: var(--dl-space-space-doubleunit);
             border-radius: var(--dl-radius-radius-radius1);
-            padding-right: var(--dl-space-space-halfunit);
+            margin-bottom: var(--dl-space-space-tripleunit);
+            padding-right: var(--dl-space-space-doubleunit);
             flex-direction: column;
-            padding-bottom: var(--dl-space-space-halfunit);
+            padding-bottom: var(--dl-space-space-doubleunit);
             backdrop-filter: saturate(200%) blur(30px);
             background-color: hsla(0, 0%, 100%, 0.8);
           }
@@ -121,20 +120,6 @@ const Hero = (props) => {
             flex-direction: row;
           }
           .hero-container3 {
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            display: flex;
-            align-items: flex-start;
-            margin-right: var(--dl-space-space-unit);
-            flex-direction: row;
-          }
-          .hero-container4 {
-            display: flex;
-            margin-top: var(--dl-space-space-unitandahalfunit);
-            align-items: flex-start;
-            margin-bottom: var(--dl-space-space-unit);
-            flex-direction: row;
-          }
-          .hero-container5 {
             display: flex;
             align-items: flex-start;
             margin-right: var(--dl-space-space-unit);
@@ -172,6 +157,7 @@ const Hero = (props) => {
               width: 90%;
               height: auto;
               margin-left: var(--dl-space-space-doubleunit);
+              margin-bottom: var(--dl-space-space-tripleunit);
             }
             .hero-container1 {
               width: 70%;
@@ -210,8 +196,10 @@ const Hero = (props) => {
               display: none;
             }
             .hero-image1 {
-              top: 152px;
+              top: 0px;
               right: 58px;
+              bottom: 0px;
+              margin: auto;
             }
           }
           @media (max-width: 479px) {
@@ -221,6 +209,7 @@ const Hero = (props) => {
               padding-right: 0px;
             }
             .hero-card {
+              align-self: center;
               margin-top: var(--dl-space-space-sixunits);
               margin-left: var(--dl-space-space-unit);
               padding-top: var(--dl-space-space-tripleunit);
@@ -251,7 +240,7 @@ const Hero = (props) => {
             }
             .hero-text1 {
               align-self: center;
-              text-align: left;
+              text-align: center;
             }
             .hero-text5 {
               color: var(--dl-color-secondary-600);
@@ -259,18 +248,11 @@ const Hero = (props) => {
               text-align: left;
             }
             .hero-container2 {
+              align-self: center;
               align-items: center;
               flex-direction: column;
             }
             .hero-container3 {
-              margin-right: 0px;
-              margin-bottom: var(--dl-space-space-unit);
-            }
-            .hero-container4 {
-              align-items: center;
-              flex-direction: column;
-            }
-            .hero-container5 {
               margin-right: 0px;
               margin-bottom: var(--dl-space-space-unit);
             }
