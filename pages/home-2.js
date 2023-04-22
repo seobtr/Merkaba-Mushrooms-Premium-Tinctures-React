@@ -85,19 +85,19 @@ const Home2 = (props) => {
         <section className="home2-features">
           <FeatureCard1
             title="Components"
-            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
             benefits1="Choose the best design system for your next product."
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
           ></FeatureCard1>
           <FeatureCard1 image_src="https://play.teleporthq.io/static/svg/default-img.svg"></FeatureCard1>
           <FeatureCard1
             title="Less Code"
-            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
             benefits1="Make your code easier to maintain using variables."
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
           ></FeatureCard1>
           <FeatureCard1
             title="Fully Responsive"
-            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
             benefits1="This design system is fully supported on any device."
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
           ></FeatureCard1>
           <section className="home2-container05">
             <div className="home2-container06">

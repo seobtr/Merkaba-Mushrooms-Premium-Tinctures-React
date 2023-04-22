@@ -750,15 +750,15 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
+  rootClassName: '',
   Brand_2: 'Merkaba Mushrooms',
   Brand: 'Merkaba Mushrooms',
-  rootClassName: '',
 }
 
 Header.propTypes = {
+  rootClassName: PropTypes.string,
   Brand_2: PropTypes.string,
   Brand: PropTypes.string,
-  rootClassName: PropTypes.string,
 }
 
 export default Header

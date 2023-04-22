@@ -79,23 +79,23 @@ const FeatureCard1 = (props) => {
 }
 
 FeatureCard1.defaultProps = {
+  benefit3: 'Add benefits 3',
   benefits1: 'Add benefits 1',
+  rootClassName: '',
   featuredTitle: 'Add Title',
   image_alt: 'image',
-  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
   benefits2: 'Add benefits 2',
-  benefit3: 'Add benefits 3',
-  rootClassName: '',
+  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
 }
 
 FeatureCard1.propTypes = {
+  benefit3: PropTypes.string,
   benefits1: PropTypes.string,
+  rootClassName: PropTypes.string,
   featuredTitle: PropTypes.string,
   image_alt: PropTypes.string,
-  image_src: PropTypes.string,
   benefits2: PropTypes.string,
-  benefit3: PropTypes.string,
-  rootClassName: PropTypes.string,
+  image_src: PropTypes.string,
 }
 
 export default FeatureCard1

@@ -26,14 +26,22 @@ const Home = (props) => {
               />
               <div className="home-container2">
                 <h1 className="home-text HeadingOne">Merkaba Mushrooms</h1>
-                <h2 className="home-text1">medicinal tinctures</h2>
+                <h2 className="home-text1">Medicinal Mushroom Tinctures</h2>
                 <p className="home-text2 Lead">
                   Fruiting Body only tinctures specifically formulated to taste
                   good and make you feel good.
                 </p>
                 <div className="home-container3">
                   <div className="home-container4">
-                    <PrimaryPinkButton4 button="Shop Tincures"></PrimaryPinkButton4>
+                    <a
+                      href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
+                      className="home-link"
+                    >
+                      <PrimaryPinkButton4
+                        button="Shop Tincures"
+                        className="home-component1"
+                      ></PrimaryPinkButton4>
+                    </a>
                   </div>
                   <OutlineGrayButton2 button="Learn More"></OutlineGrayButton2>
                 </div>
@@ -148,6 +156,12 @@ const Home = (props) => {
             align-items: flex-start;
             margin-right: var(--dl-space-space-unit);
             flex-direction: row;
+          }
+          .home-link {
+            display: contents;
+          }
+          .home-component1 {
+            text-decoration: none;
           }
           .home-image1 {
             top: 0px;

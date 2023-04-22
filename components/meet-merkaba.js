@@ -11,17 +11,17 @@ const MeetMerkaba = (props) => {
         <section className="meet-merkaba-features">
           <FeatureCard1
             title="Components"
-            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
             benefits1="Increase Stamina"
+            benefits2="Respiratory Enhancement"
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
             featuredTitle="Cordyceps"
             rootClassName="feature-card1-root-class-name"
-            benefits2="Respiratory Enhancement"
           ></FeatureCard1>
           <FeatureCard1
-            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
-            rootClassName="feature-card1-root-class-name1"
-            featuredTitle="Lion's Mane"
             benefits1="Enhance Brain Function"
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            featuredTitle="Lion's Mane"
+            rootClassName="feature-card1-root-class-name1"
           ></FeatureCard1>
           <FeatureCard1
             title="Fully Responsive"
@@ -359,50 +359,50 @@ const MeetMerkaba = (props) => {
 }
 
 MeetMerkaba.defaultProps = {
-  rootClassName: '',
-  text1:
-    'The South’s Leading Medicinal Mushroom Company Providing Quality Mushroom Tinctures',
-  text2:
-    'The highest status people in human history are those that asked for nothing and gave everything',
-  image_src3:
-    'https://images.unsplash.com/photo-1669101283561-642d16d924ba?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fGxhYiUyMHxlbnwwfHx8fDE2ODIxNzgxMjI&ixlib=rb-4.0.3&w=1100',
-  image_alt3: 'image',
-  image_src4: '/playground_assets/cordyceps_unsaturated-bg-1100w.png',
-  image_alt4: 'image',
   Quote:
     "We're always constantly testing the potency as well as the taste without compromising the benefits",
-  Quoted: '-Jordan Gros',
-  image_src5:
-    'https://images.unsplash.com/photo-1625286535466-68a6d71e4568?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGxpb25zJTIwbWFuZXxlbnwwfHx8fDE2ODIxNzgxNjI&ixlib=rb-4.0.3&w=1000',
   image_alt5: 'image',
+  Quoted: '-Jordan Gros',
+  image_alt3: 'image',
   text5:
     'Cordyceps is known for providing increase performance in athletic abilities',
-  text6:
-    "Lion's Mane mushrooms, also called Hericium Erinaceus, are prized for their nootropic properties. Our dual extract lion's mane tinctures offer cognitive support, immune support, anti-inflammatory and gut health benefits.",
-  text7: '',
+  text10: '',
+  rootClassName: '',
   text8: '',
   text9: '',
-  text10: '',
+  image_src3:
+    'https://images.unsplash.com/photo-1669101283561-642d16d924ba?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fGxhYiUyMHxlbnwwfHx8fDE2ODIxNzgxMjI&ixlib=rb-4.0.3&w=1100',
+  image_src4: '/playground_assets/cordyceps_unsaturated-bg-1100w.png',
+  text1:
+    'The South’s Leading Medicinal Mushroom Company Providing Quality Mushroom Tinctures',
+  text7: '',
+  text2:
+    'The highest status people in human history are those that asked for nothing and gave everything',
+  image_src5:
+    'https://images.unsplash.com/photo-1625286535466-68a6d71e4568?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGxpb25zJTIwbWFuZXxlbnwwfHx8fDE2ODIxNzgxNjI&ixlib=rb-4.0.3&w=1000',
+  image_alt4: 'image',
+  text6:
+    "Lion's Mane mushrooms, also called Hericium Erinaceus, are prized for their nootropic properties. Our dual extract lion's mane tinctures offer cognitive support, immune support, anti-inflammatory and gut health benefits.",
 }
 
 MeetMerkaba.propTypes = {
-  rootClassName: PropTypes.string,
-  text1: PropTypes.string,
-  text2: PropTypes.string,
-  image_src3: PropTypes.string,
-  image_alt3: PropTypes.string,
-  image_src4: PropTypes.string,
-  image_alt4: PropTypes.string,
   Quote: PropTypes.string,
-  Quoted: PropTypes.string,
-  image_src5: PropTypes.string,
   image_alt5: PropTypes.string,
+  Quoted: PropTypes.string,
+  image_alt3: PropTypes.string,
   text5: PropTypes.string,
-  text6: PropTypes.string,
-  text7: PropTypes.string,
+  text10: PropTypes.string,
+  rootClassName: PropTypes.string,
   text8: PropTypes.string,
   text9: PropTypes.string,
-  text10: PropTypes.string,
+  image_src3: PropTypes.string,
+  image_src4: PropTypes.string,
+  text1: PropTypes.string,
+  text7: PropTypes.string,
+  text2: PropTypes.string,
+  image_src5: PropTypes.string,
+  image_alt4: PropTypes.string,
+  text6: PropTypes.string,
 }
 
 export default MeetMerkaba
