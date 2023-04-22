@@ -148,7 +148,6 @@ const Hero = (props) => {
             object-position: right;
             border-bottom-left-radius: 10rem;
           }
-
           @media (max-width: 991px) {
             .hero-container {
               max-width: 960px;

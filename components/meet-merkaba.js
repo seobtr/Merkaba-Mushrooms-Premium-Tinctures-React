@@ -2,91 +2,86 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
+import FeatureCard1 from './feature-card1'
+
 const MeetMerkaba = (props) => {
   return (
     <>
       <section className={`meet-merkaba-container ${props.rootClassName} `}>
-        <div className="meet-merkaba-container1">
-          <span className="meet-merkaba-text">{props.text}</span>
-          <h1 className="meet-merkaba-text01">{props.heading}</h1>
-        </div>
-        <div className="meet-merkaba-container2">
-          <div className="meet-merkaba-container3">
-            <img
-              alt={props.image_alt}
-              src={props.image_src}
-              className="meet-merkaba-image"
-            />
-            <span className="meet-merkaba-text02 Small">
-              <span className="meet-merkaba-text03">
-                &quot;Over the span of the satellite record, Arctic sea ice has
-                been declining significantly, while sea ice in the Antarctichas
-                increased very slightly&quot;
+        <section className="meet-merkaba-features">
+          <FeatureCard1
+            text="Choose the best design system for your next product."
+            title="Components"
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+          ></FeatureCard1>
+          <FeatureCard1 image_src="https://play.teleporthq.io/static/svg/default-img.svg"></FeatureCard1>
+          <FeatureCard1
+            text="Make your code easier to maintain using variables."
+            title="Less Code"
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+          ></FeatureCard1>
+          <FeatureCard1
+            text="This design system is fully supported on any device."
+            title="Fully Responsive"
+            image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+          ></FeatureCard1>
+          <section className="meet-merkaba-container1">
+            <div className="meet-merkaba-container2">
+              <h1 className="meet-merkaba-text HeadingOne">
+                <span className="meet-merkaba-text01">{props.text1}</span>
+              </h1>
+              <span className="meet-merkaba-text02">
+                <span className="meet-merkaba-text03">{props.text2}</span>
               </span>
-              <br></br>
-              <span className="meet-merkaba-text05">-NOAA</span>
-            </span>
-            <div className="meet-merkaba-container4">
-              <img
-                alt={props.image_alt2}
-                src={props.image_src2}
-                className="meet-merkaba-image1"
-              />
             </div>
-          </div>
-          <div className="meet-merkaba-container5">
-            <img
-              alt={props.image_alt1}
-              src={props.image_src1}
-              className="meet-merkaba-image2"
-            />
-            <div className="meet-merkaba-container6">
-              <h3 className="HeadingTwo">
-                <span className="meet-merkaba-text07">
-                  So what does the new record for the lowest level of winter ice
-                  actually mean
+            <div className="meet-merkaba-container3">
+              <div className="meet-merkaba-container4">
+                <img
+                  alt={props.image_alt3}
+                  src={props.image_src3}
+                  className="meet-merkaba-image"
+                />
+                <span className="meet-merkaba-text04 Small">
+                  <span className="meet-merkaba-text05">{props.Quote}</span>
+                  <br></br>
+                  <span className="meet-merkaba-text07">{props.Quoted}</span>
                 </span>
-              </h3>
-              <p>
-                <br></br>
-                <span className="meet-merkaba-text09">
-                  The Arctic Ocean freezes every winter and much of the sea-ice
-                  then thaws every summer, and that process will continue
-                  whatever happens with climate change. Even if the Arctic
-                  continues to be one of the fastest-warming regions of the
-                  world, it will always be plunged into bitterly cold polar dark
-                  every winter. And year-by-year, for all kinds of natural
-                  reasons, there’s huge variety of the state of the ice.
-                </span>
-                <br></br>
-                <span></span>
-                <br></br>
-                <span className="meet-merkaba-text12">
-                  For a start, it does not automatically follow that a record
-                  amount of ice will melt this summer. More important for
-                  determining the size of the annual thaw is the state of the
-                  weather as the midnight sun approaches and temperatures rise.
-                  But over the more than 30 years of satellite records,
-                  scientists have observed a clear pattern of decline,
-                  decade-by-decade.
-                </span>
-                <br></br>
-                <span></span>
-                <br></br>
-                <span className="meet-merkaba-text15">
-                  The Arctic Ocean freezes every winter and much of the sea-ice
-                  then thaws every summer, and that process will continue
-                  whatever happens with climate change. Even if the Arctic
-                  continues to be one of the fastest-warming regions of the
-                  world, it will always be plunged into bitterly cold polar dark
-                  every winter. And year-by-year, for all kinds of natural
-                  reasons, there’s huge variety of the state of the ice.
-                </span>
-                <br></br>
-              </p>
+                <div className="meet-merkaba-container5">
+                  <img
+                    alt={props.image_alt5}
+                    src={props.image_src5}
+                    className="meet-merkaba-image1"
+                  />
+                </div>
+              </div>
+              <div className="meet-merkaba-container6">
+                <img
+                  alt={props.image_alt4}
+                  src={props.image_src4}
+                  className="meet-merkaba-image2"
+                />
+                <div className="meet-merkaba-container7">
+                  <h3 className="HeadingTwo">
+                    <span className="meet-merkaba-text09">{props.text5}</span>
+                  </h3>
+                  <p>
+                    <br></br>
+                    <span className="meet-merkaba-text11">{props.text6}</span>
+                    <br></br>
+                    <span>{props.text7}</span>
+                    <br></br>
+                    <span className="meet-merkaba-text14">{props.text8}</span>
+                    <br></br>
+                    <span>{props.text9}</span>
+                    <br></br>
+                    <span className="meet-merkaba-text17">{props.text10}</span>
+                    <br></br>
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
       <style jsx>
         {`
@@ -103,33 +98,61 @@ const MeetMerkaba = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-sixunits);
           }
-          .meet-merkaba-container1 {
+          .meet-merkaba-features {
+            width: 100%;
             display: flex;
-            max-width: 70%;
+            flex-wrap: wrap;
+            max-width: 1320px;
+            align-items: flex-start;
+            padding-top: var(--dl-space-space-sixunits);
+            padding-left: var(--dl-space-space-tripleunit);
+            padding-right: var(--dl-space-space-tripleunit);
+            flex-direction: row;
+            padding-bottom: var(--dl-space-space-sixunits);
+          }
+          .meet-merkaba-container1 {
+            flex: 0 0 auto;
+            width: 100%;
+            display: flex;
+            max-width: 1320px;
+            align-items: center;
+            padding-top: var(--dl-space-space-sixunits);
+            padding-left: var(--dl-space-space-tripleunit);
+            padding-right: var(--dl-space-space-tripleunit);
+            flex-direction: column;
+            padding-bottom: var(--dl-space-space-sixunits);
+          }
+          .meet-merkaba-container2 {
+            display: flex;
             align-items: center;
             margin-left: auto;
             margin-right: auto;
             flex-direction: column;
           }
           .meet-merkaba-text {
-            max-width: 600px;
-            text-align: center;
-            font-weight: bold;
             margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .meet-merkaba-text01 {
-            width: 100%;
-            text-align: center;
-            margin-bottom: var(--dl-space-space-halfunit);
-            background-image: linear-gradient(
-              310deg,
-              rgb(121, 40, 202),
-              rgb(255, 0, 128)
-            );
+            background-image: linear-gradient(310deg, #7928ca, #ff0080);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          .meet-merkaba-container2 {
+          .meet-merkaba-text01 {
+            color: rgb(203, 12, 159);
+            white-space: normal;
+            text-decoration: none;
+          }
+          .meet-merkaba-text02 {
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: var(--dl-space-space-halfunit);
+          }
+          .meet-merkaba-text03 {
+            color: rgb(103, 116, 142);
+            display: inline;
+            font-weight: 400;
+            white-space: normal;
+            background-color: rgb(255, 255, 255);
+          }
+          .meet-merkaba-container3 {
             flex: 0 0 auto;
             width: 100%;
             display: flex;
@@ -140,7 +163,7 @@ const MeetMerkaba = (props) => {
             margin-right: var(--dl-space-space-unitandahalfunit);
             flex-direction: row;
           }
-          .meet-merkaba-container3 {
+          .meet-merkaba-container4 {
             flex: 0 0 auto;
             width: 50%;
             height: 100%;
@@ -158,7 +181,7 @@ const MeetMerkaba = (props) => {
             margin-right: -3rem;
             border-radius: var(--dl-radius-radius-radius75);
           }
-          .meet-merkaba-text02 {
+          .meet-merkaba-text04 {
             flex: 0 0 auto;
             width: 40%;
             display: flex;
@@ -173,19 +196,19 @@ const MeetMerkaba = (props) => {
             margin-bottom: 8rem;
             flex-direction: column;
           }
-          .meet-merkaba-text03 {
+          .meet-merkaba-text05 {
             color: rgb(203, 12, 159);
             display: inline;
             font-weight: 400;
             white-space: normal;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-text05 {
+          .meet-merkaba-text07 {
             color: rgb(203, 12, 159);
             font-weight: 400;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-container4 {
+          .meet-merkaba-container5 {
             width: 100%;
             height: 100%;
             display: flex;
@@ -208,7 +231,7 @@ const MeetMerkaba = (props) => {
             border-radius: var(--dl-radius-radius-radius75);
             margin-bottom: var(--dl-space-space-tripleunit);
           }
-          .meet-merkaba-container5 {
+          .meet-merkaba-container6 {
             flex: 0 0 auto;
             width: 40%;
             display: flex;
@@ -228,32 +251,32 @@ const MeetMerkaba = (props) => {
             border-radius: var(--dl-radius-radius-radius75);
             margin-bottom: var(--dl-space-space-tripleunit);
           }
-          .meet-merkaba-container6 {
+          .meet-merkaba-container7 {
             width: 90%;
             display: flex;
             align-self: center;
             align-items: flex-start;
             flex-direction: column;
           }
-          .meet-merkaba-text07 {
+          .meet-merkaba-text09 {
             color: rgb(37, 47, 64);
             font-weight: 700;
             white-space: normal;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-text09 {
+          .meet-merkaba-text11 {
             color: rgb(103, 116, 142);
             font-weight: 400;
             white-space: normal;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-text12 {
+          .meet-merkaba-text14 {
             color: rgb(103, 116, 142);
             font-weight: 400;
             white-space: normal;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-text15 {
+          .meet-merkaba-text17 {
             color: rgb(103, 116, 142);
             font-weight: 400;
             white-space: normal;
@@ -261,29 +284,50 @@ const MeetMerkaba = (props) => {
           }
 
           @media (max-width: 991px) {
+            .meet-merkaba-features {
+              max-width: 960px;
+            }
             .meet-merkaba-container1 {
+              max-width: 960px;
+              padding-left: var(--dl-space-space-doubleunit);
+              padding-right: var(--dl-space-space-doubleunit);
+            }
+            .meet-merkaba-container2 {
               max-width: 80%;
             }
             .meet-merkaba-text {
               text-align: center;
             }
             .meet-merkaba-text02 {
+              text-align: center;
+            }
+            .meet-merkaba-text04 {
               width: 50%;
             }
           }
           @media (max-width: 767px) {
-            .meet-merkaba-container2 {
+            .meet-merkaba-features {
+              max-width: 720px;
+              padding-top: var(--dl-space-space-doubleunit);
+              padding-left: var(--dl-space-space-unitandahalfunit);
+              padding-right: var(--dl-space-space-unitandahalfunit);
+              padding-bottom: var(--dl-space-space-doubleunit);
+            }
+            .meet-merkaba-container1 {
+              max-width: 720px;
+            }
+            .meet-merkaba-container3 {
               align-items: center;
               flex-direction: column;
             }
-            .meet-merkaba-container3 {
+            .meet-merkaba-container4 {
               width: 80%;
             }
             .meet-merkaba-image {
               margin-left: 0px;
               margin-right: 0px;
             }
-            .meet-merkaba-text02 {
+            .meet-merkaba-text04 {
               width: 70%;
               align-self: center;
               margin-top: var(--dl-space-space-tripleunit);
@@ -292,11 +336,16 @@ const MeetMerkaba = (props) => {
             .meet-merkaba-image1 {
               display: none;
             }
-            .meet-merkaba-container5 {
+            .meet-merkaba-container6 {
               width: 80%;
             }
             .meet-merkaba-image2 {
               display: none;
+            }
+          }
+          @media (max-width: 479px) {
+            .meet-merkaba-features {
+              width: 100%;
             }
           }
         `}
@@ -306,31 +355,50 @@ const MeetMerkaba = (props) => {
 }
 
 MeetMerkaba.defaultProps = {
-  image_src:
-    'https://images.unsplash.com/photo-1532634993-15f421e42ec0?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGxhYnJhdG9yeXxlbnwwfHx8fDE2Njg2MjQ2MDM&ixlib=rb-4.0.3&w=1100',
-  text: 'MEET MERKABA',
   rootClassName: '',
-  image_alt1: 'image',
-  image_src2:
-    'https://images.unsplash.com/photo-1634326599007-a108c3f5abcd?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDR8fGNvcmR5Y2Vwc3xlbnwwfHx8fDE2Njg2MjQ2ODM&ixlib=rb-4.0.3&w=1000',
-  image_alt2: 'image',
-  heading:
+  text1:
     'The South’s Leading Medicinal Mushroom Company Providing Quality Mushroom Tinctures',
-  image_alt: 'image',
-  image_src1:
-    'https://images.unsplash.com/photo-1654011021856-5d590a4f6770?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDYzfHxtdXNocm9vbSUyMGZvcmFnaW5nfGVufDB8fHx8MTY2ODYyNDY2MA&ixlib=rb-4.0.3&w=1100',
+  text2:
+    'The highest status people in human history are those that asked for nothing and gave everything',
+  image_src3:
+    'https://images.unsplash.com/photo-1669101283561-642d16d924ba?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fGxhYiUyMHxlbnwwfHx8fDE2ODIxNzgxMjI&ixlib=rb-4.0.3&w=1100',
+  image_alt3: 'image',
+  image_src4: '/playground_assets/cordyceps_unsaturated-bg-1100w.png',
+  image_alt4: 'image',
+  Quote:
+    "We're always constantly testing the potency as well as the taste without compromising the benefits",
+  Quoted: '-Jordan Gros',
+  image_src5:
+    'https://images.unsplash.com/photo-1625286535466-68a6d71e4568?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGxpb25zJTIwbWFuZXxlbnwwfHx8fDE2ODIxNzgxNjI&ixlib=rb-4.0.3&w=1000',
+  image_alt5: 'image',
+  text5:
+    'Cordyceps is known for providing increase performance in athletic abilities',
+  text6:
+    "Lion's Mane mushrooms, also called Hericium Erinaceus, are prized for their nootropic properties. Our dual extract lion's mane tinctures offer cognitive support, immune support, anti-inflammatory and gut health benefits.",
+  text7: '',
+  text8: '',
+  text9: '',
+  text10: '',
 }
 
 MeetMerkaba.propTypes = {
-  image_src: PropTypes.string,
-  text: PropTypes.string,
   rootClassName: PropTypes.string,
-  image_alt1: PropTypes.string,
-  image_src2: PropTypes.string,
-  image_alt2: PropTypes.string,
-  heading: PropTypes.string,
-  image_alt: PropTypes.string,
-  image_src1: PropTypes.string,
+  text1: PropTypes.string,
+  text2: PropTypes.string,
+  image_src3: PropTypes.string,
+  image_alt3: PropTypes.string,
+  image_src4: PropTypes.string,
+  image_alt4: PropTypes.string,
+  Quote: PropTypes.string,
+  Quoted: PropTypes.string,
+  image_src5: PropTypes.string,
+  image_alt5: PropTypes.string,
+  text5: PropTypes.string,
+  text6: PropTypes.string,
+  text7: PropTypes.string,
+  text8: PropTypes.string,
+  text9: PropTypes.string,
+  text10: PropTypes.string,
 }
 
 export default MeetMerkaba

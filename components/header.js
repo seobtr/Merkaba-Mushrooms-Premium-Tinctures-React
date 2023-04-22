@@ -9,7 +9,10 @@ import PrimaryPinkButton1 from './primary-pink-button1'
 const Header = (props) => {
   return (
     <>
-      <div data-role="Header" className="header-header">
+      <div
+        data-role="Header"
+        className={`header-header ${props.rootClassName} `}
+      >
         <div className="header-container">
           <header data-thq="thq-navbar" className="header-navbar-interactive">
             <div className="header-container1">
@@ -44,8 +47,8 @@ const Header = (props) => {
                 className="header-link1"
               >
                 <PrimaryPinkButton2
-                  rootClassName="primary-pink-button2-root-class-name"
                   button="SHOP"
+                  rootClassName="primary-pink-button2-root-class-name"
                   className="header-component"
                 ></PrimaryPinkButton2>
               </a>
@@ -98,8 +101,8 @@ const Header = (props) => {
                   className="header-link2"
                 >
                   <PrimaryPinkButton2
-                    rootClassName="primary-pink-button2-root-class-name1"
                     button="Shop"
+                    rootClassName="primary-pink-button2-root-class-name1"
                     className="header-component1"
                   ></PrimaryPinkButton2>
                 </a>
@@ -647,6 +650,7 @@ const Header = (props) => {
             width: 16px;
             height: 16px;
           }
+
           @media (max-width: 991px) {
             .header-navbar-interactive {
               max-width: 960px;
@@ -732,13 +736,15 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
-  Brand: 'Merkaba Mushrooms',
   Brand_2: 'Merkaba Mushrooms',
+  Brand: 'Merkaba Mushrooms',
+  rootClassName: '',
 }
 
 Header.propTypes = {
-  Brand: PropTypes.string,
   Brand_2: PropTypes.string,
+  Brand: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default Header

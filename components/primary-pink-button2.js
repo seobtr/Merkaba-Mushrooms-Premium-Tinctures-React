@@ -41,13 +41,13 @@ const PrimaryPinkButton2 = (props) => {
 }
 
 PrimaryPinkButton2.defaultProps = {
-  button: 'Button',
   rootClassName: '',
+  button: 'Button',
 }
 
 PrimaryPinkButton2.propTypes = {
-  button: PropTypes.string,
   rootClassName: PropTypes.string,
+  button: PropTypes.string,
 }
 
 export default PrimaryPinkButton2
