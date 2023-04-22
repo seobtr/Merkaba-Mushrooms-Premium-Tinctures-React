@@ -173,6 +173,7 @@ const Hero = (props) => {
               top: 0px;
               bottom: 0px;
               margin: auto;
+              z-index: 100;
             }
             .hero-image1 {
               z-index: 100;

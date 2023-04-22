@@ -25,6 +25,7 @@
   --dl-size-size-halfunit: 0.5rem;
   --dl-color-secondary-200: #8392abff;
   --dl-color-secondary-600: #252f40ff;
+  --dl-color-secondary-700: #20273fff;
   --dl-color-turquoise-100: #d5fafcff;
   --dl-color-turquoise-800: #75e3eaff;
   --dl-radius-radius-round: 50%;
@@ -146,6 +147,14 @@
   line-height: 1.4;
   letter-spacing: -0.025rem;
   text-transform: uppercase;
+}
+.HeadingThree {
+  font-size: 1.25rem;
+  font-family: Open Sans;
+  font-weight: 600;
+  line-height: 1.375;
+  text-transform: none;
+  text-decoration: none;
 }
 .Headline6 {
   font-size: 20px;

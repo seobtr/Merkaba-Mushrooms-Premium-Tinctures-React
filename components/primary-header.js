@@ -29,13 +29,15 @@ const PrimaryHeader = (props) => {
                   <br></br>
                 </a>
               </Link>
-              <span className="primary-header-text3 Large">Coming Soon</span>
-              <span className="primary-header-text4 Large">Learn</span>
+              <Link href="/home-2">
+                <a className="primary-header-link1 Large">Coming Soon</a>
+              </Link>
+              <span className="primary-header-text3 Large">Learn</span>
               <a
                 href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                className="primary-header-link1"
+                className="primary-header-link2"
               >
-                <span className="Large primary-header-text5">Shop</span>
+                <span className="Large primary-header-text4">Shop</span>
                 <br></br>
               </a>
             </div>
@@ -43,7 +45,7 @@ const PrimaryHeader = (props) => {
               <div className="primary-header-container3">
                 <a
                   href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                  className="primary-header-link2"
+                  className="primary-header-link3"
                 >
                   <PrimaryPinkButton2
                     button="buy now"
@@ -70,7 +72,7 @@ const PrimaryHeader = (props) => {
                 src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
                 className="primary-header-image1"
               />
-              <span className="primary-header-text7 Large">
+              <span className="primary-header-text6 Large">
                 Merkaba Mushrooms
               </span>
             </div>
@@ -86,18 +88,18 @@ const PrimaryHeader = (props) => {
           <div className="primary-header-mid">
             <div className="primary-header-menu1">
               <Link href="/">
-                <a className="primary-header-link3 Large">Home</a>
+                <a className="primary-header-link4 Large">Home</a>
               </Link>
               <Link href="/about">
-                <a className="primary-header-link4">Meet Merkaba</a>
+                <a className="primary-header-link5">Meet Merkaba</a>
               </Link>
-              <span className="primary-header-text8 Large">Coming Soon</span>
+              <span className="primary-header-text7 Large">Coming Soon</span>
             </div>
           </div>
           <div className="primary-header-bot">
             <a
               href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-              className="primary-header-link5"
+              className="primary-header-link6"
             >
               <PrimaryPinkButton2
                 button="Shop"
@@ -195,28 +197,6 @@ const PrimaryHeader = (props) => {
           .primary-header-text1:hover {
             color: var(--dl-color-gray-500);
           }
-          .primary-header-text3 {
-            margin-top: var(--dl-space-space-halfunit);
-            transition: 0.3s;
-            margin-left: var(--dl-space-space-unit);
-            margin-right: var(--dl-space-space-unit);
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-decoration: none;
-          }
-          .primary-header-text3:hover {
-            color: var(--dl-color-gray-500);
-          }
-          .primary-header-text4 {
-            margin-top: var(--dl-space-space-halfunit);
-            transition: 0.3s;
-            margin-left: var(--dl-space-space-unit);
-            margin-right: var(--dl-space-space-unit);
-            margin-bottom: var(--dl-space-space-halfunit);
-            text-decoration: none;
-          }
-          .primary-header-text4:hover {
-            color: var(--dl-color-gray-500);
-          }
           .primary-header-link1 {
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
@@ -228,7 +208,29 @@ const PrimaryHeader = (props) => {
           .primary-header-link1:hover {
             color: var(--dl-color-gray-500);
           }
-          .primary-header-text5:hover {
+          .primary-header-text3 {
+            margin-top: var(--dl-space-space-halfunit);
+            transition: 0.3s;
+            margin-left: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
+          .primary-header-text3:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .primary-header-link2 {
+            margin-top: var(--dl-space-space-halfunit);
+            transition: 0.3s;
+            margin-left: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
+          .primary-header-link2:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .primary-header-text4:hover {
             color: var(--dl-color-gray-500);
           }
           .primary-header-container2 {
@@ -243,7 +245,7 @@ const PrimaryHeader = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .primary-header-link2 {
+          .primary-header-link3 {
             display: contents;
           }
           .primary-header-component {
@@ -294,7 +296,7 @@ const PrimaryHeader = (props) => {
             width: auto;
             object-fit: contain;
           }
-          .primary-header-text7 {
+          .primary-header-text6 {
             font-weight: 600;
             text-decoration: none;
           }
@@ -324,15 +326,15 @@ const PrimaryHeader = (props) => {
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .primary-header-link3 {
+          .primary-header-link4 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .primary-header-link3:hover {
+          .primary-header-link4:hover {
             color: var(--dl-color-gray-500);
           }
-          .primary-header-link4 {
+          .primary-header-link5 {
             font-size: 0.875rem;
             transition: 0.3s;
             font-family: Open Sans;
@@ -342,11 +344,11 @@ const PrimaryHeader = (props) => {
             text-transform: none;
             text-decoration: none;
           }
-          .primary-header-text8 {
+          .primary-header-text7 {
             transition: 0.3s;
             text-decoration: none;
           }
-          .primary-header-text8:hover {
+          .primary-header-text7:hover {
             color: var(--dl-color-gray-500);
           }
           .primary-header-bot {
@@ -355,7 +357,7 @@ const PrimaryHeader = (props) => {
             margin-top: auto;
             flex-direction: column;
           }
-          .primary-header-link5 {
+          .primary-header-link6 {
             display: contents;
           }
           .primary-header-component1 {
@@ -396,7 +398,7 @@ const PrimaryHeader = (props) => {
               width: 64px;
               height: 52px;
             }
-            .primary-header-text7 {
+            .primary-header-text6 {
               text-align: center;
             }
             .primary-header-icon2 {

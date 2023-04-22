@@ -2,21 +2,21 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-const OutlineGrayButton1 = (props) => {
+const OutlineGrayButton2 = (props) => {
   return (
     <>
-      <div className="outline-gray-button1-container">
-        <button className="outline-gray-button1-button ButtonSmall button">
+      <div className="outline-gray-button2-container">
+        <button className="outline-gray-button2-button button ButtonSmall">
           {props.button}
         </button>
       </div>
       <style jsx>
         {`
-          .outline-gray-button1-container {
+          .outline-gray-button2-container {
             display: flex;
             position: relative;
           }
-          .outline-gray-button1-button {
+          .outline-gray-button2-button {
             color: var(--dl-color-secondary-200);
             outlinr: none;
             transition: all 0.15s ease-in;
@@ -27,7 +27,7 @@ const OutlineGrayButton1 = (props) => {
             padding-right: var(--dl-space-space-unitandahalfunit);
             padding-bottom: var(--dl-space-space-triplequarterunit);
           }
-          .outline-gray-button1-button:hover {
+          .outline-gray-button2-button:hover {
             cursor: pointer;
             transform: scale(1.02);
           }
@@ -37,12 +37,12 @@ const OutlineGrayButton1 = (props) => {
   )
 }
 
-OutlineGrayButton1.defaultProps = {
+OutlineGrayButton2.defaultProps = {
   button: 'Button',
 }
 
-OutlineGrayButton1.propTypes = {
+OutlineGrayButton2.propTypes = {
   button: PropTypes.string,
 }
 
-export default OutlineGrayButton1
+export default OutlineGrayButton2

@@ -1,68 +1,22 @@
 import React from 'react'
-import Link from 'next/link'
-
-import DangerousHTML from 'dangerous-html/react'
-import PropTypes from 'prop-types'
 
 import PrimaryPinkButton1 from './primary-pink-button1'
 
 const Header = (props) => {
   return (
     <>
-      <header className={`header-header ${props.rootClassName} `}>
+      <div data-role="Header" className="header-header">
         <nav className="header-nav">
           <div className="header-container">
-            <Link href="/">
-              <a className="header-link">
-                <img
-                  alt={props.image_alt}
-                  src={props.image_src}
-                  className="header-image"
-                />
-              </a>
-            </Link>
-            <span className="header-text Large">Merkaba Mushrooms</span>
-          </div>
-          <div className="header-container1">
+            <span className="header-text Large">Soft UI Design System</span>
             <div className="header-menu">
-              <a
-                href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="header-link1"
-              >
-                Shop
-              </a>
-              <span className="header-text1">Blog</span>
-              <Link href="/shop">
-                <a className="header-link2">About</a>
-              </Link>
-              <div>
-                <DangerousHTML
-                  html={`<div class="ec-cart-widget"></div>
-<div>
-    <script data-cfasync="false" type="text/javascript"
-        src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-11-13" charset="utf-8"></script>
-    <script type="text/javascript">
-        Ecwid.init();
-    </script>
-</div>`}
-                ></DangerousHTML>
-              </div>
+              <span className="header-text1 Large">Home</span>
+              <span className="header-text2 Large">Profile</span>
+              <span className="header-text3 Large">Coming Soon</span>
             </div>
-            <div className="header-container2">
-              <div className="header-container3">
-                <a
-                  href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  className="header-link3"
-                >
-                  <PrimaryPinkButton1
-                    button="buy now"
-                    className="header-component"
-                  ></PrimaryPinkButton1>
-                </a>
+            <div className="header-container1">
+              <div className="header-container2">
+                <PrimaryPinkButton1 button="buy now"></PrimaryPinkButton1>
               </div>
               <div data-role="BurgerMenu" className="header-burger-menu">
                 <svg viewBox="0 0 1024 1024" className="header-icon">
@@ -74,15 +28,7 @@ const Header = (props) => {
         </nav>
         <div data-role="MobileMenu" className="header-mobile-menu">
           <div className="header-top">
-            <img
-              alt={props.image_alt1}
-              src={props.image_src1}
-              className="header-image1"
-            />
-            <span className="header-text2">
-              <span>Merkaba Mushrooms</span>
-              <br></br>
-            </span>
+            <span className="header-text4 Large">Soft UI Design System</span>
             <div data-role="CloseMobileMenu" className="header-close-menu">
               <svg viewBox="0 0 1024 1024" className="header-icon2">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -91,29 +37,31 @@ const Header = (props) => {
           </div>
           <div className="header-mid">
             <div className="header-menu1">
-              <span className="header-text5 Large">Shop</span>
-              <span className="header-text6 Large">Blog</span>
-              <span className="header-text7 Large">Blog</span>
+              <span className="header-text5 Large">Home</span>
+              <span className="header-text6 Large">Profile</span>
+              <span className="header-text7 Large">Coming Soon</span>
             </div>
           </div>
           <div className="header-bot">
             <PrimaryPinkButton1 button="buy now"></PrimaryPinkButton1>
           </div>
         </div>
-      </header>
+      </div>
       <style jsx>
         {`
           .header-header {
-            flex: 0 0 auto;
+            top: 0px;
+            left: auto;
+            right: auto;
             width: 100%;
+            bottom: auto;
             display: flex;
-            padding: var(--dl-space-space-doubleunit);
-            z-index: 100;
-            position: relative;
-            max-width: 1110px;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
+            z-index: 3;
+            position: fixed;
+            max-width: 1320px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            justify-content: center;
           }
           .header-nav {
             flex: 0 0 auto;
@@ -137,35 +85,19 @@ const Header = (props) => {
             background-color: hsla(0, 0%, 100%, 0.8) !important;
           }
           .header-container {
-            flex: 0 0 auto;
-            width: auto;
-            display: flex;
-            align-self: center;
-            align-items: flex-start;
-          }
-          .header-link {
-            display: contents;
-          }
-          .header-image {
-            width: auto;
-            height: 41px;
-            object-fit: cover;
-            text-decoration: none;
-          }
-          .header-text {
-            align-self: center;
-            font-weight: 600;
-            margin-left: var(--dl-space-space-unit);
-            margin-right: var(--dl-space-space-unit);
-            text-decoration: none;
-          }
-          .header-container1 {
             color: var(--dl-color-gray-black);
-            width: auto;
+            width: 100%;
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
+          }
+          .header-text {
+            color: var(--dl-color-secondary-700);
+            font-weight: 600;
+            margin-left: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            text-decoration: none;
           }
           .header-menu {
             flex: 0 0 auto;
@@ -173,62 +105,50 @@ const Header = (props) => {
             align-items: flex-start;
             flex-direction: row;
           }
-          .header-link1 {
-            font-size: 0.875rem;
-            margin-top: var(--dl-space-space-halfunit);
-            transition: 0.3s;
-            font-family: Open Sans;
-            font-weight: 400;
-            margin-left: var(--dl-space-space-unit);
-            margin-right: var(--dl-space-space-unit);
-            margin-bottom: var(--dl-space-space-halfunit);
-            letter-spacing: -0.025rem;
-            text-transform: none;
-            text-decoration: none;
-          }
           .header-text1 {
-            font-size: 0.875rem;
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
-            font-family: Open Sans;
-            font-weight: 400;
             margin-left: var(--dl-space-space-unit);
             margin-right: var(--dl-space-space-unit);
             margin-bottom: var(--dl-space-space-halfunit);
-            letter-spacing: -0.025rem;
-            text-transform: none;
             text-decoration: none;
           }
-          .header-link2 {
-            font-size: 0.875rem;
+          .header-text1:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .header-text2 {
             margin-top: var(--dl-space-space-halfunit);
             transition: 0.3s;
-            font-family: Open Sans;
-            font-weight: 400;
             margin-left: var(--dl-space-space-unit);
             margin-right: var(--dl-space-space-unit);
             margin-bottom: var(--dl-space-space-halfunit);
-            letter-spacing: -0.025rem;
-            text-transform: none;
             text-decoration: none;
+          }
+          .header-text2:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .header-text3 {
+            margin-top: var(--dl-space-space-halfunit);
+            transition: 0.3s;
+            margin-left: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+            margin-bottom: var(--dl-space-space-halfunit);
+            text-decoration: none;
+          }
+          .header-text3:hover {
+            color: var(--dl-color-gray-500);
+          }
+          .header-container1 {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
           }
           .header-container2 {
             display: flex;
             align-items: center;
             flex-direction: row;
             justify-content: space-between;
-          }
-          .header-container3 {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .header-link3 {
-            display: contents;
-          }
-          .header-component {
-            text-decoration: none;
           }
           .header-burger-menu {
             display: none;
@@ -264,11 +184,8 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-image1 {
-            width: 100px;
-            object-fit: cover;
-          }
-          .header-text2 {
+          .header-text4 {
+            color: var(--dl-color-secondary-700);
             font-weight: 600;
             text-decoration: none;
           }
@@ -328,21 +245,11 @@ const Header = (props) => {
             flex-direction: column;
           }
           @media (max-width: 991px) {
-            .header-header {
-              padding: var(--dl-space-space-halfunit);
-            }
             .header-nav {
               max-width: 960px;
-              margin-top: var(--dl-space-space-halfunit);
             }
-            .header-link1 {
-              font-family: Montserrat;
-            }
-            .header-text1 {
-              font-family: Montserrat;
-            }
-            .header-link2 {
-              font-family: Montserrat;
+            .header-menu {
+              display: none;
             }
           }
           @media (max-width: 767px) {
@@ -351,63 +258,14 @@ const Header = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .header-header {
-              padding-top: var(--dl-space-space-unit);
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-unit);
-            }
-            .header-container {
-              width: 177px;
-              height: 0px;
-            }
-            .header-image {
-              align-self: center;
-            }
-            .header-link2 {
-              font-size: 0.875rem;
-              font-family: Montserrat;
-              font-weight: 400;
-              letter-spacing: -0.025rem;
-              text-transform: none;
-              text-decoration: none;
-            }
-            .header-container3 {
+            .header-container2 {
               display: none;
-            }
-            .header-mobile-menu {
-              display: none;
-            }
-            .header-image1 {
-              width: auto;
-              height: auto;
-              min-height: auto;
-            }
-            .header-text2 {
-              font-weight: 600;
-              text-decoration: none;
             }
           }
         `}
       </style>
     </>
   )
-}
-
-Header.defaultProps = {
-  image_alt1: 'image',
-  image_src: '/playground_assets/asset%2011-200w.png',
-  image_src1: '/playground_assets/asset%2011-200w.png',
-  rootClassName: '',
-  image_alt: 'image',
-}
-
-Header.propTypes = {
-  image_alt1: PropTypes.string,
-  image_src: PropTypes.string,
-  image_src1: PropTypes.string,
-  rootClassName: PropTypes.string,
-  image_alt: PropTypes.string,
 }
 
 export default Header

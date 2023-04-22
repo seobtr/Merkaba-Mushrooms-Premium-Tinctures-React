@@ -6,7 +6,7 @@ const PrimaryPinkButton1 = (props) => {
   return (
     <>
       <div className="primary-pink-button1-container">
-        <button className="primary-pink-button1-button button ButtonSmall">
+        <button className="primary-pink-button1-button ButtonSmall button">
           {props.button}
         </button>
       </div>

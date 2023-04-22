@@ -2,34 +2,33 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-const OutlineGrayButton1 = (props) => {
+const PrimaryPinkButton4 = (props) => {
   return (
     <>
-      <div className="outline-gray-button1-container">
-        <button className="outline-gray-button1-button ButtonSmall button">
+      <div className="primary-pink-button4-container">
+        <button className="primary-pink-button4-button ButtonSmall">
           {props.button}
         </button>
       </div>
       <style jsx>
         {`
-          .outline-gray-button1-container {
+          .primary-pink-button4-container {
             display: flex;
             position: relative;
           }
-          .outline-gray-button1-button {
-            color: var(--dl-color-secondary-200);
-            outlinr: none;
+          .primary-pink-button4-button {
+            color: var(--dl-color-gray-white);
+            outline: none;
+            background: linear-gradient(310deg, #7928ca, #ff0080);
+            box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%),
+              0 2px 4px -1px rgb(0 0 0 / 7%);
             transition: all 0.15s ease-in;
             padding-top: var(--dl-space-space-triplequarterunit);
-            border-color: var(--dl-color-secondary-200);
+            border-width: 0px;
             padding-left: var(--dl-space-space-unitandahalfunit);
             border-radius: 1.875rem;
             padding-right: var(--dl-space-space-unitandahalfunit);
             padding-bottom: var(--dl-space-space-triplequarterunit);
-          }
-          .outline-gray-button1-button:hover {
-            cursor: pointer;
-            transform: scale(1.02);
           }
         `}
       </style>
@@ -37,12 +36,12 @@ const OutlineGrayButton1 = (props) => {
   )
 }
 
-OutlineGrayButton1.defaultProps = {
+PrimaryPinkButton4.defaultProps = {
   button: 'Button',
 }
 
-OutlineGrayButton1.propTypes = {
+PrimaryPinkButton4.propTypes = {
   button: PropTypes.string,
 }
 
-export default OutlineGrayButton1
+export default PrimaryPinkButton4
