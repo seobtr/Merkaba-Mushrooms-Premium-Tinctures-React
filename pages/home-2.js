@@ -22,8 +22,8 @@ const Home2 = (props) => {
           <div className="home2-container01">
             <div className="home2-card">
               <img
-                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/4ad00d57-e757-4c8f-bc48-4c10208059e9/f5a4f564-d6a1-479d-b233-4e20a5bc208d?org_if_sml=120110"
                 alt="image"
+                src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/4ad00d57-e757-4c8f-bc48-4c10208059e9/f5a4f564-d6a1-479d-b233-4e20a5bc208d?org_if_sml=120110"
                 className="home2-image"
               />
               <div className="home2-container02">
@@ -115,7 +115,7 @@ const Home2 = (props) => {
               <div className="home2-container08">
                 <img
                   alt="image"
-                  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/laptop.jpg"
+                  src="https://images.unsplash.com/photo-1669101283561-642d16d924ba?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fGxhYiUyMHxlbnwwfHx8fDE2ODIxNzgxMjI&amp;ixlib=rb-4.0.3&amp;w=1100"
                   className="home2-image2"
                 />
                 <span className="home2-text13 Small">
@@ -130,7 +130,7 @@ const Home2 = (props) => {
                 <div className="home2-container09">
                   <img
                     alt="image"
-                    src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/coding.jpg"
+                    src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fGxpb25zJTIwbWFuZXxlbnwwfHx8fDE2ODIxNzgxNjI&amp;ixlib=rb-4.0.3&amp;w=1000"
                     className="home2-image3"
                   />
                 </div>

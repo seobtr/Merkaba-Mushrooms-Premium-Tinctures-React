@@ -77,7 +77,7 @@ class CustomDocument extends Document {
           <div
             dangerouslySetInnerHTML={{
               __html:
-                '<div class="ec-cart-widget"></div>\n<div>\n<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-11-10" charset="utf-8"></script>\n<script type="text/javascript">Ecwid.init();</script>\n</div>',
+                '<div class="ec-cart-widget"></div>\n<div>\n<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?78742521&data_platform=code&data_date=2022-11-10" charset="utf-8"></script>\n<script type="text/javascript">Ecwid.init();</script>\n</div> \n    <script data-section-id=\'navbar\' src=\'https://unpkg.com/@teleporthq/teleport-custom-scripts\'></script>',
             }}
           ></div>
         </body>
