@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Header2 from '../components/header2'
+import Header from '../components/header'
 
 const About = (props) => {
   return (
@@ -14,7 +14,7 @@ const About = (props) => {
             content="About - Merkaba Mushrooms E-Commerce"
           />
         </Head>
-        <Header2 rootClassName="header2-root-class-name1"></Header2>
+        <Header rootClassName="header-root-class-name1"></Header>
       </div>
       <style jsx>
         {`

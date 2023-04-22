@@ -10,20 +10,23 @@ const MeetMerkaba = (props) => {
       <section className={`meet-merkaba-container ${props.rootClassName} `}>
         <section className="meet-merkaba-features">
           <FeatureCard1
-            text="Choose the best design system for your next product."
             title="Components"
             image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            benefits1="Increase Stamina"
+            featuredTitle="Cordyceps"
+            rootClassName="feature-card1-root-class-name"
+            benefits2="Respiratory Enhancement"
           ></FeatureCard1>
-          <FeatureCard1 image_src="https://play.teleporthq.io/static/svg/default-img.svg"></FeatureCard1>
           <FeatureCard1
-            text="Make your code easier to maintain using variables."
-            title="Less Code"
             image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            rootClassName="feature-card1-root-class-name1"
+            featuredTitle="Lion's Mane"
+            benefits1="Enhance Brain Function"
           ></FeatureCard1>
           <FeatureCard1
-            text="This design system is fully supported on any device."
             title="Fully Responsive"
             image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            rootClassName="feature-card1-root-class-name2"
           ></FeatureCard1>
           <section className="meet-merkaba-container1">
             <div className="meet-merkaba-container2">
@@ -130,6 +133,7 @@ const MeetMerkaba = (props) => {
             flex-direction: column;
           }
           .meet-merkaba-text {
+            text-align: center;
             margin-bottom: var(--dl-space-space-halfunit);
             background-image: linear-gradient(310deg, #7928ca, #ff0080);
             -webkit-background-clip: text;

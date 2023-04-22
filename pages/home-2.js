@@ -84,20 +84,20 @@ const Home2 = (props) => {
         </div>
         <section className="home2-features">
           <FeatureCard1
-            text="Choose the best design system for your next product."
             title="Components"
             image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            benefits1="Choose the best design system for your next product."
           ></FeatureCard1>
           <FeatureCard1 image_src="https://play.teleporthq.io/static/svg/default-img.svg"></FeatureCard1>
           <FeatureCard1
-            text="Make your code easier to maintain using variables."
             title="Less Code"
             image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            benefits1="Make your code easier to maintain using variables."
           ></FeatureCard1>
           <FeatureCard1
-            text="This design system is fully supported on any device."
             title="Fully Responsive"
             image_src="https://play.teleporthq.io/static/svg/default-img.svg"
+            benefits1="This design system is fully supported on any device."
           ></FeatureCard1>
           <section className="home2-container05">
             <div className="home2-container06">

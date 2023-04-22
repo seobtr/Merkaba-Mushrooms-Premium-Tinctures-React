@@ -17,7 +17,7 @@ const Shop = (props) => {
             content="Shop - Merkaba Mushrooms E-Commerce"
           />
         </Head>
-        <Header2 rootClassName="header2-root-class-name2"></Header2>
+        <Header2 rootClassName="header2-root-class-name"></Header2>
         <div className="shop-container1">
           <section className="shop-container2">
             <div id="my-store-78742521">

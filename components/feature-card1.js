@@ -5,14 +5,18 @@ import PropTypes from 'prop-types'
 const FeatureCard1 = (props) => {
   return (
     <>
-      <div className="feature-card1-container">
+      <div className={`feature-card1-container ${props.rootClassName} `}>
         <img
           alt={props.image_alt}
           src={props.image_src}
           className="feature-card1-image"
         />
-        <h5 className="feature-card1-text HeadingThree">{props.new_prop}</h5>
-        <span className="feature-card1-text1">{props.text}</span>
+        <h5 className="feature-card1-text HeadingThree">
+          {props.featuredTitle}
+        </h5>
+        <span className="feature-card1-text1">{props.benefits1}</span>
+        <span className="feature-card1-text2">{props.benefits2}</span>
+        <span className="feature-card1-text3">{props.benefit3}</span>
       </div>
       <style jsx>
         {`
@@ -41,6 +45,23 @@ const FeatureCard1 = (props) => {
             text-align: center;
             margin-bottom: var(--dl-space-space-unit);
           }
+          .feature-card1-text2 {
+            text-align: center;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .feature-card1-text3 {
+            text-align: center;
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .feature-card1-root-class-name {
+            width: 33%;
+          }
+          .feature-card1-root-class-name1 {
+            width: 33%;
+          }
+          .feature-card1-root-class-name2 {
+            width: 33%;
+          }
           @media (max-width: 767px) {
             .feature-card1-container {
               width: 50%;
@@ -58,17 +79,23 @@ const FeatureCard1 = (props) => {
 }
 
 FeatureCard1.defaultProps = {
-  text: 'Get the latest design ideas and turn it into reality.',
-  new_prop: 'Design',
+  benefits1: 'Add benefits 1',
+  featuredTitle: 'Add Title',
   image_alt: 'image',
   image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  benefits2: 'Add benefits 2',
+  benefit3: 'Add benefits 3',
+  rootClassName: '',
 }
 
 FeatureCard1.propTypes = {
-  text: PropTypes.string,
-  new_prop: PropTypes.string,
+  benefits1: PropTypes.string,
+  featuredTitle: PropTypes.string,
   image_alt: PropTypes.string,
   image_src: PropTypes.string,
+  benefits2: PropTypes.string,
+  benefit3: PropTypes.string,
+  rootClassName: PropTypes.string,
 }
 
 export default FeatureCard1
