@@ -314,6 +314,9 @@ const Footer = (props) => {
             fill: var(--dl-color-orange-default);
           }
 
+          .footer-root-class-name1 {
+            height: auto;
+          }
           @media (max-width: 991px) {
             .footer-root-class-name1 {
               height: auto;
