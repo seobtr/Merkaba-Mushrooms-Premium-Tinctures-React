@@ -68,9 +68,7 @@ const Home = (props) => {
           />
         </div>
         <MeetMerkaba rootClassName="meet-merkaba-root-class-name"></MeetMerkaba>
-        <div className="home-testimonial"></div>
-        <div className="home-cta"></div>
-        <Footer></Footer>
+        <Footer rootClassName="footer-root-class-name1"></Footer>
       </div>
       <style jsx>
         {`
@@ -217,25 +215,6 @@ const Home = (props) => {
             opacity: 0.4;
             position: absolute;
             object-fit: cover;
-          }
-          .home-testimonial {
-            width: 100%;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            display: flex;
-            background-size: cover;
-            justify-content: center;
-            background-image: url('https://images.unsplash.com/photo-1503149779833-1de50ebe5f8a?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxzd2lzcyUyMGNoZWVzZSUyMHBsYW50fGVufDB8fHx8MTYyNTg0MTU0Mg&ixlib=rb-1.2.1&h=1200');
-            background-position: center;
-          }
-          .home-cta {
-            width: auto;
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            display: flex;
-            overflow: hidden;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #ffffff;
           }
           @media (max-width: 991px) {
             .home-hero {

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 
@@ -7,11 +8,15 @@ const Footer = (props) => {
     <>
       <div className={`footer-footer ${props.rootClassName} `}>
         <footer className="footer-container">
-          <img
-            alt={props.image_alt}
-            src={props.image_src}
-            className="footer-image"
-          />
+          <Link href="/">
+            <a className="footer-link">
+              <img
+                alt={props.image_alt}
+                src={props.image_src}
+                className="footer-image"
+              />
+            </a>
+          </Link>
           <div className="footer-container1">
             <span className="footer-text">{props.text}</span>
             <span className="footer-text1">{props.text1}</span>
@@ -25,13 +30,13 @@ const Footer = (props) => {
             <span className="footer-text6">{props.Disclaimer}</span>
           </div>
           <div className="footer-container3">
-            <span className="footer-text7 Body2">{props.text6}</span>
+            <span className="footer-text7 Body2">{props.copyright}</span>
             <div className="footer-container4">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="footer-link"
+                className="footer-link1"
               >
                 <div className="footer-container5">
                   <svg
@@ -46,7 +51,7 @@ const Footer = (props) => {
                 href="https://dribbble.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="footer-link1"
+                className="footer-link2"
               >
                 <div className="footer-container6">
                   <svg
@@ -61,7 +66,7 @@ const Footer = (props) => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="footer-link2"
+                className="footer-link3"
               >
                 <div className="footer-container7">
                   <svg
@@ -76,7 +81,7 @@ const Footer = (props) => {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="footer-link3"
+                className="footer-link4"
               >
                 <div className="footer-container8">
                   <svg viewBox="0 0 1024 1024" className="footer-icon6">
@@ -116,10 +121,14 @@ const Footer = (props) => {
             justify-content: space-between;
             background-color: #ffffff;
           }
+          .footer-link {
+            display: contents;
+          }
           .footer-image {
             width: 92px;
             height: 105px;
             object-fit: cover;
+            text-decoration: none;
           }
           .footer-container1 {
             display: flex;
@@ -221,7 +230,7 @@ const Footer = (props) => {
             align-items: flex-start;
             flex-direction: row;
           }
-          .footer-link {
+          .footer-link1 {
             display: contents;
           }
           .footer-container5 {
@@ -241,7 +250,7 @@ const Footer = (props) => {
           .footer-icon:hover {
             fill: var(--dl-color-purple-default);
           }
-          .footer-link1 {
+          .footer-link2 {
             display: contents;
           }
           .footer-container6 {
@@ -262,7 +271,7 @@ const Footer = (props) => {
           .footer-icon2:hover {
             fill: var(--dl-color-pink-default);
           }
-          .footer-link2 {
+          .footer-link3 {
             display: contents;
           }
           .footer-container7 {
@@ -283,7 +292,7 @@ const Footer = (props) => {
           .footer-icon4:hover {
             fill: var(--dl-color-turquoise-default);
           }
-          .footer-link3 {
+          .footer-link4 {
             display: contents;
           }
           .footer-container8 {
@@ -305,6 +314,11 @@ const Footer = (props) => {
             fill: var(--dl-color-orange-default);
           }
 
+          @media (max-width: 991px) {
+            .footer-root-class-name1 {
+              height: auto;
+            }
+          }
           @media (max-width: 767px) {
             .footer-container1 {
               flex-wrap: wrap;
@@ -334,7 +348,7 @@ Footer.defaultProps = {
   text5: 'Privacy Policy',
   image_src: '/playground_assets/merkaba_logo2-200w.png',
   rootClassName: '',
-  text6: '© 2022 Merkaba Mushrooms. All rights reserved',
+  copyright: '© 2023 Merkaba Mushrooms. All rights reserved',
   text: 'About',
   text2: 'Tinctures',
 }
@@ -348,7 +362,7 @@ Footer.propTypes = {
   text5: PropTypes.string,
   image_src: PropTypes.string,
   rootClassName: PropTypes.string,
-  text6: PropTypes.string,
+  copyright: PropTypes.string,
   text: PropTypes.string,
   text2: PropTypes.string,
 }
