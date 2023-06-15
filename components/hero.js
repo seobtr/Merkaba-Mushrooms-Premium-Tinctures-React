@@ -30,7 +30,7 @@ const Hero = (props) => {
         </div>
         <img
           alt={props.image_alt}
-          src="/playground_assets/cordyceps_unsaturated-bg-1500w.png"
+          src="/cordyceps_unsaturated-bg-1500w.png"
           className="hero-image"
         />
         <img
@@ -276,7 +276,7 @@ const Hero = (props) => {
 
 Hero.defaultProps = {
   image_src1:
-    '/playground_assets/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png',
+    '/merkaba%20mushrooms%20lions%20mane%20mushroom%20tincture-300w.png',
   image_alt1: 'image',
   heading: 'Merkaba Mushrooms',
   image_alt: 'image',

@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
-import DangerousHTML from 'dangerous-html/react'
+import Script from 'dangerous-html/react'
 
-import Header2 from '../components/header2'
+import Header from '../components/header'
 import Footer from '../components/footer'
 
 const Shop = (props) => {
@@ -17,11 +17,11 @@ const Shop = (props) => {
             content="Shop - Merkaba Mushrooms E-Commerce"
           />
         </Head>
-        <Header2 rootClassName="header2-root-class-name"></Header2>
+        <Header rootClassName="header-root-class-name4"></Header>
         <div className="shop-container1">
           <section className="shop-container2">
             <div id="my-store-78742521">
-              <DangerousHTML
+              <Script
                 id="my-store-78742521"
                 html={`<script
     data-cfasync="false"
@@ -39,26 +39,26 @@ xProductBrowser(
 );
 </script>
 `}
-              ></DangerousHTML>
+              ></Script>
             </div>
           </section>
         </div>
-        <Footer rootClassName="footer-root-class-name"></Footer>
+        <Footer rootClassName="footer-root-class-name4"></Footer>
       </div>
       <style jsx>
         {`
           .shop-container {
+            width: 100%;
             display: flex;
             overflow: auto;
-            max-width: 100%;
             min-height: 100vh;
             align-items: center;
             flex-direction: column;
-            justify-content: flex-start;
           }
           .shop-container1 {
             flex: 0 0 auto;
             display: flex;
+            margin-top: var(--dl-space-space-sixunits);
             align-items: center;
             flex-direction: column;
             justify-content: center;
@@ -70,20 +70,35 @@ xProductBrowser(
             align-items: flex-start;
             flex-direction: column;
           }
+          @media (max-width: 1200px) {
+            .shop-container1 {
+              margin-top: var(--dl-space-space-sixunits);
+            }
+          }
           @media (max-width: 991px) {
+            .shop-container1 {
+              margin-top: var(--dl-space-space-sixunits);
+            }
             .shop-container2 {
               width: 100%;
               max-width: 950px;
             }
           }
           @media (max-width: 767px) {
+            .shop-container1 {
+              margin-top: var(--dl-space-space-fiveunits);
+            }
             .shop-container2 {
               max-width: 720px;
             }
           }
           @media (max-width: 479px) {
+            .shop-container1 {
+              margin-top: var(--dl-space-space-fiveunits);
+            }
             .shop-container2 {
               max-width: 450px;
+              margin-top: var(--dl-space-space-oneandhalfunits);
             }
           }
         `}

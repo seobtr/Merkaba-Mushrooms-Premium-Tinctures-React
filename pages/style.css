@@ -14,7 +14,8 @@
   --dl-color-purple-100: #f1e4ffff;
   --dl-color-purple-800: #dec6f7ff;
   --dl-color-purple-900: #ac69f8ff;
-  --dl-space-space-unit: 1rem;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
   --dl-color-purple-1000: #6209c6ff;
   --dl-color-background-1: rgba(0, 0, 0, 1);
   --dl-color-background-3: rgba(100, 100, 100, 1);
@@ -33,24 +34,32 @@
   --dl-color-purple-default: #8c30f5ff;
   --dl-size-size-doubleunit: 2rem;
   --dl-size-size-tripleunit: 3rem;
-  --dl-space-space-halfunit: 0.5rem;
+  --dl-space-space-halfunit: 8px;
   --dl-space-space-sixunits: 6rem;
+  --dl-space-space-twounits: 32px;
   --dl-radius-radius-radius1: 1rem;
   --dl-radius-radius-radius2: 2px;
   --dl-radius-radius-radius4: 4px;
   --dl-radius-radius-radius6: 6px;
   --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-sixunits1: 96px;
   --dl-radius-radius-radius40: 40px;
   --dl-radius-radius-radius75: 0.75rem;
   --dl-space-space-doubleunit: 2rem;
+  --dl-space-space-threeunits: 48px;
   --dl-space-space-tripleunit: 3rem;
   --dl-color-turquoise-default: #2ec5ceff;
+  --dl-color-light_text-primary: rgba(0, 0, 0, 0.8700000047683716);
+  --dl-color-light_info-contrast: rgba(255, 255, 255, 1);
+  --dl-space-space-oneandhalfunits: 24px;
+  --dl-color-light_primary-contrast: rgba(255, 255, 255, 1);
   --dl-space-space-unitandahalfunit: 1.5rem;
   --dl-space-space-triplequarterunit: 0.75rem;
 }
 .teleport-show {
   display: flex !important;
-  transform: none !important;
 }
 .list {
   width: 100%;
@@ -93,6 +102,74 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
+.social {
+  width: 20px;
+  display: flex;
+  padding: 0px;
+  box-shadow: none;
+  align-items: center;
+  border-width: 0px;
+  border-radius: 0px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: transparent;
+}
+.button-clean {
+  border: none;
+  padding: 0px;
+  box-shadow: none;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  background-color: transparent;
+}
+.button-link {
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-size: 24px;
+  box-shadow: none;
+  font-style: normal;
+  align-items: center;
+  font-weight: 400;
+  line-height: 36px;
+  padding-top: var(--dl-space-space-threeunits);
+  border-color: rgba(255, 255, 255, 0.3);
+  border-width: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: transparent;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+.accordion {
+  color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  border-color: rgba(255, 255, 255, 0.2);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  border-bottom-width: 1px;
+}
+.accordion:hover {
+  color: white;
+  border-color: white;
+}
+.category-link {
+  color: var(--dl-color-gray-500);
+  font-weight: 700;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .Small {
   font-size: 0.875rem;
   font-family: Open Sans;
@@ -109,12 +186,26 @@
   text-transform: none;
   text-decoration: none;
 }
+.ComponentsButtonLarge {
+  font-size: 15px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
 .LargeLabel {
   font-size: 20px;
   font-family: Montserrat;
   font-weight: 600;
   text-transform: none;
   text-decoration: none;
+}
+.TypographyBody1 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
 }
 .Lead {
   font-size: 1.25rem;
@@ -131,11 +222,33 @@
   text-transform: none;
   text-decoration: none;
 }
+.h4-Mobile {
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.H1-Marketig_48 {
+  font-size: 86px;
+  font-family: Italiana;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: none;
+  text-decoration: none;
+}
 .Lead1 {
   font-size: 18px;
   font-family: Montserrat;
   font-weight: 400;
   line-height: 1.77;
+  text-transform: none;
+  text-decoration: none;
+}
+.H5-Mobile {
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
@@ -148,6 +261,13 @@
   letter-spacing: -0.025rem;
   text-transform: uppercase;
 }
+.H2-DesktopAlt {
+  font-size: 36px;
+  font-family: Italiana;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
 .HeadingThree {
   font-size: 1.25rem;
   font-family: Open Sans;
@@ -156,15 +276,24 @@
   text-transform: none;
   text-decoration: none;
 }
-.Headline6 {
-  font-size: 20px;
+.H1Marketing_48 {
+  font-size: 48px;
+  font-style: Regular;
+  font-family: Italiana;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: none;
+  text-decoration: none;
+}
+.H6-Desktop {
+  font-size: 18px;
   font-family: Montserrat;
   font-weight: 400;
   text-transform: none;
   text-decoration: none;
 }
-.Body1 {
-  font-size: 16px;
+.Body-Desktop {
+  font-size: 18px;
   font-family: Montserrat;
   font-weight: 400;
   line-height: 1.55;
@@ -179,24 +308,38 @@
   text-transform: none;
   text-decoration: none;
 }
-.Headline3 {
-  font-size: 31px;
+.H1-Mobile {
+  font-size: 32px;
   font-family: Montserrat;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
-.Headline2 {
-  font-size: 39px;
+.H3-Desktop {
+  font-size: 30px;
   font-family: Montserrat;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
-.Headline5 {
+.H3-Mobile {
+  font-size: 24px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.H2-Desktop {
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.H5-Desktop {
   font-size: 20px;
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: none;
   text-decoration: none;
 }
@@ -214,6 +357,16 @@
   text-transform: none;
   text-decoration: none;
 }
+.Headline {
+  font-size: 86px;
+  font-style: normal;
+  font-family: Italiana;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: -3px;
+  text-transform: none;
+  text-decoration: none;
+}
 .MediumLabel {
   font-size: 14px;
   font-family: Montserrat;
@@ -221,7 +374,49 @@
   text-transform: none;
   text-decoration: none;
 }
-.Headline1 {
+.H2-Mobile {
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.MarketingPagesDesktopMarketingLeadText-MarketingPage1 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.H6-Mobile {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.ComponentsButtonMedium {
+  font-size: 14px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.ComponentsButtonLarge2 {
+  font-size: 15px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.ComponentsButtonLarge3 {
+  font-size: 15px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500px;
+  font-stretch: normal;
+}
+.H1-Desktop {
   font-size: 48px;
   font-family: Italiana;
   font-weight: 800;
@@ -235,6 +430,27 @@
   letter-spacing: -0.025rem;
   text-transform: none;
   text-decoration: none;
+}
+.MarketingPagesDesktopMarketingLeadText-MarketingPage {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Montserrat;
+  font-weight: 400px;
+  font-stretch: normal;
+}
+.Body-Mobile {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+.ComponentsButtonLarge1 {
+  font-size: 15px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500px;
+  font-stretch: normal;
 }
 .BadgeLabel {
   font-size: 20px;
@@ -250,12 +466,19 @@
   text-transform: none;
   text-decoration: none;
 }
-.Headline4 {
-  font-size: 25px;
+.H4-Desktop {
+  font-size: 24px;
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: none;
   text-decoration: none;
+}
+.ComponentsButtonMedium1 {
+  font-size: 14px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500px;
+  font-stretch: normal;
 }
 .HeadingOne {
   font-size: 2.25rem;
@@ -265,6 +488,13 @@
   text-transform: none;
   text-decoration: none;
 }
+.TypographyBody11 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Roboto;
+  font-weight: 400px;
+  font-stretch: normal;
+}
 .Capitalised {
   font-size: 14px;
   font-family: Montserrat;
@@ -272,52 +502,17 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.OthersButtonsLarge {
-  font-size: 15px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 600px;
-  font-stretch: normal;
+
+
+@media(max-width: 767px) {
+  .button-link {
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
 }
-.ParagraphsCaptionDefault {
-  font-size: 12px;
-  font-style: normal;
-  font-family: Roboto;
-  font-weight: 400px;
-  font-stretch: normal;
-}
-.ParagraphsBodyDefault {
-  font-size: 14px;
-  font-style: normal;
-  font-family: Roboto;
-  font-weight: 400px;
-  font-stretch: normal;
-}
-.HeadingsScale5Default {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 600px;
-  font-stretch: normal;
-}
-.ParagraphsLeadDefault {
-  font-size: 16px;
-  font-style: normal;
-  font-family: Roboto;
-  font-weight: 400px;
-  font-stretch: normal;
-}
-.HeadingsScale3Default {
-  font-size: 24px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
-}
-.HeadingsScale1Default {
-  font-size: 48px;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500px;
-  font-stretch: normal;
+@media(max-width: 479px) {
+  .accordion {
+    padding-top: var(--dl-space-space-oneandhalfunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
 }

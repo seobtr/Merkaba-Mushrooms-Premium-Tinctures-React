@@ -1,26 +1,24 @@
 import React from 'react'
+import Link from 'next/link'
 
 import PropTypes from 'prop-types'
 
-const PrimaryPinkButton2 = (props) => {
+const ShopBtn = (props) => {
   return (
     <>
-      <div className={`primary-pink-button2-container ${props.rootClassName} `}>
-        <a
-          href="https://merkabamushrooms.com/shop"
-          className="primary-pink-button2-link button ButtonSmall"
-        >
-          {props.button}
-        </a>
+      <div className="shop-btn-container">
+        <Link href="/shop">
+          <a className="shop-btn-link ButtonSmall button">{props.button}</a>
+        </Link>
       </div>
       <style jsx>
         {`
-          .primary-pink-button2-container {
+          .shop-btn-container {
             display: flex;
             position: relative;
           }
-          .primary-pink-button2-link {
-            color: var(--dl-color-gray-white);
+          .shop-btn-link {
+            color: #ffffff;
             outline: none;
             background: linear-gradient(310deg, #7928ca, #ff0080);
             box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%),
@@ -34,9 +32,11 @@ const PrimaryPinkButton2 = (props) => {
             padding-bottom: var(--dl-space-space-triplequarterunit);
             text-decoration: none;
           }
-          .primary-pink-button2-link:hover {
+          .shop-btn-link:hover {
             cursor: pointer;
             transform: scale(1.02);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
         `}
       </style>
@@ -44,14 +44,14 @@ const PrimaryPinkButton2 = (props) => {
   )
 }
 
-PrimaryPinkButton2.defaultProps = {
-  rootClassName: '',
+ShopBtn.defaultProps = {
+  link_button: 'https://merkabamushrooms.com/shop',
   button: 'Button',
 }
 
-PrimaryPinkButton2.propTypes = {
-  rootClassName: PropTypes.string,
+ShopBtn.propTypes = {
+  link_button: PropTypes.string,
   button: PropTypes.string,
 }
 
-export default PrimaryPinkButton2
+export default ShopBtn

@@ -125,8 +125,9 @@ const Footer = (props) => {
             display: contents;
           }
           .footer-image {
-            width: 92px;
-            height: 105px;
+            width: auto;
+            height: 45px;
+            min-width: auto;
             object-fit: cover;
             text-decoration: none;
           }
@@ -313,16 +314,33 @@ const Footer = (props) => {
           .footer-icon6:hover {
             fill: var(--dl-color-orange-default);
           }
-
+          .footer-root-class-name {
+            height: 100%;
+          }
           .footer-root-class-name1 {
             height: auto;
           }
+
+          @media (max-width: 1200px) {
+            .footer-image {
+              width: auto;
+              height: 45px;
+            }
+          }
           @media (max-width: 991px) {
+            .footer-image {
+              width: auto;
+              height: 45px;
+            }
             .footer-root-class-name1 {
               height: auto;
             }
           }
           @media (max-width: 767px) {
+            .footer-image {
+              width: auto;
+              height: 45px;
+            }
             .footer-container1 {
               flex-wrap: wrap;
               justify-content: center;
@@ -333,6 +351,12 @@ const Footer = (props) => {
             .footer-text7 {
               margin-top: var(--dl-space-space-unit);
               margin-bottom: var(--dl-space-space-unit);
+            }
+          }
+          @media (max-width: 479px) {
+            .footer-image {
+              width: auto;
+              height: 45px;
             }
           }
         `}
@@ -349,7 +373,7 @@ Footer.defaultProps = {
   text4: 'Help',
   text1: 'Benefits',
   text5: 'Privacy Policy',
-  image_src: '/playground_assets/merkaba_logo2-200w.png',
+  image_src: '/brand_assets/logo%20with%20type-200h.png',
   rootClassName: '',
   copyright: '© 2023 Merkaba Mushrooms. All rights reserved',
   text: 'About',

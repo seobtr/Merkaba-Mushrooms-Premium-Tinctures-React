@@ -31,11 +31,9 @@ const MeetMerkaba = (props) => {
           <section className="meet-merkaba-container1">
             <div className="meet-merkaba-container2">
               <h1 className="meet-merkaba-text HeadingOne">
-                <span className="meet-merkaba-text01">{props.text1}</span>
+                <span className="meet-merkaba-text1">{props.text1}</span>
               </h1>
-              <span className="meet-merkaba-text02">
-                <span className="meet-merkaba-text03">{props.text2}</span>
-              </span>
+              <span>{props.introBody}</span>
             </div>
             <div className="meet-merkaba-container3">
               <div className="meet-merkaba-container4">
@@ -44,10 +42,10 @@ const MeetMerkaba = (props) => {
                   src={props.image_src3}
                   className="meet-merkaba-image"
                 />
-                <span className="meet-merkaba-text04 Small">
-                  <span className="meet-merkaba-text05">{props.Quote}</span>
+                <span className="meet-merkaba-text3 Small">
+                  <span className="meet-merkaba-text4">{props.Quote}</span>
                   <br></br>
-                  <span className="meet-merkaba-text07">{props.Quoted}</span>
+                  <span className="meet-merkaba-text6">{props.Quoted}</span>
                 </span>
                 <div className="meet-merkaba-container5">
                   <img
@@ -65,21 +63,8 @@ const MeetMerkaba = (props) => {
                 />
                 <div className="meet-merkaba-container7">
                   <h3 className="HeadingTwo">
-                    <span className="meet-merkaba-text09">{props.text5}</span>
+                    <span className="meet-merkaba-text8">{props.text5}</span>
                   </h3>
-                  <p>
-                    <br></br>
-                    <span className="meet-merkaba-text11">{props.text6}</span>
-                    <br></br>
-                    <span>{props.text7}</span>
-                    <br></br>
-                    <span className="meet-merkaba-text14">{props.text8}</span>
-                    <br></br>
-                    <span>{props.text9}</span>
-                    <br></br>
-                    <span className="meet-merkaba-text17">{props.text10}</span>
-                    <br></br>
-                  </p>
                 </div>
               </div>
             </div>
@@ -108,8 +93,8 @@ const MeetMerkaba = (props) => {
             max-width: 1320px;
             align-items: flex-start;
             padding-top: var(--dl-space-space-sixunits);
-            padding-left: var(--dl-space-space-tripleunit);
-            padding-right: var(--dl-space-space-tripleunit);
+            padding-left: var(--dl-space-space-unit);
+            padding-right: var(--dl-space-space-unit);
             flex-direction: row;
             padding-bottom: var(--dl-space-space-sixunits);
           }
@@ -139,22 +124,10 @@ const MeetMerkaba = (props) => {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-          .meet-merkaba-text01 {
+          .meet-merkaba-text1 {
             color: rgb(203, 12, 159);
             white-space: normal;
             text-decoration: none;
-          }
-          .meet-merkaba-text02 {
-            max-width: 600px;
-            text-align: center;
-            margin-bottom: var(--dl-space-space-halfunit);
-          }
-          .meet-merkaba-text03 {
-            color: rgb(103, 116, 142);
-            display: inline;
-            font-weight: 400;
-            white-space: normal;
-            background-color: rgb(255, 255, 255);
           }
           .meet-merkaba-container3 {
             flex: 0 0 auto;
@@ -185,7 +158,7 @@ const MeetMerkaba = (props) => {
             margin-right: -3rem;
             border-radius: var(--dl-radius-radius-radius75);
           }
-          .meet-merkaba-text04 {
+          .meet-merkaba-text3 {
             flex: 0 0 auto;
             width: 40%;
             display: flex;
@@ -200,14 +173,14 @@ const MeetMerkaba = (props) => {
             margin-bottom: 8rem;
             flex-direction: column;
           }
-          .meet-merkaba-text05 {
+          .meet-merkaba-text4 {
             color: rgb(203, 12, 159);
             display: inline;
             font-weight: 400;
             white-space: normal;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-text07 {
+          .meet-merkaba-text6 {
             color: rgb(203, 12, 159);
             font-weight: 400;
             background-color: rgb(255, 255, 255);
@@ -262,39 +235,27 @@ const MeetMerkaba = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .meet-merkaba-text09 {
+          .meet-merkaba-text8 {
             color: rgb(37, 47, 64);
             font-weight: 700;
             white-space: normal;
             background-color: rgb(255, 255, 255);
           }
-          .meet-merkaba-text11 {
-            color: rgb(103, 116, 142);
-            font-weight: 400;
-            white-space: normal;
-            background-color: rgb(255, 255, 255);
-          }
-          .meet-merkaba-text14 {
-            color: rgb(103, 116, 142);
-            font-weight: 400;
-            white-space: normal;
-            background-color: rgb(255, 255, 255);
-          }
-          .meet-merkaba-text17 {
-            color: rgb(103, 116, 142);
-            font-weight: 400;
-            white-space: normal;
-            background-color: rgb(255, 255, 255);
-          }
 
           @media (max-width: 991px) {
+            .meet-merkaba-container {
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+            }
             .meet-merkaba-features {
               max-width: 960px;
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
             }
             .meet-merkaba-container1 {
               max-width: 960px;
-              padding-left: var(--dl-space-space-doubleunit);
-              padding-right: var(--dl-space-space-doubleunit);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
             }
             .meet-merkaba-container2 {
               max-width: 80%;
@@ -302,10 +263,7 @@ const MeetMerkaba = (props) => {
             .meet-merkaba-text {
               text-align: center;
             }
-            .meet-merkaba-text02 {
-              text-align: center;
-            }
-            .meet-merkaba-text04 {
+            .meet-merkaba-text3 {
               width: 50%;
             }
           }
@@ -318,7 +276,12 @@ const MeetMerkaba = (props) => {
               padding-bottom: var(--dl-space-space-doubleunit);
             }
             .meet-merkaba-container1 {
+              padding: var(--dl-space-space-doubleunit);
               max-width: 720px;
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-unit);
             }
             .meet-merkaba-container3 {
               align-items: center;
@@ -331,7 +294,7 @@ const MeetMerkaba = (props) => {
               margin-left: 0px;
               margin-right: 0px;
             }
-            .meet-merkaba-text04 {
+            .meet-merkaba-text3 {
               width: 70%;
               align-self: center;
               margin-top: var(--dl-space-space-tripleunit);
@@ -348,8 +311,24 @@ const MeetMerkaba = (props) => {
             }
           }
           @media (max-width: 479px) {
+            .meet-merkaba-container {
+              padding-top: var(--dl-space-space-tripleunit);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+            }
             .meet-merkaba-features {
               width: 100%;
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+            }
+            .meet-merkaba-container1 {
+              padding: var(--dl-space-space-halfunit);
+            }
+            .meet-merkaba-container3 {
+              margin-top: var(--dl-space-space-doubleunit);
+              margin-left: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
+              margin-bottom: var(--dl-space-space-doubleunit);
             }
           }
         `}
@@ -361,6 +340,8 @@ const MeetMerkaba = (props) => {
 MeetMerkaba.defaultProps = {
   Quote:
     "We're always constantly testing the potency as well as the taste without compromising the benefits",
+  introBody:
+    'We specialize in crafting premium quality medicinal mushroom tinctures to promote wellness and healing; our tinctures are made from the finest organic mushrooms, sourced from trusted suppliers, and prepared using state-of-the-art extraction methods to ensure maximum potency and efficacy. Explore our website to learn more about our products and how they can benefit your health.',
   image_alt5: 'image',
   Quoted: '-Jordan Gros',
   image_alt3: 'image',
@@ -372,7 +353,7 @@ MeetMerkaba.defaultProps = {
   text9: '',
   image_src3:
     'https://images.unsplash.com/photo-1669101283561-642d16d924ba?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDl8fGxhYiUyMHxlbnwwfHx8fDE2ODIxNzgxMjI&ixlib=rb-4.0.3&w=1100',
-  image_src4: '/playground_assets/cordyceps_unsaturated-bg-1100w.png',
+  image_src4: '/cordyceps_unsaturated-bg-1100w.png',
   text1:
     'The South’s Leading Medicinal Mushroom Company Providing Quality Mushroom Tinctures',
   text7: '',
@@ -387,6 +368,7 @@ MeetMerkaba.defaultProps = {
 
 MeetMerkaba.propTypes = {
   Quote: PropTypes.string,
+  introBody: PropTypes.string,
   image_alt5: PropTypes.string,
   Quoted: PropTypes.string,
   image_alt3: PropTypes.string,

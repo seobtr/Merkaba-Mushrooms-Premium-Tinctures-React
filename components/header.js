@@ -20,12 +20,11 @@ const Header = (props) => {
                 <a className="header-link">
                   <img
                     alt="logo"
-                    src="/playground_assets/merkaba_logo2-1500h.png"
+                    src="/brand_assets/logo%20with%20type-1500h.png"
                     className="header-logo"
                   />
                 </a>
               </Link>
-              <span className="header-text">{props.Brand_2}</span>
             </div>
             <div
               data-thq="thq-navbar-nav"
@@ -37,18 +36,22 @@ const Header = (props) => {
                 data-role="Nav"
                 className="header-nav"
               >
-                <Link href="/about">
-                  <a className="header-link1">About</a>
-                </Link>
+                <span className="header-text">About</span>
                 <span className="header-text01">Shop</span>
-                <span className="header-text02">Learn</span>
-                <span className="header-text03">Blog</span>
+                <Link href="/resources">
+                  <a className="header-link1">Learn</a>
+                </Link>
+                <Link href="/blog">
+                  <a className="header-link2">Blog</a>
+                </Link>
               </nav>
             </div>
             <div data-thq="thq-navbar-btn-group" className="header-btn-group">
               <a
-                href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                className="header-link2"
+                href="https://merkabamushrooms.com/shop"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="header-link3"
               >
                 <PrimaryPinkButton2
                   button="SHOP"
@@ -72,10 +75,9 @@ const Header = (props) => {
                   <div className="header-container3">
                     <img
                       alt="image"
-                      src="/playground_assets/merkaba_logo2-1500h.png"
+                      src="/brand_assets/logo%20with%20type-1500h.png"
                       className="header-image"
                     />
-                    <span className="header-text04">{props.Brand}</span>
                   </div>
                   <div data-thq="thq-close-menu" className="header-menu-close">
                     <svg viewBox="0 0 1024 1024" className="header-icon02">
@@ -88,28 +90,26 @@ const Header = (props) => {
                   data-role="Nav"
                   className="header-nav2"
                 >
-                  <span className="header-text05">About</span>
+                  <span className="header-text02">About</span>
+                  <span className="header-text03">
+                    <span className="header-text04">Shop</span>
+                    <br></br>
+                  </span>
                   <span className="header-text06">
                     <span className="header-text07">Shop</span>
                     <br></br>
                   </span>
-                  <span className="header-text09">
-                    <span className="header-text10">Shop</span>
-                    <br></br>
-                  </span>
-                  <span className="header-text12">Learn</span>
-                  <span className="header-text13">Blog</span>
+                  <span className="header-text09">Learn</span>
+                  <span className="header-text10">Blog</span>
                 </nav>
-                <a
-                  href="https://merkaba-mushrooms-premium-tinctures-react.vercel.app/shop#!/~/"
-                  className="header-link3"
-                >
-                  <PrimaryPinkButton2
-                    button="Shop"
-                    rootClassName="primary-pink-button2-root-class-name1"
-                    className="header-component1"
-                  ></PrimaryPinkButton2>
-                </a>
+                <div className="header-container4">
+                  <a
+                    href="https://merkabamushrooms.com/shop"
+                    className="header-link4 button ButtonSmall"
+                  >
+                    {props.SHOP}
+                  </a>
+                </div>
               </div>
               <div className="header-icon-group">
                 <svg
@@ -136,7 +136,7 @@ const Header = (props) => {
         </div>
         <div data-role="MobileMenu" className="header-mobile-menu1">
           <div className="header-top">
-            <span className="header-text14 Large">Soft UI Design System</span>
+            <span className="header-text11 Large">Soft UI Design System</span>
             <div data-role="CloseMobileMenu" className="header-close-menu">
               <svg viewBox="0 0 1024 1024" className="header-icon10">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -145,9 +145,9 @@ const Header = (props) => {
           </div>
           <div className="header-mid">
             <div className="header-menu">
-              <span className="header-text15 Large">Home</span>
-              <span className="header-text16 Large">Profile</span>
-              <span className="header-text17 Large">Coming Soon</span>
+              <span className="header-text12 Large">Home</span>
+              <span className="header-text13 Large">Profile</span>
+              <span className="header-text14 Large">Coming Soon</span>
             </div>
           </div>
           <div className="header-bot">
@@ -170,10 +170,10 @@ const Header = (props) => {
                 className="header-nav3"
               >
                 <span>About</span>
-                <span className="header-text19">Features</span>
-                <span className="header-text20">Pricing</span>
-                <span className="header-text21">Team</span>
-                <span className="header-text22">Blog</span>
+                <span className="header-text16">Features</span>
+                <span className="header-text17">Pricing</span>
+                <span className="header-text18">Team</span>
+                <span className="header-text19">Blog</span>
               </nav>
             </div>
             <div data-thq="thq-navbar-btn-group" className="header-btn-group1">
@@ -191,7 +191,7 @@ const Header = (props) => {
                 data-role="Nav"
                 className="header-nav4"
               >
-                <div className="header-container4">
+                <div className="header-container5">
                   <img
                     alt="image"
                     src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
@@ -208,13 +208,13 @@ const Header = (props) => {
                   data-role="Nav"
                   className="header-nav5"
                 >
-                  <span className="header-text23">About</span>
-                  <span className="header-text24">Features</span>
-                  <span className="header-text25">Pricing</span>
-                  <span className="header-text26">Team</span>
-                  <span className="header-text27">Blog</span>
+                  <span className="header-text20">About</span>
+                  <span className="header-text21">Features</span>
+                  <span className="header-text22">Pricing</span>
+                  <span className="header-text23">Team</span>
+                  <span className="header-text24">Blog</span>
                 </nav>
-                <div className="header-container5">
+                <div className="header-container6">
                   <button className="header-login1 button">Login</button>
                   <button className="button">Register</button>
                 </div>
@@ -256,6 +256,7 @@ const Header = (props) => {
             position: fixed;
             max-width: 1320px;
             padding-left: var(--dl-space-space-unitandahalfunit);
+            margin-bottom: var(--dl-space-space-fourunits);
             padding-right: var(--dl-space-space-unitandahalfunit);
             justify-content: center;
           }
@@ -301,9 +302,6 @@ const Header = (props) => {
             height: 2rem;
             text-decoration: none;
           }
-          .header-text {
-            margin-left: var(--dl-space-space-unit);
-          }
           .header-desktop-menu {
             display: flex;
           }
@@ -313,17 +311,19 @@ const Header = (props) => {
             align-items: center;
             flex-direction: row;
           }
-          .header-link1 {
+          .header-text {
             text-decoration: none;
           }
           .header-text01 {
             margin-left: 32px;
           }
-          .header-text02 {
+          .header-link1 {
             margin-left: 32px;
+            text-decoration: none;
           }
-          .header-text03 {
+          .header-link2 {
             margin-left: 32px;
+            text-decoration: none;
           }
           .header-btn-group {
             display: flex;
@@ -331,7 +331,7 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-link2 {
+          .header-link3 {
             display: contents;
           }
           .header-component {
@@ -394,7 +394,13 @@ const Header = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .header-text05 {
+          .header-text02 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .header-text03 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .header-text04 {
             margin-bottom: var(--dl-space-space-unit);
           }
           .header-text06 {
@@ -409,17 +415,28 @@ const Header = (props) => {
           .header-text10 {
             margin-bottom: var(--dl-space-space-unit);
           }
-          .header-text12 {
-            margin-bottom: var(--dl-space-space-unit);
+          .header-container4 {
+            display: flex;
+            position: relative;
           }
-          .header-text13 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .header-link3 {
-            display: contents;
-          }
-          .header-component1 {
+          .header-link4 {
+            color: var(--dl-color-gray-white);
+            outline: none;
+            background: linear-gradient(310deg, #7928ca, #ff0080);
+            box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%),
+              0 2px 4px -1px rgb(0 0 0 / 7%);
+            transition: all 0.15s ease-in;
+            padding-top: var(--dl-space-space-triplequarterunit);
+            border-width: 0px;
+            padding-left: var(--dl-space-space-unitandahalfunit);
+            border-radius: 1.875rem;
+            padding-right: var(--dl-space-space-unitandahalfunit);
+            padding-bottom: var(--dl-space-space-triplequarterunit);
             text-decoration: none;
+          }
+          .header-link4:hover {
+            cursor: pointer;
+            transform: scale(1.02);
           }
           .header-icon-group {
             display: flex;
@@ -461,7 +478,7 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-text14 {
+          .header-text11 {
             color: var(--dl-color-secondary-700);
             font-weight: 600;
             text-decoration: none;
@@ -492,27 +509,27 @@ const Header = (props) => {
             margin-bottom: var(--dl-space-space-unit);
             flex-direction: column;
           }
-          .header-text15 {
+          .header-text12 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .header-text15:hover {
+          .header-text12:hover {
             color: var(--dl-color-gray-500);
           }
-          .header-text16 {
+          .header-text13 {
             transition: 0.3s;
             margin-bottom: var(--dl-space-space-halfunit);
             text-decoration: none;
           }
-          .header-text16:hover {
+          .header-text13:hover {
             color: var(--dl-color-gray-500);
           }
-          .header-text17 {
+          .header-text14 {
             transition: 0.3s;
             text-decoration: none;
           }
-          .header-text17:hover {
+          .header-text14:hover {
             color: var(--dl-color-gray-500);
           }
           .header-bot {
@@ -544,16 +561,16 @@ const Header = (props) => {
             align-items: center;
             flex-direction: row;
           }
+          .header-text16 {
+            margin-left: 32px;
+          }
+          .header-text17 {
+            margin-left: 32px;
+          }
+          .header-text18 {
+            margin-left: 32px;
+          }
           .header-text19 {
-            margin-left: 32px;
-          }
-          .header-text20 {
-            margin-left: 32px;
-          }
-          .header-text21 {
-            margin-left: 32px;
-          }
-          .header-text22 {
             margin-left: 32px;
           }
           .header-btn-group1 {
@@ -593,7 +610,7 @@ const Header = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .header-container4 {
+          .header-container5 {
             width: 100%;
             display: flex;
             align-items: center;
@@ -618,22 +635,22 @@ const Header = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
+          .header-text20 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .header-text21 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .header-text22 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
           .header-text23 {
             margin-bottom: var(--dl-space-space-unit);
           }
           .header-text24 {
             margin-bottom: var(--dl-space-space-unit);
           }
-          .header-text25 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .header-text26 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .header-text27 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .header-container5 {
+          .header-container6 {
             flex: 0 0 auto;
             width: auto;
             display: flex;
@@ -666,18 +683,15 @@ const Header = (props) => {
             .header-navbar-interactive {
               max-width: 960px;
             }
-            .header-text {
-              margin-left: var(--dl-space-space-unit);
-            }
           }
           @media (max-width: 767px) {
             .header-text01 {
               margin-left: var(--dl-space-space-unit);
             }
-            .header-text02 {
+            .header-link1 {
               margin-left: var(--dl-space-space-unit);
             }
-            .header-text03 {
+            .header-link2 {
               margin-left: var(--dl-space-space-unit);
             }
             .header-icon {
@@ -691,16 +705,16 @@ const Header = (props) => {
             .header-desktop-menu1 {
               display: none;
             }
+            .header-text16 {
+              margin-left: var(--dl-space-space-unit);
+            }
+            .header-text17 {
+              margin-left: var(--dl-space-space-unit);
+            }
+            .header-text18 {
+              margin-left: var(--dl-space-space-unit);
+            }
             .header-text19 {
-              margin-left: var(--dl-space-space-unit);
-            }
-            .header-text20 {
-              margin-left: var(--dl-space-space-unit);
-            }
-            .header-text21 {
-              margin-left: var(--dl-space-space-unit);
-            }
-            .header-text22 {
               margin-left: var(--dl-space-space-unit);
             }
             .header-btn-group1 {
@@ -711,9 +725,8 @@ const Header = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .header-text {
-              margin-left: var(--dl-space-space-halfunit);
-              margin-right: var(--dl-space-space-halfunit);
+            .header-header {
+              margin-bottom: 0px;
             }
             .header-desktop-menu {
               display: none;
@@ -731,11 +744,6 @@ const Header = (props) => {
             .header-mobile-menu {
               padding: 16px;
             }
-            .header-text04 {
-              text-align: center;
-              margin-left: var(--dl-space-space-halfunit);
-              margin-right: var(--dl-space-space-halfunit);
-            }
             .header-navbar-interactive1 {
               padding: var(--dl-space-space-unit);
             }
@@ -750,14 +758,18 @@ const Header = (props) => {
 }
 
 Header.defaultProps = {
+  SHOP: 'SHOP',
   rootClassName: '',
-  Brand_2: 'Merkaba Mushrooms',
+  rootClassName1: '',
+  link_component: 'https://merkabamushrooms.com/shop',
   Brand: 'Merkaba Mushrooms',
 }
 
 Header.propTypes = {
+  SHOP: PropTypes.string,
   rootClassName: PropTypes.string,
-  Brand_2: PropTypes.string,
+  rootClassName1: PropTypes.string,
+  link_component: PropTypes.string,
   Brand: PropTypes.string,
 }
 
